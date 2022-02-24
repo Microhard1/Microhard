@@ -1,7 +1,7 @@
 ﻿
 namespace DemoCreacionPreguntas
 {
-    partial class Form1
+    partial class PaginaPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,8 @@ namespace DemoCreacionPreguntas
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.components = new System.ComponentModel.Container();
+            this.Borde = new System.Windows.Forms.Panel();
             this.botonRestaurarTamaño = new System.Windows.Forms.Button();
             this.botonMinimizar = new System.Windows.Forms.Button();
             this.botonMaximizar = new System.Windows.Forms.Button();
@@ -39,22 +40,23 @@ namespace DemoCreacionPreguntas
             this.tipoTest = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.Borde.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // Borde
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.botonRestaurarTamaño);
-            this.panel1.Controls.Add(this.botonMinimizar);
-            this.panel1.Controls.Add(this.botonMaximizar);
-            this.panel1.Controls.Add(this.botonCerrar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(982, 38);
-            this.panel1.TabIndex = 0;
+            this.Borde.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Borde.Controls.Add(this.botonRestaurarTamaño);
+            this.Borde.Controls.Add(this.botonMinimizar);
+            this.Borde.Controls.Add(this.botonMaximizar);
+            this.Borde.Controls.Add(this.botonCerrar);
+            this.Borde.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Borde.Location = new System.Drawing.Point(0, 0);
+            this.Borde.Name = "Borde";
+            this.Borde.Size = new System.Drawing.Size(982, 38);
+            this.Borde.TabIndex = 0;
             // 
             // botonRestaurarTamaño
             // 
@@ -159,19 +161,26 @@ namespace DemoCreacionPreguntas
             this.panelContenedor.Size = new System.Drawing.Size(982, 480);
             this.panelContenedor.TabIndex = 2;
             // 
-            // Form1
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.Borde;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // PaginaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 577);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Borde);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "PaginaPrincipal";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
+            this.Borde.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -180,7 +189,7 @@ namespace DemoCreacionPreguntas
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Borde;
         private System.Windows.Forms.Button botonMinimizar;
         private System.Windows.Forms.Button botonMaximizar;
         private System.Windows.Forms.Button botonCerrar;
@@ -190,6 +199,7 @@ namespace DemoCreacionPreguntas
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button botonRestaurarTamaño;
         private System.Windows.Forms.Panel panelContenedor;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
 

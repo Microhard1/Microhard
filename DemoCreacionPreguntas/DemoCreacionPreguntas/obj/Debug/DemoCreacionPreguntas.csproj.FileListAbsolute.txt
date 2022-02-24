@@ -9,3 +9,17 @@ C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\DemoCreacionPreguntas\Demo
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.exe
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.pdb
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.Form2.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\bin\Debug\DemoCreacionPreguntas.exe.config
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\bin\Debug\DemoCreacionPreguntas.exe
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\bin\Debug\DemoCreacionPreguntas.pdb
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.PaginaPrincipal.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.Properties.Resources.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.Form2.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.VerdaderoFalso.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.csproj.GenerateResource.cache
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.exe
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.pdb
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.csproj.CopyComplete
