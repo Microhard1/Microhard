@@ -1,7 +1,6 @@
-﻿
-namespace DemoCreacionPreguntas
+﻿namespace DemoCreacionPreguntas
 {
-    partial class VerdaderoFalso
+    partial class RespuestaAbierta
     {
         /// <summary>
         /// Required designer variable.
@@ -29,61 +28,26 @@ namespace DemoCreacionPreguntas
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.RadioButton radioButton1;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VerdaderoFalso));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RespuestaAbierta));
             this.TextoPregunta = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.imagenPregunta = new System.Windows.Forms.PictureBox();
             this.crearQuiz = new Bunifu.Framework.UI.BunifuFlatButton();
-            radioButton1 = new System.Windows.Forms.RadioButton();
+            this.imagenPregunta = new System.Windows.Forms.PictureBox();
+            this.textoRespuesta = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).BeginInit();
             this.SuspendLayout();
             // 
             // TextoPregunta
             // 
             this.TextoPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextoPregunta.Location = new System.Drawing.Point(83, 27);
+            this.TextoPregunta.Location = new System.Drawing.Point(120, 33);
             this.TextoPregunta.Margin = new System.Windows.Forms.Padding(2);
             this.TextoPregunta.Multiline = true;
             this.TextoPregunta.Name = "TextoPregunta";
             this.TextoPregunta.Size = new System.Drawing.Size(537, 66);
-            this.TextoPregunta.TabIndex = 1;
+            this.TextoPregunta.TabIndex = 2;
             this.TextoPregunta.Text = "Pregunta";
             this.TextoPregunta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // radioButton1
-            // 
-            radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            radioButton1.Location = new System.Drawing.Point(83, 148);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new System.Drawing.Size(184, 72);
-            radioButton1.TabIndex = 3;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Verdadero";
-            radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(83, 226);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(184, 72);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Falso";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // imagenPregunta
-            // 
-            this.imagenPregunta.AccessibleName = "imagenPregunta";
-            this.imagenPregunta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.imagenPregunta.Image = ((System.Drawing.Image)(resources.GetObject("imagenPregunta.Image")));
-            this.imagenPregunta.Location = new System.Drawing.Point(436, 123);
-            this.imagenPregunta.Margin = new System.Windows.Forms.Padding(2);
-            this.imagenPregunta.Name = "imagenPregunta";
-            this.imagenPregunta.Size = new System.Drawing.Size(184, 218);
-            this.imagenPregunta.TabIndex = 5;
-            this.imagenPregunta.TabStop = false;
+            this.TextoPregunta.TextChanged += new System.EventHandler(this.TextoPregunta_TextChanged);
             // 
             // crearQuiz
             // 
@@ -106,31 +70,55 @@ namespace DemoCreacionPreguntas
             this.crearQuiz.IconVisible = true;
             this.crearQuiz.IconZoom = 90D;
             this.crearQuiz.IsTab = false;
-            this.crearQuiz.Location = new System.Drawing.Point(436, 355);
+            this.crearQuiz.Location = new System.Drawing.Point(477, 359);
             this.crearQuiz.Name = "crearQuiz";
             this.crearQuiz.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.crearQuiz.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.crearQuiz.OnHoverTextColor = System.Drawing.Color.White;
             this.crearQuiz.selected = false;
             this.crearQuiz.Size = new System.Drawing.Size(184, 48);
-            this.crearQuiz.TabIndex = 8;
+            this.crearQuiz.TabIndex = 10;
             this.crearQuiz.Text = "CREAR";
             this.crearQuiz.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.crearQuiz.Textcolor = System.Drawing.Color.White;
             this.crearQuiz.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // VerdaderoFalso
+            // imagenPregunta
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(720, 415);
+            this.imagenPregunta.AccessibleName = "imagenPregunta";
+            this.imagenPregunta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.imagenPregunta.Image = ((System.Drawing.Image)(resources.GetObject("imagenPregunta.Image")));
+            this.imagenPregunta.Location = new System.Drawing.Point(477, 117);
+            this.imagenPregunta.Margin = new System.Windows.Forms.Padding(2);
+            this.imagenPregunta.Name = "imagenPregunta";
+            this.imagenPregunta.Size = new System.Drawing.Size(184, 218);
+            this.imagenPregunta.TabIndex = 9;
+            this.imagenPregunta.TabStop = false;
+            // 
+            // textoRespuesta
+            // 
+            this.textoRespuesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textoRespuesta.Location = new System.Drawing.Point(120, 117);
+            this.textoRespuesta.Margin = new System.Windows.Forms.Padding(2);
+            this.textoRespuesta.Multiline = true;
+            this.textoRespuesta.Name = "textoRespuesta";
+            this.textoRespuesta.Size = new System.Drawing.Size(344, 218);
+            this.textoRespuesta.TabIndex = 11;
+            this.textoRespuesta.Text = "Respuesta";
+            this.textoRespuesta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // RespuestaAbierta
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(760, 428);
+            this.Controls.Add(this.textoRespuesta);
             this.Controls.Add(this.crearQuiz);
             this.Controls.Add(this.imagenPregunta);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(radioButton1);
             this.Controls.Add(this.TextoPregunta);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "VerdaderoFalso";
-            this.Text = "Form3";
+            this.Name = "RespuestaAbierta";
+            this.Text = "RespuestaAbierta";
             ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -140,8 +128,8 @@ namespace DemoCreacionPreguntas
         #endregion
 
         private System.Windows.Forms.TextBox TextoPregunta;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.PictureBox imagenPregunta;
         private Bunifu.Framework.UI.BunifuFlatButton crearQuiz;
+        private System.Windows.Forms.PictureBox imagenPregunta;
+        private System.Windows.Forms.TextBox textoRespuesta;
     }
 }

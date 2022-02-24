@@ -67,7 +67,12 @@ namespace DemoCreacionPreguntas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            abrirFormHijo(new VerdaderoFalso());
+        }
 
+        private void BotonRespuestaAbierta_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new RespuestaAbierta());
         }
     }
 }

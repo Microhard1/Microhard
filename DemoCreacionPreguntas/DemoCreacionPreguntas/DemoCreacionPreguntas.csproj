@@ -57,6 +57,12 @@
     <Compile Include="PaginaPrincipal.Designer.cs">
       <DependentUpon>PaginaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="RespuestaAbierta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RespuestaAbierta.Designer.cs">
+      <DependentUpon>RespuestaAbierta.cs</DependentUpon>
+    </Compile>
     <Compile Include="VerdaderoFalso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RespuestaAbierta.resx">
+      <DependentUpon>RespuestaAbierta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TipoTest.resx">
       <DependentUpon>TipoTest.cs</DependentUpon>
     </EmbeddedResource>
