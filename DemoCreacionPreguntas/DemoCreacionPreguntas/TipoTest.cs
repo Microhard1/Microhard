@@ -29,5 +29,10 @@ namespace DemoCreacionPreguntas
                 imagenPregunta.Image = new Bitmap(open.FileName);
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

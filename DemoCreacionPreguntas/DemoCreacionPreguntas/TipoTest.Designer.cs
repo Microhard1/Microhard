@@ -30,7 +30,7 @@ namespace DemoCreacionPreguntas
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TextoPregunta = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.imagenPregunta = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -39,13 +39,17 @@ namespace DemoCreacionPreguntas
             ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // TextoPregunta
             // 
-            this.textBox1.Location = new System.Drawing.Point(59, 34);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(715, 105);
-            this.textBox1.TabIndex = 0;
+            this.TextoPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextoPregunta.Location = new System.Drawing.Point(59, 34);
+            this.TextoPregunta.Multiline = true;
+            this.TextoPregunta.Name = "TextoPregunta";
+            this.TextoPregunta.Size = new System.Drawing.Size(715, 80);
+            this.TextoPregunta.TabIndex = 0;
+            this.TextoPregunta.Text = "Pregunta";
+            this.TextoPregunta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TextoPregunta.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -69,7 +73,7 @@ namespace DemoCreacionPreguntas
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(70, 276);
+            this.textBox3.Location = new System.Drawing.Point(70, 266);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(355, 54);
@@ -86,7 +90,7 @@ namespace DemoCreacionPreguntas
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(145, 429);
+            this.button2.Location = new System.Drawing.Point(179, 429);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(134, 30);
             this.button2.TabIndex = 5;
@@ -104,7 +108,7 @@ namespace DemoCreacionPreguntas
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.imagenPregunta);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TextoPregunta);
             this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
@@ -117,7 +121,7 @@ namespace DemoCreacionPreguntas
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TextoPregunta;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox imagenPregunta;
         private System.Windows.Forms.TextBox textBox3;
