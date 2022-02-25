@@ -19,7 +19,7 @@ namespace DemoCreacionPreguntas
 
         private void TextoPregunta_TextChanged(object sender, EventArgs e)
         {
-            TextoPregunta.
+            
         }
     }
 }
