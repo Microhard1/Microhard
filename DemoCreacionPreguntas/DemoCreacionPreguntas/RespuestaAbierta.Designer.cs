@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RespuestaAbierta));
             this.TextoPregunta = new System.Windows.Forms.TextBox();
-            this.crearQuiz = new Bunifu.Framework.UI.BunifuFlatButton();
+            
             this.imagenPregunta = new System.Windows.Forms.PictureBox();
             this.textoRespuesta = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).BeginInit();
@@ -51,38 +51,7 @@
             // 
             // crearQuiz
             // 
-            this.crearQuiz.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.crearQuiz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.crearQuiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.crearQuiz.BorderRadius = 0;
-            this.crearQuiz.ButtonText = "CREAR";
-            this.crearQuiz.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.crearQuiz.DisabledColor = System.Drawing.Color.Gray;
-            this.crearQuiz.Iconcolor = System.Drawing.Color.Transparent;
-            this.crearQuiz.Iconimage = ((System.Drawing.Image)(resources.GetObject("crearQuiz.Iconimage")));
-            this.crearQuiz.Iconimage_right = null;
-            this.crearQuiz.Iconimage_right_Selected = null;
-            this.crearQuiz.Iconimage_Selected = null;
-            this.crearQuiz.IconMarginLeft = 0;
-            this.crearQuiz.IconMarginRight = 0;
-            this.crearQuiz.IconRightVisible = true;
-            this.crearQuiz.IconRightZoom = 0D;
-            this.crearQuiz.IconVisible = true;
-            this.crearQuiz.IconZoom = 90D;
-            this.crearQuiz.IsTab = false;
-            this.crearQuiz.Location = new System.Drawing.Point(477, 359);
-            this.crearQuiz.Name = "crearQuiz";
-            this.crearQuiz.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.crearQuiz.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.crearQuiz.OnHoverTextColor = System.Drawing.Color.White;
-            this.crearQuiz.selected = false;
-            this.crearQuiz.Size = new System.Drawing.Size(184, 48);
-            this.crearQuiz.TabIndex = 10;
-            this.crearQuiz.Text = "CREAR";
-            this.crearQuiz.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.crearQuiz.Textcolor = System.Drawing.Color.White;
-            this.crearQuiz.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
+           
             // imagenPregunta
             // 
             this.imagenPregunta.AccessibleName = "imagenPregunta";
@@ -113,7 +82,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 428);
             this.Controls.Add(this.textoRespuesta);
-            this.Controls.Add(this.crearQuiz);
+            
             this.Controls.Add(this.imagenPregunta);
             this.Controls.Add(this.TextoPregunta);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -128,7 +97,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox TextoPregunta;
-        private Bunifu.Framework.UI.BunifuFlatButton crearQuiz;
+        
         private System.Windows.Forms.PictureBox imagenPregunta;
         private System.Windows.Forms.TextBox textoRespuesta;
     }

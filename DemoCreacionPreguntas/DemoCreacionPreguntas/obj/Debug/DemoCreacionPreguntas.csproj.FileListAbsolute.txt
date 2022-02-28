@@ -12,7 +12,6 @@ C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\DemoCreacionPreguntas\Demo
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\bin\Debug\DemoCreacionPreguntas.exe.config
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\bin\Debug\DemoCreacionPreguntas.exe
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\bin\Debug\DemoCreacionPreguntas.pdb
-C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.csproj.AssemblyReference.cache
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.PaginaPrincipal.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.Properties.Resources.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.Form2.resources
@@ -39,3 +38,6 @@ C:\Users\Pc\Documents\upv\soft\PSW\Microhard\DemoCreacionPreguntas\DemoCreacionP
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.pdb
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.RespuestaAbierta.resources
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.CrearQuiz.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.CrearQuiz.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.RespuestaAbierta.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.csproj.AssemblyReference.cache
