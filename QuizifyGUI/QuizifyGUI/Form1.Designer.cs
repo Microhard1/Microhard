@@ -44,14 +44,24 @@ namespace QuizifyGUI
             this.PaginaCrearPreguntas = new MetroSet_UI.Child.MetroSetSetTabPage();
             this.metroSetTabControl2 = new MetroSet_UI.Controls.MetroSetTabControl();
             this.PaginaVerdaderoFalso = new MetroSet_UI.Child.MetroSetSetTabPage();
-            this.PaginaRespuestaAbierta = new MetroSet_UI.Child.MetroSetSetTabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.metroSetTextBox1 = new MetroSet_UI.Controls.MetroSetTextBox();
             this.PaginaSeleccionMultiple = new MetroSet_UI.Child.MetroSetSetTabPage();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.metroSetTextBox2 = new MetroSet_UI.Controls.MetroSetTextBox();
+            this.PaginaRespuestaAbierta = new MetroSet_UI.Child.MetroSetSetTabPage();
+            this.metroSetRichTextBox1 = new MetroSet_UI.Controls.MetroSetRichTextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.metroSetTextBox3 = new MetroSet_UI.Controls.MetroSetTextBox();
             this.metroSetPanel1 = new MetroSet_UI.Controls.MetroSetPanel();
-            this.metroSetRadioButton1 = new MetroSet_UI.Controls.MetroSetRadioButton();
             this.metroSetNumeric1 = new MetroSet_UI.Controls.MetroSetNumeric();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.metroSetButton1 = new MetroSet_UI.Controls.MetroSetButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.PaginaPerfil = new MetroSet_UI.Child.MetroSetSetTabPage();
             this.metroSetLabel1 = new MetroSet_UI.Controls.MetroSetLabel();
             this.metroSetProgressBar1 = new MetroSet_UI.Controls.MetroSetProgressBar();
@@ -59,39 +69,28 @@ namespace QuizifyGUI
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PaginaCrearQuiz = new MetroSet_UI.Child.MetroSetSetTabPage();
-            this.Inicio = new MetroSet_UI.Child.MetroSetSetTabPage();
-            this.metroSetContextMenuStrip1 = new MetroSet_UI.Controls.MetroSetContextMenuStrip();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.metroSetTextBox1 = new MetroSet_UI.Controls.MetroSetTextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.metroSetTextBox2 = new MetroSet_UI.Controls.MetroSetTextBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.metroSetTextBox3 = new MetroSet_UI.Controls.MetroSetTextBox();
-            this.metroSetRichTextBox1 = new MetroSet_UI.Controls.MetroSetRichTextBox();
+            this.Inicio = new MetroSet_UI.Child.MetroSetSetTabPage();
+            this.metroSetContextMenuStrip1 = new MetroSet_UI.Controls.MetroSetContextMenuStrip();
+            this.metroSetLabel2 = new MetroSet_UI.Controls.MetroSetLabel();
+            this.metroSetDivider1 = new MetroSet_UI.Controls.MetroSetDivider();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.ColeccionDePaginas.SuspendLayout();
             this.PaginaRealizarQuiz.SuspendLayout();
             this.metroSetSetTabPage3.SuspendLayout();
             this.PaginaCrearPreguntas.SuspendLayout();
             this.metroSetTabControl2.SuspendLayout();
             this.PaginaVerdaderoFalso.SuspendLayout();
-            this.PaginaRespuestaAbierta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PaginaSeleccionMultiple.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.PaginaRespuestaAbierta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.metroSetPanel1.SuspendLayout();
             this.PaginaPerfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PaginaCrearQuiz.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // metroSetControlBox1
@@ -133,30 +132,31 @@ namespace QuizifyGUI
             this.ColeccionDePaginas.AnimateEasingType = MetroSet_UI.Enums.EasingType.CubeOut;
             this.ColeccionDePaginas.AnimateTime = 200;
             this.ColeccionDePaginas.BackgroundColor = System.Drawing.Color.White;
-            this.ColeccionDePaginas.Controls.Add(this.PaginaRealizarQuiz);
-            this.ColeccionDePaginas.Controls.Add(this.metroSetSetTabPage3);
-            this.ColeccionDePaginas.Controls.Add(this.PaginaCrearPreguntas);
-            this.ColeccionDePaginas.Controls.Add(this.PaginaPerfil);
-            this.ColeccionDePaginas.Controls.Add(this.PaginaCrearQuiz);
             this.ColeccionDePaginas.Controls.Add(this.Inicio);
+            this.ColeccionDePaginas.Controls.Add(this.PaginaRealizarQuiz);
+            this.ColeccionDePaginas.Controls.Add(this.PaginaCrearPreguntas);
+            this.ColeccionDePaginas.Controls.Add(this.PaginaCrearQuiz);
+            this.ColeccionDePaginas.Controls.Add(this.metroSetSetTabPage3);
+            this.ColeccionDePaginas.Controls.Add(this.PaginaPerfil);
             this.ColeccionDePaginas.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ColeccionDePaginas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ColeccionDePaginas.IsDerivedStyle = true;
             this.ColeccionDePaginas.ItemSize = new System.Drawing.Size(100, 38);
-            this.ColeccionDePaginas.Location = new System.Drawing.Point(25, 57);
+            this.ColeccionDePaginas.Location = new System.Drawing.Point(12, 70);
             this.ColeccionDePaginas.Name = "ColeccionDePaginas";
-            this.ColeccionDePaginas.SelectedIndex = 2;
+            this.ColeccionDePaginas.SelectedIndex = 3;
             this.ColeccionDePaginas.SelectedTextColor = System.Drawing.Color.White;
-            this.ColeccionDePaginas.Size = new System.Drawing.Size(1037, 609);
+            this.ColeccionDePaginas.Size = new System.Drawing.Size(1096, 599);
             this.ColeccionDePaginas.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.ColeccionDePaginas.Speed = 100;
             this.ColeccionDePaginas.Style = MetroSet_UI.Enums.Style.Light;
             this.ColeccionDePaginas.StyleManager = this.styleManager1;
             this.ColeccionDePaginas.TabIndex = 1;
-            this.ColeccionDePaginas.TabStyle = MetroSet_UI.Enums.TabStyle.Style2;
             this.ColeccionDePaginas.ThemeAuthor = null;
             this.ColeccionDePaginas.ThemeName = null;
             this.ColeccionDePaginas.UnselectedTextColor = System.Drawing.Color.Gray;
             this.ColeccionDePaginas.UseAnimation = false;
+            this.ColeccionDePaginas.SelectedIndexChanged += new System.EventHandler(this.ColeccionDePaginas_SelectedIndexChanged);
             // 
             // PaginaRealizarQuiz
             // 
@@ -172,7 +172,7 @@ namespace QuizifyGUI
             this.PaginaRealizarQuiz.IsDerivedStyle = true;
             this.PaginaRealizarQuiz.Location = new System.Drawing.Point(4, 42);
             this.PaginaRealizarQuiz.Name = "PaginaRealizarQuiz";
-            this.PaginaRealizarQuiz.Size = new System.Drawing.Size(1029, 563);
+            this.PaginaRealizarQuiz.Size = new System.Drawing.Size(1088, 553);
             this.PaginaRealizarQuiz.Style = MetroSet_UI.Enums.Style.Light;
             this.PaginaRealizarQuiz.StyleManager = this.styleManager1;
             this.PaginaRealizarQuiz.TabIndex = 1;
@@ -180,6 +180,7 @@ namespace QuizifyGUI
             this.PaginaRealizarQuiz.ThemeAuthor = "Narwin";
             this.PaginaRealizarQuiz.ThemeName = "MetroLite";
             this.PaginaRealizarQuiz.ToolTipText = null;
+            this.PaginaRealizarQuiz.Click += new System.EventHandler(this.PaginaRealizarQuiz_Click);
             // 
             // metroSetBadge1
             // 
@@ -346,7 +347,7 @@ namespace QuizifyGUI
             this.PaginaCrearPreguntas.IsDerivedStyle = true;
             this.PaginaCrearPreguntas.Location = new System.Drawing.Point(4, 42);
             this.PaginaCrearPreguntas.Name = "PaginaCrearPreguntas";
-            this.PaginaCrearPreguntas.Size = new System.Drawing.Size(1029, 563);
+            this.PaginaCrearPreguntas.Size = new System.Drawing.Size(1088, 553);
             this.PaginaCrearPreguntas.Style = MetroSet_UI.Enums.Style.Light;
             this.PaginaCrearPreguntas.StyleManager = this.styleManager1;
             this.PaginaCrearPreguntas.TabIndex = 0;
@@ -368,7 +369,7 @@ namespace QuizifyGUI
             this.metroSetTabControl2.ItemSize = new System.Drawing.Size(100, 38);
             this.metroSetTabControl2.Location = new System.Drawing.Point(189, 20);
             this.metroSetTabControl2.Name = "metroSetTabControl2";
-            this.metroSetTabControl2.SelectedIndex = 1;
+            this.metroSetTabControl2.SelectedIndex = 0;
             this.metroSetTabControl2.SelectedTextColor = System.Drawing.Color.White;
             this.metroSetTabControl2.Size = new System.Drawing.Size(869, 507);
             this.metroSetTabControl2.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
@@ -399,30 +400,76 @@ namespace QuizifyGUI
             this.PaginaVerdaderoFalso.StyleManager = this.styleManager1;
             this.PaginaVerdaderoFalso.TabIndex = 0;
             this.PaginaVerdaderoFalso.Text = "Verdadero/Falso";
-            this.PaginaVerdaderoFalso.ThemeAuthor = null;
-            this.PaginaVerdaderoFalso.ThemeName = null;
+            this.PaginaVerdaderoFalso.ThemeAuthor = "Narwin";
+            this.PaginaVerdaderoFalso.ThemeName = "MetroLite";
             this.PaginaVerdaderoFalso.ToolTipText = null;
             // 
-            // PaginaRespuestaAbierta
+            // pictureBox2
             // 
-            this.PaginaRespuestaAbierta.BaseColor = System.Drawing.Color.White;
-            this.PaginaRespuestaAbierta.Controls.Add(this.metroSetRichTextBox1);
-            this.PaginaRespuestaAbierta.Controls.Add(this.pictureBox4);
-            this.PaginaRespuestaAbierta.Controls.Add(this.metroSetTextBox3);
-            this.PaginaRespuestaAbierta.Font = null;
-            this.PaginaRespuestaAbierta.ImageIndex = 0;
-            this.PaginaRespuestaAbierta.ImageKey = null;
-            this.PaginaRespuestaAbierta.IsDerivedStyle = true;
-            this.PaginaRespuestaAbierta.Location = new System.Drawing.Point(4, 42);
-            this.PaginaRespuestaAbierta.Name = "PaginaRespuestaAbierta";
-            this.PaginaRespuestaAbierta.Size = new System.Drawing.Size(861, 461);
-            this.PaginaRespuestaAbierta.Style = MetroSet_UI.Enums.Style.Light;
-            this.PaginaRespuestaAbierta.StyleManager = this.styleManager1;
-            this.PaginaRespuestaAbierta.TabIndex = 1;
-            this.PaginaRespuestaAbierta.Text = "Respuesta Abierta";
-            this.PaginaRespuestaAbierta.ThemeAuthor = null;
-            this.PaginaRespuestaAbierta.ThemeName = null;
-            this.PaginaRespuestaAbierta.ToolTipText = null;
+            this.pictureBox2.Location = new System.Drawing.Point(317, 98);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(273, 217);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.Red;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.ForeColor = System.Drawing.Color.White;
+            this.radioButton2.Location = new System.Drawing.Point(590, 364);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(134, 40);
+            this.radioButton2.TabIndex = 2;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "FALSO";
+            this.radioButton2.UseVisualStyleBackColor = false;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Lime;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.ForeColor = System.Drawing.Color.White;
+            this.radioButton1.Location = new System.Drawing.Point(158, 364);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(226, 40);
+            this.radioButton1.TabIndex = 1;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "VERDADERO";
+            this.radioButton1.UseVisualStyleBackColor = false;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // metroSetTextBox1
+            // 
+            this.metroSetTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroSetTextBox1.AutoCompleteCustomSource = null;
+            this.metroSetTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.metroSetTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.metroSetTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.metroSetTextBox1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.metroSetTextBox1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.metroSetTextBox1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.metroSetTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroSetTextBox1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.metroSetTextBox1.Image = null;
+            this.metroSetTextBox1.IsDerivedStyle = true;
+            this.metroSetTextBox1.Lines = null;
+            this.metroSetTextBox1.Location = new System.Drawing.Point(158, 34);
+            this.metroSetTextBox1.MaxLength = 32767;
+            this.metroSetTextBox1.Multiline = false;
+            this.metroSetTextBox1.Name = "metroSetTextBox1";
+            this.metroSetTextBox1.ReadOnly = false;
+            this.metroSetTextBox1.Size = new System.Drawing.Size(640, 49);
+            this.metroSetTextBox1.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetTextBox1.StyleManager = null;
+            this.metroSetTextBox1.TabIndex = 0;
+            this.metroSetTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.metroSetTextBox1.ThemeAuthor = "Narwin";
+            this.metroSetTextBox1.ThemeName = "MetroLite";
+            this.metroSetTextBox1.UseSystemPasswordChar = false;
+            this.metroSetTextBox1.WatermarkText = "PREGUNTA";
             // 
             // PaginaSeleccionMultiple
             // 
@@ -444,20 +491,190 @@ namespace QuizifyGUI
             this.PaginaSeleccionMultiple.StyleManager = this.styleManager1;
             this.PaginaSeleccionMultiple.TabIndex = 2;
             this.PaginaSeleccionMultiple.Text = "Seleccion Multiple";
-            this.PaginaSeleccionMultiple.ThemeAuthor = null;
-            this.PaginaSeleccionMultiple.ThemeName = null;
+            this.PaginaSeleccionMultiple.ThemeAuthor = "Narwin";
+            this.PaginaSeleccionMultiple.ThemeName = "MetroLite";
             this.PaginaSeleccionMultiple.ToolTipText = null;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton6.Location = new System.Drawing.Point(110, 373);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(176, 40);
+            this.radioButton6.TabIndex = 9;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "OPCION 4";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton5.Location = new System.Drawing.Point(110, 279);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(176, 40);
+            this.radioButton5.TabIndex = 8;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "OPCION 3";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(471, 106);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(279, 325);
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(110, 190);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(176, 40);
+            this.radioButton3.TabIndex = 6;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "OPCION 2";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(110, 106);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(176, 40);
+            this.radioButton4.TabIndex = 5;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "OPCION 1";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // metroSetTextBox2
+            // 
+            this.metroSetTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroSetTextBox2.AutoCompleteCustomSource = null;
+            this.metroSetTextBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.metroSetTextBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.metroSetTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.metroSetTextBox2.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.metroSetTextBox2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.metroSetTextBox2.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.metroSetTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroSetTextBox2.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.metroSetTextBox2.Image = null;
+            this.metroSetTextBox2.IsDerivedStyle = true;
+            this.metroSetTextBox2.Lines = null;
+            this.metroSetTextBox2.Location = new System.Drawing.Point(110, 30);
+            this.metroSetTextBox2.MaxLength = 32767;
+            this.metroSetTextBox2.Multiline = false;
+            this.metroSetTextBox2.Name = "metroSetTextBox2";
+            this.metroSetTextBox2.ReadOnly = false;
+            this.metroSetTextBox2.Size = new System.Drawing.Size(640, 49);
+            this.metroSetTextBox2.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetTextBox2.StyleManager = null;
+            this.metroSetTextBox2.TabIndex = 4;
+            this.metroSetTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.metroSetTextBox2.ThemeAuthor = "Narwin";
+            this.metroSetTextBox2.ThemeName = "MetroLite";
+            this.metroSetTextBox2.UseSystemPasswordChar = false;
+            this.metroSetTextBox2.WatermarkText = "PREGUNTA";
+            // 
+            // PaginaRespuestaAbierta
+            // 
+            this.PaginaRespuestaAbierta.BaseColor = System.Drawing.Color.White;
+            this.PaginaRespuestaAbierta.Controls.Add(this.metroSetRichTextBox1);
+            this.PaginaRespuestaAbierta.Controls.Add(this.pictureBox4);
+            this.PaginaRespuestaAbierta.Controls.Add(this.metroSetTextBox3);
+            this.PaginaRespuestaAbierta.Font = null;
+            this.PaginaRespuestaAbierta.ImageIndex = 0;
+            this.PaginaRespuestaAbierta.ImageKey = null;
+            this.PaginaRespuestaAbierta.IsDerivedStyle = true;
+            this.PaginaRespuestaAbierta.Location = new System.Drawing.Point(4, 42);
+            this.PaginaRespuestaAbierta.Name = "PaginaRespuestaAbierta";
+            this.PaginaRespuestaAbierta.Size = new System.Drawing.Size(861, 461);
+            this.PaginaRespuestaAbierta.Style = MetroSet_UI.Enums.Style.Light;
+            this.PaginaRespuestaAbierta.StyleManager = this.styleManager1;
+            this.PaginaRespuestaAbierta.TabIndex = 1;
+            this.PaginaRespuestaAbierta.Text = "Respuesta Abierta";
+            this.PaginaRespuestaAbierta.ThemeAuthor = "Narwin";
+            this.PaginaRespuestaAbierta.ThemeName = "MetroLite";
+            this.PaginaRespuestaAbierta.ToolTipText = null;
+            // 
+            // metroSetRichTextBox1
+            // 
+            this.metroSetRichTextBox1.AutoWordSelection = false;
+            this.metroSetRichTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.metroSetRichTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.metroSetRichTextBox1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.metroSetRichTextBox1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.metroSetRichTextBox1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.metroSetRichTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.metroSetRichTextBox1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.metroSetRichTextBox1.IsDerivedStyle = true;
+            this.metroSetRichTextBox1.Lines = null;
+            this.metroSetRichTextBox1.Location = new System.Drawing.Point(110, 106);
+            this.metroSetRichTextBox1.MaxLength = 32767;
+            this.metroSetRichTextBox1.Name = "metroSetRichTextBox1";
+            this.metroSetRichTextBox1.ReadOnly = false;
+            this.metroSetRichTextBox1.Size = new System.Drawing.Size(304, 325);
+            this.metroSetRichTextBox1.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetRichTextBox1.StyleManager = null;
+            this.metroSetRichTextBox1.TabIndex = 10;
+            this.metroSetRichTextBox1.Text = resources.GetString("metroSetRichTextBox1.Text");
+            this.metroSetRichTextBox1.ThemeAuthor = "Narwin";
+            this.metroSetRichTextBox1.ThemeName = "MetroLite";
+            this.metroSetRichTextBox1.WordWrap = true;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(471, 106);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(279, 325);
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
+            // metroSetTextBox3
+            // 
+            this.metroSetTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroSetTextBox3.AutoCompleteCustomSource = null;
+            this.metroSetTextBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.metroSetTextBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.metroSetTextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.metroSetTextBox3.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.metroSetTextBox3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.metroSetTextBox3.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.metroSetTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroSetTextBox3.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.metroSetTextBox3.Image = null;
+            this.metroSetTextBox3.IsDerivedStyle = true;
+            this.metroSetTextBox3.Lines = null;
+            this.metroSetTextBox3.Location = new System.Drawing.Point(110, 30);
+            this.metroSetTextBox3.MaxLength = 32767;
+            this.metroSetTextBox3.Multiline = false;
+            this.metroSetTextBox3.Name = "metroSetTextBox3";
+            this.metroSetTextBox3.ReadOnly = false;
+            this.metroSetTextBox3.Size = new System.Drawing.Size(640, 49);
+            this.metroSetTextBox3.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetTextBox3.StyleManager = null;
+            this.metroSetTextBox3.TabIndex = 8;
+            this.metroSetTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.metroSetTextBox3.ThemeAuthor = "Narwin";
+            this.metroSetTextBox3.ThemeName = "MetroLite";
+            this.metroSetTextBox3.UseSystemPasswordChar = false;
+            this.metroSetTextBox3.WatermarkText = "PREGUNTA";
             // 
             // metroSetPanel1
             // 
             this.metroSetPanel1.BackgroundColor = System.Drawing.Color.White;
             this.metroSetPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.metroSetPanel1.BorderThickness = 1;
-            this.metroSetPanel1.Controls.Add(this.metroSetRadioButton1);
+            this.metroSetPanel1.Controls.Add(this.metroSetDivider1);
+            this.metroSetPanel1.Controls.Add(this.metroSetLabel2);
             this.metroSetPanel1.Controls.Add(this.metroSetNumeric1);
             this.metroSetPanel1.Controls.Add(this.textBox2);
             this.metroSetPanel1.Controls.Add(this.metroSetButton1);
-            this.metroSetPanel1.Controls.Add(this.textBox1);
             this.metroSetPanel1.IsDerivedStyle = true;
             this.metroSetPanel1.Location = new System.Drawing.Point(3, 20);
             this.metroSetPanel1.Name = "metroSetPanel1";
@@ -467,28 +684,6 @@ namespace QuizifyGUI
             this.metroSetPanel1.TabIndex = 2;
             this.metroSetPanel1.ThemeAuthor = null;
             this.metroSetPanel1.ThemeName = null;
-            // 
-            // metroSetRadioButton1
-            // 
-            this.metroSetRadioButton1.BackgroundColor = System.Drawing.Color.White;
-            this.metroSetRadioButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetRadioButton1.Checked = false;
-            this.metroSetRadioButton1.CheckSignColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.metroSetRadioButton1.CheckState = MetroSet_UI.Enums.CheckState.Unchecked;
-            this.metroSetRadioButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.metroSetRadioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.metroSetRadioButton1.Group = 0;
-            this.metroSetRadioButton1.IsDerivedStyle = true;
-            this.metroSetRadioButton1.Location = new System.Drawing.Point(26, 197);
-            this.metroSetRadioButton1.Name = "metroSetRadioButton1";
-            this.metroSetRadioButton1.Size = new System.Drawing.Size(138, 17);
-            this.metroSetRadioButton1.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetRadioButton1.StyleManager = this.styleManager1;
-            this.metroSetRadioButton1.TabIndex = 3;
-            this.metroSetRadioButton1.Text = "Mostrar Notas";
-            this.metroSetRadioButton1.ThemeAuthor = null;
-            this.metroSetRadioButton1.ThemeName = null;
-            this.metroSetRadioButton1.CheckedChanged += new MetroSet_UI.Controls.MetroSetRadioButton.CheckedChangedEventHandler(this.metroSetRadioButton1_CheckedChanged);
             // 
             // metroSetNumeric1
             // 
@@ -500,7 +695,7 @@ namespace QuizifyGUI
             this.metroSetNumeric1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
             this.metroSetNumeric1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.metroSetNumeric1.IsDerivedStyle = true;
-            this.metroSetNumeric1.Location = new System.Drawing.Point(26, 138);
+            this.metroSetNumeric1.Location = new System.Drawing.Point(26, 55);
             this.metroSetNumeric1.Maximum = 100;
             this.metroSetNumeric1.Minimum = 0;
             this.metroSetNumeric1.Name = "metroSetNumeric1";
@@ -513,13 +708,6 @@ namespace QuizifyGUI
             this.metroSetNumeric1.ThemeAuthor = null;
             this.metroSetNumeric1.ThemeName = null;
             this.metroSetNumeric1.Value = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(26, 76);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 26);
-            this.textBox2.TabIndex = 2;
             // 
             // metroSetButton1
             // 
@@ -543,16 +731,10 @@ namespace QuizifyGUI
             this.metroSetButton1.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetButton1.StyleManager = this.styleManager1;
             this.metroSetButton1.TabIndex = 1;
-            this.metroSetButton1.Text = "Crear Quiz";
+            this.metroSetButton1.Text = "Crear Pregunta";
             this.metroSetButton1.ThemeAuthor = null;
             this.metroSetButton1.ThemeName = null;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(26, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 26);
-            this.textBox1.TabIndex = 1;
+            this.metroSetButton1.Click += new System.EventHandler(this.metroSetButton1_Click);
             // 
             // PaginaPerfil
             // 
@@ -648,14 +830,13 @@ namespace QuizifyGUI
             this.PaginaCrearQuiz.BaseColor = System.Drawing.Color.White;
             this.PaginaCrearQuiz.Controls.Add(this.button2);
             this.PaginaCrearQuiz.Controls.Add(this.textBox4);
-            this.PaginaCrearQuiz.Controls.Add(this.checkedListBox1);
             this.PaginaCrearQuiz.Font = null;
             this.PaginaCrearQuiz.ImageIndex = 0;
             this.PaginaCrearQuiz.ImageKey = null;
             this.PaginaCrearQuiz.IsDerivedStyle = true;
             this.PaginaCrearQuiz.Location = new System.Drawing.Point(4, 42);
             this.PaginaCrearQuiz.Name = "PaginaCrearQuiz";
-            this.PaginaCrearQuiz.Size = new System.Drawing.Size(1029, 563);
+            this.PaginaCrearQuiz.Size = new System.Drawing.Size(1088, 553);
             this.PaginaCrearQuiz.Style = MetroSet_UI.Enums.Style.Light;
             this.PaginaCrearQuiz.StyleManager = this.styleManager1;
             this.PaginaCrearQuiz.TabIndex = 4;
@@ -663,51 +844,6 @@ namespace QuizifyGUI
             this.PaginaCrearQuiz.ThemeAuthor = "Narwin";
             this.PaginaCrearQuiz.ThemeName = "MetroLite";
             this.PaginaCrearQuiz.ToolTipText = null;
-            // 
-            // Inicio
-            // 
-            this.Inicio.BaseColor = System.Drawing.Color.White;
-            this.Inicio.Font = null;
-            this.Inicio.ImageIndex = 0;
-            this.Inicio.ImageKey = null;
-            this.Inicio.IsDerivedStyle = true;
-            this.Inicio.Location = new System.Drawing.Point(4, 42);
-            this.Inicio.Name = "Inicio";
-            this.Inicio.Size = new System.Drawing.Size(1029, 563);
-            this.Inicio.Style = MetroSet_UI.Enums.Style.Light;
-            this.Inicio.StyleManager = this.styleManager1;
-            this.Inicio.TabIndex = 5;
-            this.Inicio.Text = "Inicio";
-            this.Inicio.ThemeAuthor = "Narwin";
-            this.Inicio.ThemeName = "MetroLite";
-            this.Inicio.ToolTipText = null;
-            // 
-            // metroSetContextMenuStrip1
-            // 
-            this.metroSetContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.metroSetContextMenuStrip1.IsDerivedStyle = true;
-            this.metroSetContextMenuStrip1.Name = "metroSetContextMenuStrip1";
-            this.metroSetContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            this.metroSetContextMenuStrip1.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetContextMenuStrip1.StyleManager = null;
-            this.metroSetContextMenuStrip1.ThemeAuthor = "Narwin";
-            this.metroSetContextMenuStrip1.ThemeName = "MetroLite";
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Pregunta 1",
-            "Pregunta 2",
-            "Pregunta 3",
-            "Pregunta 4",
-            "Pregunta 5"});
-            this.checkedListBox1.Location = new System.Drawing.Point(234, 87);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(565, 403);
-            this.checkedListBox1.Sorted = true;
-            this.checkedListBox1.TabIndex = 0;
-            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // button2
             // 
@@ -728,216 +864,71 @@ namespace QuizifyGUI
             this.textBox4.Size = new System.Drawing.Size(533, 26);
             this.textBox4.TabIndex = 4;
             // 
-            // metroSetTextBox1
+            // Inicio
             // 
-            this.metroSetTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroSetTextBox1.AutoCompleteCustomSource = null;
-            this.metroSetTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.metroSetTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.metroSetTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetTextBox1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.metroSetTextBox1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetTextBox1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.metroSetTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroSetTextBox1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.metroSetTextBox1.Image = null;
-            this.metroSetTextBox1.IsDerivedStyle = true;
-            this.metroSetTextBox1.Lines = null;
-            this.metroSetTextBox1.Location = new System.Drawing.Point(158, 34);
-            this.metroSetTextBox1.MaxLength = 32767;
-            this.metroSetTextBox1.Multiline = false;
-            this.metroSetTextBox1.Name = "metroSetTextBox1";
-            this.metroSetTextBox1.ReadOnly = false;
-            this.metroSetTextBox1.Size = new System.Drawing.Size(640, 49);
-            this.metroSetTextBox1.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetTextBox1.StyleManager = null;
-            this.metroSetTextBox1.TabIndex = 0;
-            this.metroSetTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.metroSetTextBox1.ThemeAuthor = "Narwin";
-            this.metroSetTextBox1.ThemeName = "MetroLite";
-            this.metroSetTextBox1.UseSystemPasswordChar = false;
-            this.metroSetTextBox1.WatermarkText = "PREGUNTA";
+            this.Inicio.BaseColor = System.Drawing.Color.Transparent;
+            this.Inicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Inicio.ImageIndex = 0;
+            this.Inicio.ImageKey = null;
+            this.Inicio.IsDerivedStyle = true;
+            this.Inicio.Location = new System.Drawing.Point(4, 42);
+            this.Inicio.Name = "Inicio";
+            this.Inicio.Size = new System.Drawing.Size(1088, 553);
+            this.Inicio.Style = MetroSet_UI.Enums.Style.Light;
+            this.Inicio.StyleManager = this.styleManager1;
+            this.Inicio.TabIndex = 5;
+            this.Inicio.Text = "Inicio";
+            this.Inicio.ThemeAuthor = "Narwin";
+            this.Inicio.ThemeName = "MetroLite";
+            this.Inicio.ToolTipText = null;
             // 
-            // radioButton1
+            // metroSetContextMenuStrip1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(158, 155);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(226, 40);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "VERDADERO";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.metroSetContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.metroSetContextMenuStrip1.IsDerivedStyle = true;
+            this.metroSetContextMenuStrip1.Name = "metroSetContextMenuStrip1";
+            this.metroSetContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.metroSetContextMenuStrip1.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetContextMenuStrip1.StyleManager = null;
+            this.metroSetContextMenuStrip1.ThemeAuthor = "Narwin";
+            this.metroSetContextMenuStrip1.ThemeName = "MetroLite";
+            this.metroSetContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.metroSetContextMenuStrip1_Opening);
             // 
-            // radioButton2
+            // metroSetLabel2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(158, 246);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(134, 40);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "FALSO";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.metroSetLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.metroSetLabel2.IsDerivedStyle = true;
+            this.metroSetLabel2.Location = new System.Drawing.Point(26, 26);
+            this.metroSetLabel2.Name = "metroSetLabel2";
+            this.metroSetLabel2.Size = new System.Drawing.Size(138, 23);
+            this.metroSetLabel2.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetLabel2.StyleManager = null;
+            this.metroSetLabel2.TabIndex = 4;
+            this.metroSetLabel2.Text = "Puntuacion";
+            this.metroSetLabel2.ThemeAuthor = "Narwin";
+            this.metroSetLabel2.ThemeName = "MetroLite";
             // 
-            // pictureBox2
+            // metroSetDivider1
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(519, 110);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(279, 325);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.metroSetDivider1.IsDerivedStyle = true;
+            this.metroSetDivider1.Location = new System.Drawing.Point(26, 152);
+            this.metroSetDivider1.Name = "metroSetDivider1";
+            this.metroSetDivider1.Orientation = MetroSet_UI.Enums.DividerStyle.Horizontal;
+            this.metroSetDivider1.Size = new System.Drawing.Size(138, 4);
+            this.metroSetDivider1.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetDivider1.StyleManager = null;
+            this.metroSetDivider1.TabIndex = 4;
+            this.metroSetDivider1.Text = "metroSetDivider1";
+            this.metroSetDivider1.ThemeAuthor = "Narwin";
+            this.metroSetDivider1.ThemeName = "MetroLite";
+            this.metroSetDivider1.Thickness = 1;
             // 
-            // pictureBox3
+            // textBox2
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(471, 106);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(279, 325);
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(110, 190);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(176, 40);
-            this.radioButton3.TabIndex = 6;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "OPCION 2";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(110, 106);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(176, 40);
-            this.radioButton4.TabIndex = 5;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "OPCION 1";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // metroSetTextBox2
-            // 
-            this.metroSetTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroSetTextBox2.AutoCompleteCustomSource = null;
-            this.metroSetTextBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.metroSetTextBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.metroSetTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetTextBox2.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.metroSetTextBox2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetTextBox2.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.metroSetTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroSetTextBox2.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.metroSetTextBox2.Image = null;
-            this.metroSetTextBox2.IsDerivedStyle = true;
-            this.metroSetTextBox2.Lines = null;
-            this.metroSetTextBox2.Location = new System.Drawing.Point(110, 30);
-            this.metroSetTextBox2.MaxLength = 32767;
-            this.metroSetTextBox2.Multiline = false;
-            this.metroSetTextBox2.Name = "metroSetTextBox2";
-            this.metroSetTextBox2.ReadOnly = false;
-            this.metroSetTextBox2.Size = new System.Drawing.Size(640, 49);
-            this.metroSetTextBox2.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetTextBox2.StyleManager = null;
-            this.metroSetTextBox2.TabIndex = 4;
-            this.metroSetTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.metroSetTextBox2.ThemeAuthor = "Narwin";
-            this.metroSetTextBox2.ThemeName = "MetroLite";
-            this.metroSetTextBox2.UseSystemPasswordChar = false;
-            this.metroSetTextBox2.WatermarkText = "PREGUNTA";
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(110, 279);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(176, 40);
-            this.radioButton5.TabIndex = 8;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "OPCION 3";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(110, 373);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(176, 40);
-            this.radioButton6.TabIndex = 9;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "OPCION 4";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(471, 106);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(279, 325);
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // metroSetTextBox3
-            // 
-            this.metroSetTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroSetTextBox3.AutoCompleteCustomSource = null;
-            this.metroSetTextBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.metroSetTextBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.metroSetTextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetTextBox3.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.metroSetTextBox3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetTextBox3.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.metroSetTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroSetTextBox3.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.metroSetTextBox3.Image = null;
-            this.metroSetTextBox3.IsDerivedStyle = true;
-            this.metroSetTextBox3.Lines = null;
-            this.metroSetTextBox3.Location = new System.Drawing.Point(110, 30);
-            this.metroSetTextBox3.MaxLength = 32767;
-            this.metroSetTextBox3.Multiline = false;
-            this.metroSetTextBox3.Name = "metroSetTextBox3";
-            this.metroSetTextBox3.ReadOnly = false;
-            this.metroSetTextBox3.Size = new System.Drawing.Size(640, 49);
-            this.metroSetTextBox3.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetTextBox3.StyleManager = null;
-            this.metroSetTextBox3.TabIndex = 8;
-            this.metroSetTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.metroSetTextBox3.ThemeAuthor = "Narwin";
-            this.metroSetTextBox3.ThemeName = "MetroLite";
-            this.metroSetTextBox3.UseSystemPasswordChar = false;
-            this.metroSetTextBox3.WatermarkText = "PREGUNTA";
-            // 
-            // metroSetRichTextBox1
-            // 
-            this.metroSetRichTextBox1.AutoWordSelection = false;
-            this.metroSetRichTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetRichTextBox1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.metroSetRichTextBox1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetRichTextBox1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.metroSetRichTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.metroSetRichTextBox1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.metroSetRichTextBox1.IsDerivedStyle = true;
-            this.metroSetRichTextBox1.Lines = null;
-            this.metroSetRichTextBox1.Location = new System.Drawing.Point(110, 106);
-            this.metroSetRichTextBox1.MaxLength = 32767;
-            this.metroSetRichTextBox1.Name = "metroSetRichTextBox1";
-            this.metroSetRichTextBox1.ReadOnly = false;
-            this.metroSetRichTextBox1.Size = new System.Drawing.Size(304, 325);
-            this.metroSetRichTextBox1.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetRichTextBox1.StyleManager = null;
-            this.metroSetRichTextBox1.TabIndex = 10;
-            this.metroSetRichTextBox1.Text = resources.GetString("metroSetRichTextBox1.Text");
-            this.metroSetRichTextBox1.ThemeAuthor = "Narwin";
-            this.metroSetRichTextBox1.ThemeName = "MetroLite";
-            this.metroSetRichTextBox1.WordWrap = true;
+            this.textBox2.Location = new System.Drawing.Point(26, 239);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(138, 26);
+            this.textBox2.TabIndex = 2;
             // 
             // Form1
             // 
@@ -959,9 +950,12 @@ namespace QuizifyGUI
             this.metroSetTabControl2.ResumeLayout(false);
             this.PaginaVerdaderoFalso.ResumeLayout(false);
             this.PaginaVerdaderoFalso.PerformLayout();
-            this.PaginaRespuestaAbierta.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.PaginaSeleccionMultiple.ResumeLayout(false);
             this.PaginaSeleccionMultiple.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.PaginaRespuestaAbierta.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.metroSetPanel1.ResumeLayout(false);
             this.metroSetPanel1.PerformLayout();
             this.PaginaPerfil.ResumeLayout(false);
@@ -969,9 +963,6 @@ namespace QuizifyGUI
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PaginaCrearQuiz.ResumeLayout(false);
             this.PaginaCrearQuiz.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -987,9 +978,7 @@ namespace QuizifyGUI
         private MetroSet_UI.Components.StyleManager styleManager1;
         private System.Windows.Forms.TextBox textBox3;
         private MetroSet_UI.Controls.MetroSetPanel metroSetPanel1;
-        private System.Windows.Forms.TextBox textBox2;
         private MetroSet_UI.Controls.MetroSetButton metroSetButton1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
@@ -997,7 +986,6 @@ namespace QuizifyGUI
         private MetroSet_UI.Controls.MetroSetEllipse metroSetEllipse1;
         private MetroSet_UI.Controls.MetroSetLabel metroSetLabel1;
         private MetroSet_UI.Controls.MetroSetProgressBar metroSetProgressBar1;
-        private MetroSet_UI.Controls.MetroSetRadioButton metroSetRadioButton1;
         private MetroSet_UI.Controls.MetroSetNumeric metroSetNumeric1;
         private MetroSet_UI.Controls.MetroSetButton metroSetButton2;
         private MetroSet_UI.Controls.MetroSetDefaultButton metroSetDefaultButton1;
@@ -1011,7 +999,6 @@ namespace QuizifyGUI
         private MetroSet_UI.Controls.MetroSetContextMenuStrip metroSetContextMenuStrip1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.RadioButton radioButton1;
         private MetroSet_UI.Controls.MetroSetTextBox metroSetTextBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -1025,6 +1012,9 @@ namespace QuizifyGUI
         private MetroSet_UI.Controls.MetroSetRichTextBox metroSetRichTextBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private MetroSet_UI.Controls.MetroSetTextBox metroSetTextBox3;
+        private MetroSet_UI.Controls.MetroSetDivider metroSetDivider1;
+        private MetroSet_UI.Controls.MetroSetLabel metroSetLabel2;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

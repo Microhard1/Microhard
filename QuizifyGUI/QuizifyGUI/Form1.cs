@@ -57,5 +57,25 @@ namespace QuizifyGUI
         {
 
         }
+
+        private void ColeccionDePaginas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void metroSetContextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void metroSetButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PaginaRealizarQuiz_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
