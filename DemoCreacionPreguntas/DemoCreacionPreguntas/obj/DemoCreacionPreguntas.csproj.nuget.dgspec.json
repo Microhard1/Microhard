@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Usuario\\OneDrive\\Documentos\\upv\\software\\psw\\Microhard\\DemoCreacionPreguntas\\DemoCreacionPreguntas\\DemoCreacionPreguntas.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Usuario\\OneDrive\\Documentos\\upv\\software\\psw\\Microhard\\DemoCreacionPreguntas\\DemoCreacionPreguntas\\DemoCreacionPreguntas.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Documentos\\upv\\software\\psw\\Microhard\\DemoCreacionPreguntas\\DemoCreacionPreguntas\\DemoCreacionPreguntas.csproj",
+        "projectName": "DemoCreacionPreguntas",
+        "projectPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\upv\\software\\psw\\Microhard\\DemoCreacionPreguntas\\DemoCreacionPreguntas\\DemoCreacionPreguntas.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\upv\\software\\psw\\Microhard\\DemoCreacionPreguntas\\DemoCreacionPreguntas\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Usuario\\OneDrive\\Documentos\\upv\\tercero\\isw\\ISW%20Pr%C3%A1cticas\\ProyectoPracticas\\TarongISWObjectDesignTest\\obj": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Bunifu.UI.WinForms": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
