@@ -1,0 +1,9 @@
+C:\Users\sanco\source\repos\QuizifyApp\QuizifyApp\bin\Debug\QuizifyApp.exe.config
+C:\Users\sanco\source\repos\QuizifyApp\QuizifyApp\bin\Debug\QuizifyApp.exe
+C:\Users\sanco\source\repos\QuizifyApp\QuizifyApp\bin\Debug\QuizifyApp.pdb
+C:\Users\sanco\source\repos\QuizifyApp\QuizifyApp\obj\Debug\QuizifyApp.csproj.AssemblyReference.cache
+C:\Users\sanco\source\repos\QuizifyApp\QuizifyApp\obj\Debug\QuizifyApp.Properties.Resources.resources
+C:\Users\sanco\source\repos\QuizifyApp\QuizifyApp\obj\Debug\QuizifyApp.csproj.GenerateResource.cache
+C:\Users\sanco\source\repos\QuizifyApp\QuizifyApp\obj\Debug\QuizifyApp.csproj.CoreCompileInputs.cache
+C:\Users\sanco\source\repos\QuizifyApp\QuizifyApp\obj\Debug\QuizifyApp.exe
+C:\Users\sanco\source\repos\QuizifyApp\QuizifyApp\obj\Debug\QuizifyApp.pdb
