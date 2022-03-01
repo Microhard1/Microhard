@@ -9,3 +9,14 @@ C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\DemoCreacionPreguntas\Demo
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.exe
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.pdb
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.Form2.resources
+C:\Users\sanco\source\repos\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\bin\Debug\DemoCreacionPreguntas.exe.config
+C:\Users\sanco\source\repos\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\bin\Debug\DemoCreacionPreguntas.exe
+C:\Users\sanco\source\repos\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\bin\Debug\DemoCreacionPreguntas.pdb
+C:\Users\sanco\source\repos\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.csproj.AssemblyReference.cache
+C:\Users\sanco\source\repos\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.Form1.resources
+C:\Users\sanco\source\repos\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.Properties.Resources.resources
+C:\Users\sanco\source\repos\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.Form2.resources
+C:\Users\sanco\source\repos\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.csproj.GenerateResource.cache
+C:\Users\sanco\source\repos\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.csproj.CoreCompileInputs.cache
+C:\Users\sanco\source\repos\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.exe
+C:\Users\sanco\source\repos\Microhard\DemoCreacionPreguntas\DemoCreacionPreguntas\obj\Debug\DemoCreacionPreguntas.pdb
