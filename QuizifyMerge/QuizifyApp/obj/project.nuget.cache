@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PI35Y9AC00958oFSeISJEQCuUXdJaiGkpUcV4qr7L0uajri4El9RHCzRDpMxkRycvZ0wFOOlE+XMazZN3nTETQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\upv\\software\\psw\\Microhard\\QuizifyMerge\\QuizifyApp\\QuizifyApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\mahapps.metro.iconpacks\\4.11.0\\mahapps.metro.iconpacks.4.11.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
