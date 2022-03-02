@@ -38,7 +38,7 @@
       "frameworks": {
         "net472": {
           "dependencies": {
-            "MahApps.Metro.IconPacks": {
+            "MahApps.Metro.IconPacks.Material": {
               "target": "Package",
               "version": "[4.11.0, )"
             },

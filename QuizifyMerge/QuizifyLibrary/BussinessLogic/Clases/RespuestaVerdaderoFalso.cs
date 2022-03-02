@@ -7,8 +7,8 @@ namespace QuizifyLibrary.BussinessLogic.Clases
     class RespuestaVerdaderoFalso: Respuesta
     {
         bool correcta;
-        public RespuestaVerdaderoFalso(string enunciado, bool correcta):base(enunciado) {
-            this.correcta = correcta;
+        public RespuestaVerdaderoFalso(string enunciado):base(enunciado) {
+            
         }
     }
 }

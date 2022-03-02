@@ -2,23 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-<<<<<<< HEAD
-=======
-      "MahApps.Metro.IconPacks.Material/4.11.0": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.dll": {},
-          "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.dll": {},
-          "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      },
->>>>>>> 95f4a868de7d589c723707721a3713f9cbe14812
       "MetroSet_UI/2.0.0": {
         "type": "package",
         "compile": {
@@ -34,66 +17,6 @@
     }
   },
   "libraries": {
-<<<<<<< HEAD
-=======
-    "MahApps.Metro.IconPacks.Material/4.11.0": {
-      "sha512": "ZCuuxWHvXxl39XBYXk4PCMUVtw1pevT5AE1qsj7VRy2tRtDYbzHWYW0FbnH+Vf0rP7BogZrRlKns3zFEkDEjFQ==",
-      "type": "package",
-      "path": "mahapps.metro.iconpacks.material/4.11.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/MahApps.Metro.IconPacks.Core.dll",
-        "lib/net45/MahApps.Metro.IconPacks.Core.pdb",
-        "lib/net45/MahApps.Metro.IconPacks.Core.xml",
-        "lib/net45/MahApps.Metro.IconPacks.Material.dll",
-        "lib/net45/MahApps.Metro.IconPacks.Material.pdb",
-        "lib/net45/MahApps.Metro.IconPacks.Material.xml",
-        "lib/net46/MahApps.Metro.IconPacks.Core.dll",
-        "lib/net46/MahApps.Metro.IconPacks.Core.pdb",
-        "lib/net46/MahApps.Metro.IconPacks.Core.xml",
-        "lib/net46/MahApps.Metro.IconPacks.Material.dll",
-        "lib/net46/MahApps.Metro.IconPacks.Material.pdb",
-        "lib/net46/MahApps.Metro.IconPacks.Material.xml",
-        "lib/net47/MahApps.Metro.IconPacks.Core.dll",
-        "lib/net47/MahApps.Metro.IconPacks.Core.pdb",
-        "lib/net47/MahApps.Metro.IconPacks.Core.xml",
-        "lib/net47/MahApps.Metro.IconPacks.Material.dll",
-        "lib/net47/MahApps.Metro.IconPacks.Material.pdb",
-        "lib/net47/MahApps.Metro.IconPacks.Material.xml",
-        "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Core.dll",
-        "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Core.pdb",
-        "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Core.xml",
-        "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Material.dll",
-        "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Material.pdb",
-        "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Material.xml",
-        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Core.dll",
-        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Core.pdb",
-        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Core.xml",
-        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Material.dll",
-        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Material.pdb",
-        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Material.xml",
-        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.dll",
-        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.pdb",
-        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.xml",
-        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.dll",
-        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.pdb",
-        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.xml",
-        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll",
-        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.pdb",
-        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.pri",
-        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.xml",
-        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll",
-        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.pdb",
-        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.pri",
-        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.xml",
-        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material/MahApps.Metro.IconPacks.Material.xr.xml",
-        "logo_small.png",
-        "mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512",
-        "mahapps.metro.iconpacks.material.nuspec"
-      ]
-    },
->>>>>>> 95f4a868de7d589c723707721a3713f9cbe14812
     "MetroSet_UI/2.0.0": {
       "sha512": "7FO1rFTiht/j+xdvyRBQOv3JL8yoKBwQrrBuA/Zbz98sNIhgpNDO977ZumAz6TTfbuIT/4waSHsFBp01cXDDIA==",
       "type": "package",
@@ -112,10 +35,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-<<<<<<< HEAD
-=======
-      "MahApps.Metro.IconPacks.Material >= 4.11.0",
->>>>>>> 95f4a868de7d589c723707721a3713f9cbe14812
       "MetroSet_UI >= 2.0.0"
     ]
   },
@@ -163,13 +82,6 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
-<<<<<<< HEAD
-=======
-          "MahApps.Metro.IconPacks.Material": {
-            "target": "Package",
-            "version": "[4.11.0, )"
-          },
->>>>>>> 95f4a868de7d589c723707721a3713f9cbe14812
           "MetroSet_UI": {
             "target": "Package",
             "version": "[2.0.0, )"
@@ -196,5 +108,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\sanco\\source\\repos\\Microhard\\Microhard\\QuizifyMerge\\QuizifyLibrary\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -14,7 +14,7 @@ namespace QuizifyLibrary.BussinessLogic.Clases
         }
         public override Respuesta crearRespuesta(string enunciado)
         {
-            Respuesta r = new RespuestaVerdaderoFalso(enunciado,correcta);
+            Respuesta r = new RespuestaVerdaderoFalso(enunciado);
             return r;
         }
     }
