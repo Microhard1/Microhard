@@ -154,3 +154,5 @@ C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\Qui
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.CopyComplete
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.exe
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.pdb
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Inicio.resources

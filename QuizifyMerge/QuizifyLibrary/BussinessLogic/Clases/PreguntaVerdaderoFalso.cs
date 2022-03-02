@@ -14,7 +14,8 @@ namespace QuizifyLibrary.BussinessLogic.Clases
         }
         public override Respuesta crearRespuesta(string enunciado, bool correcta)
         {
-            throw new NotImplementedException();
+            Respuesta r = new RespuestaVerdaderoFalso(enunciado,correcta);
+            return r;
         }
     }
 }

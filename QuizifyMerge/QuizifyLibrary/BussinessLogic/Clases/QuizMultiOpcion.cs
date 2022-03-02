@@ -13,7 +13,6 @@ namespace QuizifyLibrary.BussinessLogic.Clases
 
         }
 
-
         public override Pregunta crearPregunta(string enunciado, string imagen, double puntuacion, string explicacion)
         {
             Pregunta p = new PreguntaMultiOpcion(enunciado, imagen, puntuacion, explicacion);

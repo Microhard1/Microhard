@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuizifyApp.BussinessLogic.Servicios
+namespace QuizifyLibrary.BussinessLogic.Servicios
 {
     class QuzifyServices
     {
