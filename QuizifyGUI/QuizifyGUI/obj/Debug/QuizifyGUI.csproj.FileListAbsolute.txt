@@ -3,7 +3,6 @@ C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyGUI\Quizi
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyGUI\QuizifyGUI\bin\Debug\QuizifyGUI.pdb
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyGUI\QuizifyGUI\bin\Debug\MetroSet UI.dll
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.AssemblyReference.cache
-C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Form1.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Properties.Resources.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.GenerateResource.cache
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.CoreCompileInputs.cache
@@ -77,3 +76,4 @@ C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyGUI\Quizi
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyGUI\QuizifyGUI\bin\Debug\MahApps.Metro.IconPacks.dll
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyGUI\QuizifyGUI\bin\Debug\MahApps.Metro.IconPacks.pdb
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyGUI\QuizifyGUI\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.InterfazPrincipal.resources
