@@ -44,6 +44,13 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+<<<<<<< HEAD
+=======
+            "MahApps.Metro.IconPacks.Material": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            },
+>>>>>>> 95f4a868de7d589c723707721a3713f9cbe14812
             "MetroSet_UI": {
               "target": "Package",
               "version": "[2.0.0, )"

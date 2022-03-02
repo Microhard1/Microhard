@@ -1,10 +1,19 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "fhNnSoTTaT4eWhVT30K5/CA9LGhxvljXPsGvxDy64/LQAKwQZdkqdtDxRQSnucAePsQJUO5y8Skd25IKUJM6xQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\sanco\\source\\repos\\Microhard\\Microhard\\QuizifyMerge\\QuizifyLibrary\\QuizifyLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sanco\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512"
+=======
+  "dgSpecHash": "AOJ2LivAr8iIRolApefhWUQkWFK4buQOqVp9r/7gLtoqhGdUrfPUyOZx6JOfsT5OMpbiND+WF45lsKDQ/WZIXA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\upv\\software\\psw\\Microhard\\QuizifyMerge\\QuizifyLibrary\\QuizifyLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\mahapps.metro.iconpacks.material\\4.11.0\\mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512"
+>>>>>>> 95f4a868de7d589c723707721a3713f9cbe14812
   ],
   "logs": []
 }
