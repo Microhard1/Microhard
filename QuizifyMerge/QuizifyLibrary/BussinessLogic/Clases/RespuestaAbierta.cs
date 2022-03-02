@@ -9,7 +9,7 @@ namespace QuizifyLibrary.BussinessLogic.Clases
     class RespuestaAbierta : Respuesta
     {
       
-        public RespuestaAbierta(string enunciado, bool correcta) : base(enunciado)
+        public RespuestaAbierta(string enunciado) : base(enunciado)
         {
 
            

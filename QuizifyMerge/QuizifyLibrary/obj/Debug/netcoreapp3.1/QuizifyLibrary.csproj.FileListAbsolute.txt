@@ -8,3 +8,13 @@ C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\Qui
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.dll
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.pdb
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\netcoreapp3.1\QuizifyLibrary.deps.json
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\netcoreapp3.1\QuizifyLibrary.dll
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\netcoreapp3.1\QuizifyLibrary.pdb
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.csproj.AssemblyReference.cache
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.AssemblyInfoInputs.cache
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.AssemblyInfo.cs
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.csproj.CoreCompileInputs.cache
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.dll
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.pdb

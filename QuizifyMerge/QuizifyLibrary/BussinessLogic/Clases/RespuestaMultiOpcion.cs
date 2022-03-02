@@ -10,10 +10,9 @@ namespace QuizifyLibrary.BussinessLogic.Clases
     {
         public bool correcta;
 
-        public RespuestaMultiOpcion(string enunciado, bool correcta) : base(enunciado) {
+        public RespuestaMultiOpcion(string enunciado) : base(enunciado) {
 
-            this.correcta = correcta;
-            
+           
         }
     }
 }

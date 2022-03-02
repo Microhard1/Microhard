@@ -10,13 +10,11 @@ namespace QuizifyLibrary.BussinessLogic.Clases
     {
         public PreguntaAbierta(string enunciado, string imagen, double puntuacion, string explicacion) :
                 base(enunciado, imagen, puntuacion, explicacion){
-
-            
         }
 
-        public override Respuesta crearRespuesta(string enunciado, bool correcta)
+        public override Respuesta crearRespuesta(string enunciado)
         {
-            Respuesta r = new RespuestaAbierta(enunciado, correcta);
+            Respuesta r = new RespuestaAbierta(enunciado);
             return r;
         }
     }

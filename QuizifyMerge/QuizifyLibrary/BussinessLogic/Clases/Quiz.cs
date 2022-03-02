@@ -12,6 +12,7 @@ namespace QuizifyLibrary.BussinessLogic.Clases
         ICollection<Pregunta> preguntasQuiz;
         ICollection<int> temas;
 
+        public Alumno hechoPor;
         public Instructor creadoPor;
         public Asignatura asignatura;
         
@@ -29,10 +30,9 @@ namespace QuizifyLibrary.BussinessLogic.Clases
         
         }
 
-
-
-        public void añadirPregunta(Pregunta p)
+        public void añadirPregunta(string enunciado, string imagen, double puntuacion, string explicacion)
         {
+            Pregunta p = crearPregunta(enunciado, imagen, puntuacion, explicacion);
             preguntasQuiz.Add(p);
         }
 

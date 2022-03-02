@@ -15,9 +15,9 @@ namespace QuizifyLibrary.BussinessLogic.Clases
         
         }
             
-        public override Respuesta crearRespuesta(string enunciado, bool correcta)
+        public override Respuesta crearRespuesta(string enunciado)
         {
-            Respuesta r = new RespuestaMultiOpcion(enunciado, correcta);
+            Respuesta r = new RespuestaMultiOpcion(enunciado);
             return r;
         }
     }

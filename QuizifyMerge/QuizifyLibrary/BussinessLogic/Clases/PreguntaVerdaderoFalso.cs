@@ -12,7 +12,7 @@ namespace QuizifyLibrary.BussinessLogic.Clases
         {
 
         }
-        public override Respuesta crearRespuesta(string enunciado, bool correcta)
+        public override Respuesta crearRespuesta(string enunciado)
         {
             throw new NotImplementedException();
         }

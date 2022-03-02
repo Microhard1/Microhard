@@ -10,11 +10,14 @@ namespace QuizifyLibrary.BussinessLogic.Clases
     {
         ICollection<Alumno> Alumnos;
         ICollection<Asignatura> imparte;
+        ICollection<Quiz> creados;
+
 
         public Instructor(string nUsuario, string passUsuario) : base(nUsuario, passUsuario) {
 
             imparte = new List<Asignatura>();
             Alumnos = new List<Alumno>();
+            creados = new List<Quiz>();
 
         }
     }

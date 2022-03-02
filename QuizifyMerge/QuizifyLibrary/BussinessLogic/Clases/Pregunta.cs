@@ -21,14 +21,15 @@ namespace QuizifyLibrary.BussinessLogic.Clases
             this.explicacion = explicacion;
             this.puntuacion = puntuacion;
             this.imagen = imagen;
-
         }
 
-        public void añadirRespuesta(Respuesta r) {
+        public void añadirRespuesta(string enunciado) 
+        {
+            Respuesta r = crearRespuesta(enunciado);
             respuestas.Add(r);
         }
 
-        public abstract Respuesta crearRespuesta(string enunciado, bool correcta);
+        public abstract Respuesta crearRespuesta(string enunciado);
 
     }
 }
