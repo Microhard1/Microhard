@@ -9,10 +9,10 @@ namespace QuizifyLibrary.BussinessLogic.Clases
     public abstract class Quiz
     {
 
-        ICollection<Pregunta> preguntasQuiz;
-        ICollection<int> temas;
+        public ICollection<Pregunta> preguntasQuiz;
 
-        public Alumno hechoPor;
+
+        public ICollection<Alumno> hechoPor;
         public Instructor creadoPor;
         public Asignatura asignatura;
         

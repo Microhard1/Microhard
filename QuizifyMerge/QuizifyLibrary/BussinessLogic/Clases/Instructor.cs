@@ -8,17 +8,29 @@ namespace QuizifyLibrary.BussinessLogic.Clases
 {
     public class Instructor : Usuario
     {
-        ICollection<Alumno> Alumnos;
-        ICollection<Asignatura> imparte;
-        ICollection<Quiz> creados;
+        public ICollection<Alumno> Alumnos;
+        public ICollection<Asignatura> imparte;
+        public ICollection<Quiz> quizesCreados;
+        public ICollection<Pregunta> preguntasCreadas;
 
 
         public Instructor(string nUsuario, string passUsuario) : base(nUsuario, passUsuario) {
 
             imparte = new List<Asignatura>();
             Alumnos = new List<Alumno>();
-            creados = new List<Quiz>();
+            quizesCreados = new List<Quiz>();
+            preguntasCreadas = new List<Pregunta>();
 
         }
+
+        public void addPregunta(Pregunta p) 
+        {
+            preguntasCreadas.Add(p);
+        }
+        public void addQuiz(Quiz q)
+        {
+            quizesCreados.Add(q);
+        }
+
     }
 }
