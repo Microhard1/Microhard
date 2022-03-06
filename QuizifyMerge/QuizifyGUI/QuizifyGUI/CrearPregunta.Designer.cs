@@ -49,22 +49,25 @@ namespace QuizifyGUI
             this.metroSetPanel1.Controls.Add(this.textBox2);
             this.metroSetPanel1.Controls.Add(this.metroSetButton1);
             this.metroSetPanel1.IsDerivedStyle = true;
-            this.metroSetPanel1.Location = new System.Drawing.Point(12, 12);
+            this.metroSetPanel1.Location = new System.Drawing.Point(14, 15);
+            this.metroSetPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.metroSetPanel1.Name = "metroSetPanel1";
-            this.metroSetPanel1.Size = new System.Drawing.Size(190, 575);
+            this.metroSetPanel1.Size = new System.Drawing.Size(214, 719);
             this.metroSetPanel1.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetPanel1.StyleManager = null;
             this.metroSetPanel1.TabIndex = 3;
             this.metroSetPanel1.ThemeAuthor = null;
             this.metroSetPanel1.ThemeName = null;
+            this.metroSetPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.metroSetPanel1_Paint);
             // 
             // metroSetDivider1
             // 
             this.metroSetDivider1.IsDerivedStyle = true;
-            this.metroSetDivider1.Location = new System.Drawing.Point(26, 152);
+            this.metroSetDivider1.Location = new System.Drawing.Point(29, 190);
+            this.metroSetDivider1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.metroSetDivider1.Name = "metroSetDivider1";
             this.metroSetDivider1.Orientation = MetroSet_UI.Enums.DividerStyle.Horizontal;
-            this.metroSetDivider1.Size = new System.Drawing.Size(138, 4);
+            this.metroSetDivider1.Size = new System.Drawing.Size(155, 4);
             this.metroSetDivider1.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetDivider1.StyleManager = null;
             this.metroSetDivider1.TabIndex = 4;
@@ -77,9 +80,9 @@ namespace QuizifyGUI
             // 
             this.metroSetLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.metroSetLabel2.IsDerivedStyle = true;
-            this.metroSetLabel2.Location = new System.Drawing.Point(26, 26);
+            this.metroSetLabel2.Location = new System.Drawing.Point(29, 32);
             this.metroSetLabel2.Name = "metroSetLabel2";
-            this.metroSetLabel2.Size = new System.Drawing.Size(138, 23);
+            this.metroSetLabel2.Size = new System.Drawing.Size(155, 29);
             this.metroSetLabel2.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetLabel2.StyleManager = null;
             this.metroSetLabel2.TabIndex = 4;
@@ -97,11 +100,12 @@ namespace QuizifyGUI
             this.metroSetNumeric1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
             this.metroSetNumeric1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.metroSetNumeric1.IsDerivedStyle = true;
-            this.metroSetNumeric1.Location = new System.Drawing.Point(26, 55);
+            this.metroSetNumeric1.Location = new System.Drawing.Point(29, 69);
+            this.metroSetNumeric1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.metroSetNumeric1.Maximum = 100;
             this.metroSetNumeric1.Minimum = 0;
             this.metroSetNumeric1.Name = "metroSetNumeric1";
-            this.metroSetNumeric1.Size = new System.Drawing.Size(138, 26);
+            this.metroSetNumeric1.Size = new System.Drawing.Size(155, 26);
             this.metroSetNumeric1.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetNumeric1.StyleManager = null;
             this.metroSetNumeric1.SymbolsColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -113,9 +117,10 @@ namespace QuizifyGUI
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(26, 239);
+            this.textBox2.Location = new System.Drawing.Point(29, 299);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 22);
+            this.textBox2.Size = new System.Drawing.Size(155, 26);
             this.textBox2.TabIndex = 2;
             // 
             // metroSetButton1
@@ -128,7 +133,8 @@ namespace QuizifyGUI
             this.metroSetButton1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.metroSetButton1.HoverTextColor = System.Drawing.Color.White;
             this.metroSetButton1.IsDerivedStyle = true;
-            this.metroSetButton1.Location = new System.Drawing.Point(26, 493);
+            this.metroSetButton1.Location = new System.Drawing.Point(29, 616);
+            this.metroSetButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.metroSetButton1.Name = "metroSetButton1";
             this.metroSetButton1.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.metroSetButton1.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -136,7 +142,7 @@ namespace QuizifyGUI
             this.metroSetButton1.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
             this.metroSetButton1.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
             this.metroSetButton1.PressTextColor = System.Drawing.Color.White;
-            this.metroSetButton1.Size = new System.Drawing.Size(138, 44);
+            this.metroSetButton1.Size = new System.Drawing.Size(155, 55);
             this.metroSetButton1.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetButton1.StyleManager = null;
             this.metroSetButton1.TabIndex = 1;
@@ -146,11 +152,12 @@ namespace QuizifyGUI
             // 
             // CrearPregunta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1049, 599);
+            this.ClientSize = new System.Drawing.Size(1180, 749);
             this.Controls.Add(this.metroSetPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CrearPregunta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "CrearPregunta";

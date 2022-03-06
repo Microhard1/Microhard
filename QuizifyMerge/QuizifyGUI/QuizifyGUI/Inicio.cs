@@ -78,7 +78,7 @@ namespace QuizifyGUI
 
         private void BotonAjustes_Click(object sender, EventArgs e)
         {
-            abrirFormHijo(new Ajustes());
+
         }
     }
 }

@@ -1,17 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fhNnSoTTaT4eWhVT30K5/CA9LGhxvljXPsGvxDy64/LQAKwQZdkqdtDxRQSnucAePsQJUO5y8Skd25IKUJM6xQ==",
+  "dgSpecHash": "Jafk8syQAAgeOk31GxtMkLL7uimJFTV6f2rHk0JyKgopsayza/ycmMCBvYeeOIFCL1ahzi2IbdXjDL1kRmkoqA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sanco\\source\\repos\\Microhard\\Microhard\\QuizifyMerge\\QuizifyLibrary\\QuizifyLibrary.csproj",
+  "projectFilePath": "C:\\Users\\Hugo\\Repositorio_PSW\\Microhard\\QuizifyMerge\\QuizifyLibrary\\QuizifyLibrary.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\sanco\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512"
+    "C:\\Users\\Hugo\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\sanco\\source\\repos\\Microhard\\Microhard\\QuizifyMerge\\QuizifyLibrary\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

@@ -16,5 +16,10 @@ namespace QuizifyGUI
         {
             InitializeComponent();
         }
+
+        private void metroSetPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
