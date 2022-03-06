@@ -8,8 +8,8 @@ namespace QuizifyLibrary.BussinessLogic.Clases
 {
     public class Asignatura
     {
-        ICollection<Competencia> competencias;
-        ICollection<Quiz> quizes;
+        public ICollection<Competencia> competencias;
+        public ICollection<Quiz> quizes;
         public Instructor instructor;
         
         public Asignatura(Instructor instructor)

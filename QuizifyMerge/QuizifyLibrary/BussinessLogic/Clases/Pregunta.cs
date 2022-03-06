@@ -9,7 +9,7 @@ namespace QuizifyLibrary.BussinessLogic.Clases
     public abstract class Pregunta
     {
 
-        ICollection<Respuesta> respuestas;
+        public ICollection<Respuesta> respuestas;
         public string enunciado;
         public string imagen;
         public double puntuacion;
