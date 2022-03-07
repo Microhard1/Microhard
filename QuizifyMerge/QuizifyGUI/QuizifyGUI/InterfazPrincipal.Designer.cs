@@ -149,7 +149,7 @@ namespace QuizifyGUI
             this.ColeccionDePaginas.ItemSize = new System.Drawing.Size(100, 38);
             this.ColeccionDePaginas.Location = new System.Drawing.Point(12, 70);
             this.ColeccionDePaginas.Name = "ColeccionDePaginas";
-            this.ColeccionDePaginas.SelectedIndex = 0;
+            this.ColeccionDePaginas.SelectedIndex = 1;
             this.ColeccionDePaginas.SelectedTextColor = System.Drawing.Color.White;
             this.ColeccionDePaginas.Size = new System.Drawing.Size(1096, 599);
             this.ColeccionDePaginas.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
@@ -290,7 +290,7 @@ namespace QuizifyGUI
             // 
             this.textBox3.Location = new System.Drawing.Point(251, 22);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(533, 30);
+            this.textBox3.Size = new System.Drawing.Size(533, 26);
             this.textBox3.TabIndex = 0;
             // 
             // PaginaCrearPreguntas
@@ -368,6 +368,7 @@ namespace QuizifyGUI
             this.pictureBox2.Size = new System.Drawing.Size(273, 217);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // radioButton2
             // 
@@ -377,7 +378,7 @@ namespace QuizifyGUI
             this.radioButton2.ForeColor = System.Drawing.Color.White;
             this.radioButton2.Location = new System.Drawing.Point(590, 364);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(160, 44);
+            this.radioButton2.Size = new System.Drawing.Size(134, 40);
             this.radioButton2.TabIndex = 2;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "FALSO";
@@ -391,7 +392,7 @@ namespace QuizifyGUI
             this.radioButton1.ForeColor = System.Drawing.Color.White;
             this.radioButton1.Location = new System.Drawing.Point(158, 364);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(270, 44);
+            this.radioButton1.Size = new System.Drawing.Size(226, 40);
             this.radioButton1.TabIndex = 1;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "VERDADERO";
@@ -458,7 +459,7 @@ namespace QuizifyGUI
             this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton6.Location = new System.Drawing.Point(110, 373);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(213, 44);
+            this.radioButton6.Size = new System.Drawing.Size(176, 40);
             this.radioButton6.TabIndex = 9;
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "OPCION 4";
@@ -470,7 +471,7 @@ namespace QuizifyGUI
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton5.Location = new System.Drawing.Point(110, 279);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(213, 44);
+            this.radioButton5.Size = new System.Drawing.Size(176, 40);
             this.radioButton5.TabIndex = 8;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "OPCION 3";
@@ -490,7 +491,7 @@ namespace QuizifyGUI
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.Location = new System.Drawing.Point(110, 190);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(213, 44);
+            this.radioButton3.Size = new System.Drawing.Size(176, 40);
             this.radioButton3.TabIndex = 6;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "OPCION 2";
@@ -502,7 +503,7 @@ namespace QuizifyGUI
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton4.Location = new System.Drawing.Point(110, 106);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(213, 44);
+            this.radioButton4.Size = new System.Drawing.Size(176, 40);
             this.radioButton4.TabIndex = 5;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "OPCION 1";
@@ -591,6 +592,7 @@ namespace QuizifyGUI
             this.pictureBox4.Size = new System.Drawing.Size(279, 325);
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // metroSetTextBox3
             // 
@@ -699,7 +701,7 @@ namespace QuizifyGUI
             // 
             this.textBox2.Location = new System.Drawing.Point(26, 239);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 30);
+            this.textBox2.Size = new System.Drawing.Size(138, 26);
             this.textBox2.TabIndex = 2;
             // 
             // metroSetButton1
@@ -805,7 +807,7 @@ namespace QuizifyGUI
             // 
             this.textBox1.Location = new System.Drawing.Point(26, 23);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 30);
+            this.textBox1.Size = new System.Drawing.Size(138, 26);
             this.textBox1.TabIndex = 2;
             // 
             // metroSetButton3
@@ -850,7 +852,7 @@ namespace QuizifyGUI
             // 
             this.textBox4.Location = new System.Drawing.Point(216, 22);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(533, 30);
+            this.textBox4.Size = new System.Drawing.Size(533, 26);
             this.textBox4.TabIndex = 4;
             // 
             // metroSetSetTabPage3
@@ -966,7 +968,7 @@ namespace QuizifyGUI
             this.LabelCorreoElectronico.AutoSize = true;
             this.LabelCorreoElectronico.Location = new System.Drawing.Point(439, 301);
             this.LabelCorreoElectronico.Name = "LabelCorreoElectronico";
-            this.LabelCorreoElectronico.Size = new System.Drawing.Size(232, 25);
+            this.LabelCorreoElectronico.Size = new System.Drawing.Size(196, 20);
             this.LabelCorreoElectronico.TabIndex = 2;
             this.LabelCorreoElectronico.Text = "PacoAlumno@gmail.com";
             this.LabelCorreoElectronico.Click += new System.EventHandler(this.label2_Click);
@@ -976,7 +978,7 @@ namespace QuizifyGUI
             this.LabelNombreUsuario.AutoSize = true;
             this.LabelNombreUsuario.Location = new System.Drawing.Point(475, 242);
             this.LabelNombreUsuario.Name = "LabelNombreUsuario";
-            this.LabelNombreUsuario.Size = new System.Drawing.Size(128, 25);
+            this.LabelNombreUsuario.Size = new System.Drawing.Size(108, 20);
             this.LabelNombreUsuario.TabIndex = 1;
             this.LabelNombreUsuario.Text = "Paco Paquito";
             // 
@@ -1005,7 +1007,7 @@ namespace QuizifyGUI
             // 
             // InterfazPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 681);
             this.Controls.Add(this.ColeccionDePaginas);

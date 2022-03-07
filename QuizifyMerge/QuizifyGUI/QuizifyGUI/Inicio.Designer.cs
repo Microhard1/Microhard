@@ -30,19 +30,20 @@ namespace QuizifyGUI
         private void InitializeComponent()
         {
             this.BarraModificarVentana = new System.Windows.Forms.Panel();
-            this.BotonInicio = new System.Windows.Forms.Button();
-            this.PanelPrincipal = new System.Windows.Forms.Panel();
-            this.NavbarIzquierda = new System.Windows.Forms.Panel();
-            this.NavbarSuperior = new System.Windows.Forms.Panel();
-            this.BotonPerfil = new MetroSet_UI.Controls.MetroSetBadge();
             this.BotonesModificarVentana = new MetroSet_UI.Controls.MetroSetControlBox();
-            this.BotonCrearPregunta = new System.Windows.Forms.Button();
-            this.BotonCrearQuiz = new System.Windows.Forms.Button();
+            this.BotonInicio = new System.Windows.Forms.Button();
+            this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.NavbarIzquierda = new System.Windows.Forms.Panel();
+            this.BotonAjustes = new System.Windows.Forms.Button();
             this.BotonRealizarQuiz = new System.Windows.Forms.Button();
             this.BotonEstadisticas = new System.Windows.Forms.Button();
-            this.BotonAjustes = new System.Windows.Forms.Button();
+            this.BotonCrearQuiz = new System.Windows.Forms.Button();
+            this.BotonCrearPregunta = new System.Windows.Forms.Button();
+            this.NavbarSuperior = new System.Windows.Forms.Panel();
+            this.BotonPerfil = new MetroSet_UI.Controls.MetroSetBadge();
+            this.PanelPrincipal = new System.Windows.Forms.Panel();
             this.BarraModificarVentana.SuspendLayout();
-            this.PanelPrincipal.SuspendLayout();
+            this.PanelContenedor.SuspendLayout();
             this.NavbarIzquierda.SuspendLayout();
             this.NavbarSuperior.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +57,32 @@ namespace QuizifyGUI
             this.BarraModificarVentana.Size = new System.Drawing.Size(1309, 41);
             this.BarraModificarVentana.TabIndex = 0;
             // 
+            // BotonesModificarVentana
+            // 
+            this.BotonesModificarVentana.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BotonesModificarVentana.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BotonesModificarVentana.CloseHoverForeColor = System.Drawing.Color.White;
+            this.BotonesModificarVentana.CloseNormalForeColor = System.Drawing.Color.Gray;
+            this.BotonesModificarVentana.DisabledForeColor = System.Drawing.Color.DimGray;
+            this.BotonesModificarVentana.IsDerivedStyle = true;
+            this.BotonesModificarVentana.Location = new System.Drawing.Point(1100, 1);
+            this.BotonesModificarVentana.MaximizeBox = true;
+            this.BotonesModificarVentana.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.BotonesModificarVentana.MaximizeHoverForeColor = System.Drawing.Color.Gray;
+            this.BotonesModificarVentana.MaximizeNormalForeColor = System.Drawing.Color.Gray;
+            this.BotonesModificarVentana.MinimizeBox = true;
+            this.BotonesModificarVentana.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.BotonesModificarVentana.MinimizeHoverForeColor = System.Drawing.Color.Gray;
+            this.BotonesModificarVentana.MinimizeNormalForeColor = System.Drawing.Color.Gray;
+            this.BotonesModificarVentana.Name = "BotonesModificarVentana";
+            this.BotonesModificarVentana.Size = new System.Drawing.Size(100, 25);
+            this.BotonesModificarVentana.Style = MetroSet_UI.Enums.Style.Light;
+            this.BotonesModificarVentana.StyleManager = null;
+            this.BotonesModificarVentana.TabIndex = 0;
+            this.BotonesModificarVentana.Text = "metroSetControlBox1";
+            this.BotonesModificarVentana.ThemeAuthor = "Narwin";
+            this.BotonesModificarVentana.ThemeName = "MetroLite";
+            // 
             // BotonInicio
             // 
             this.BotonInicio.Location = new System.Drawing.Point(566, 6);
@@ -66,16 +93,17 @@ namespace QuizifyGUI
             this.BotonInicio.UseVisualStyleBackColor = true;
             this.BotonInicio.Click += new System.EventHandler(this.button4_Click);
             // 
-            // PanelPrincipal
+            // PanelContenedor
             // 
-            this.PanelPrincipal.Controls.Add(this.NavbarIzquierda);
-            this.PanelPrincipal.Controls.Add(this.NavbarSuperior);
-            this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelPrincipal.Location = new System.Drawing.Point(0, 41);
-            this.PanelPrincipal.Name = "PanelPrincipal";
-            this.PanelPrincipal.Size = new System.Drawing.Size(1309, 623);
-            this.PanelPrincipal.TabIndex = 1;
-            this.PanelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelPrincipal_Paint);
+            this.PanelContenedor.Controls.Add(this.PanelPrincipal);
+            this.PanelContenedor.Controls.Add(this.NavbarIzquierda);
+            this.PanelContenedor.Controls.Add(this.NavbarSuperior);
+            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelContenedor.Location = new System.Drawing.Point(0, 41);
+            this.PanelContenedor.Name = "PanelContenedor";
+            this.PanelContenedor.Size = new System.Drawing.Size(1309, 623);
+            this.PanelContenedor.TabIndex = 1;
+            this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelPrincipal_Paint);
             // 
             // NavbarIzquierda
             // 
@@ -89,6 +117,62 @@ namespace QuizifyGUI
             this.NavbarIzquierda.Name = "NavbarIzquierda";
             this.NavbarIzquierda.Size = new System.Drawing.Size(163, 542);
             this.NavbarIzquierda.TabIndex = 0;
+            this.NavbarIzquierda.Paint += new System.Windows.Forms.PaintEventHandler(this.NavbarIzquierda_Paint);
+            // 
+            // BotonAjustes
+            // 
+            this.BotonAjustes.BackColor = System.Drawing.Color.Aqua;
+            this.BotonAjustes.Location = new System.Drawing.Point(64, 494);
+            this.BotonAjustes.Name = "BotonAjustes";
+            this.BotonAjustes.Size = new System.Drawing.Size(96, 45);
+            this.BotonAjustes.TabIndex = 12;
+            this.BotonAjustes.Text = "Ajustes";
+            this.BotonAjustes.UseVisualStyleBackColor = false;
+            this.BotonAjustes.Click += new System.EventHandler(this.BotonAjustes_Click);
+            // 
+            // BotonRealizarQuiz
+            // 
+            this.BotonRealizarQuiz.BackColor = System.Drawing.Color.Aqua;
+            this.BotonRealizarQuiz.Location = new System.Drawing.Point(3, 237);
+            this.BotonRealizarQuiz.Name = "BotonRealizarQuiz";
+            this.BotonRealizarQuiz.Size = new System.Drawing.Size(163, 79);
+            this.BotonRealizarQuiz.TabIndex = 9;
+            this.BotonRealizarQuiz.Text = "Realizar Quiz";
+            this.BotonRealizarQuiz.UseVisualStyleBackColor = false;
+            this.BotonRealizarQuiz.Click += new System.EventHandler(this.BotonRealizarQuiz_Click);
+            // 
+            // BotonEstadisticas
+            // 
+            this.BotonEstadisticas.BackColor = System.Drawing.Color.Aqua;
+            this.BotonEstadisticas.Location = new System.Drawing.Point(3, 358);
+            this.BotonEstadisticas.Name = "BotonEstadisticas";
+            this.BotonEstadisticas.Size = new System.Drawing.Size(163, 79);
+            this.BotonEstadisticas.TabIndex = 11;
+            this.BotonEstadisticas.Text = "Estadisticas";
+            this.BotonEstadisticas.UseVisualStyleBackColor = false;
+            this.BotonEstadisticas.Click += new System.EventHandler(this.BotonEstadisticas_Click);
+            // 
+            // BotonCrearQuiz
+            // 
+            this.BotonCrearQuiz.BackColor = System.Drawing.Color.Aqua;
+            this.BotonCrearQuiz.Location = new System.Drawing.Point(3, 125);
+            this.BotonCrearQuiz.Name = "BotonCrearQuiz";
+            this.BotonCrearQuiz.Size = new System.Drawing.Size(163, 79);
+            this.BotonCrearQuiz.TabIndex = 8;
+            this.BotonCrearQuiz.Text = "Crear Quiz";
+            this.BotonCrearQuiz.UseVisualStyleBackColor = false;
+            this.BotonCrearQuiz.Click += new System.EventHandler(this.BotonCrearQuiz_Click);
+            // 
+            // BotonCrearPregunta
+            // 
+            this.BotonCrearPregunta.BackColor = System.Drawing.Color.Aqua;
+            this.BotonCrearPregunta.Location = new System.Drawing.Point(3, 25);
+            this.BotonCrearPregunta.Name = "BotonCrearPregunta";
+            this.BotonCrearPregunta.Size = new System.Drawing.Size(163, 79);
+            this.BotonCrearPregunta.TabIndex = 3;
+            this.BotonCrearPregunta.Text = "Crear Pregunta";
+            this.BotonCrearPregunta.UseVisualStyleBackColor = false;
+            this.BotonCrearPregunta.Click += new System.EventHandler(this.BotonCrearPregunta_Click);
             // 
             // NavbarSuperior
             // 
@@ -100,6 +184,7 @@ namespace QuizifyGUI
             this.NavbarSuperior.Name = "NavbarSuperior";
             this.NavbarSuperior.Size = new System.Drawing.Size(1309, 81);
             this.NavbarSuperior.TabIndex = 2;
+            this.NavbarSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.NavbarSuperior_Paint);
             // 
             // BotonPerfil
             // 
@@ -137,100 +222,29 @@ namespace QuizifyGUI
             this.BotonPerfil.ThemeName = "MetroLite";
             this.BotonPerfil.Click += new System.EventHandler(this.metroSetBadge1_Click);
             // 
-            // BotonesModificarVentana
+            // PanelPrincipal
             // 
-            this.BotonesModificarVentana.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BotonesModificarVentana.CloseHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BotonesModificarVentana.CloseHoverForeColor = System.Drawing.Color.White;
-            this.BotonesModificarVentana.CloseNormalForeColor = System.Drawing.Color.Gray;
-            this.BotonesModificarVentana.DisabledForeColor = System.Drawing.Color.DimGray;
-            this.BotonesModificarVentana.IsDerivedStyle = true;
-            this.BotonesModificarVentana.Location = new System.Drawing.Point(1100, 1);
-            this.BotonesModificarVentana.MaximizeBox = true;
-            this.BotonesModificarVentana.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.BotonesModificarVentana.MaximizeHoverForeColor = System.Drawing.Color.Gray;
-            this.BotonesModificarVentana.MaximizeNormalForeColor = System.Drawing.Color.Gray;
-            this.BotonesModificarVentana.MinimizeBox = true;
-            this.BotonesModificarVentana.MinimizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.BotonesModificarVentana.MinimizeHoverForeColor = System.Drawing.Color.Gray;
-            this.BotonesModificarVentana.MinimizeNormalForeColor = System.Drawing.Color.Gray;
-            this.BotonesModificarVentana.Name = "BotonesModificarVentana";
-            this.BotonesModificarVentana.Size = new System.Drawing.Size(100, 25);
-            this.BotonesModificarVentana.Style = MetroSet_UI.Enums.Style.Light;
-            this.BotonesModificarVentana.StyleManager = null;
-            this.BotonesModificarVentana.TabIndex = 0;
-            this.BotonesModificarVentana.Text = "metroSetControlBox1";
-            this.BotonesModificarVentana.ThemeAuthor = "Narwin";
-            this.BotonesModificarVentana.ThemeName = "MetroLite";
-            // 
-            // BotonCrearPregunta
-            // 
-            this.BotonCrearPregunta.BackColor = System.Drawing.Color.Aqua;
-            this.BotonCrearPregunta.Location = new System.Drawing.Point(3, 25);
-            this.BotonCrearPregunta.Name = "BotonCrearPregunta";
-            this.BotonCrearPregunta.Size = new System.Drawing.Size(163, 79);
-            this.BotonCrearPregunta.TabIndex = 3;
-            this.BotonCrearPregunta.Text = "Crear Pregunta";
-            this.BotonCrearPregunta.UseVisualStyleBackColor = false;
-            this.BotonCrearPregunta.Click += new System.EventHandler(this.BotonCrearPregunta_Click);
-            // 
-            // BotonCrearQuiz
-            // 
-            this.BotonCrearQuiz.BackColor = System.Drawing.Color.Aqua;
-            this.BotonCrearQuiz.Location = new System.Drawing.Point(3, 125);
-            this.BotonCrearQuiz.Name = "BotonCrearQuiz";
-            this.BotonCrearQuiz.Size = new System.Drawing.Size(163, 79);
-            this.BotonCrearQuiz.TabIndex = 8;
-            this.BotonCrearQuiz.Text = "Crear Quiz";
-            this.BotonCrearQuiz.UseVisualStyleBackColor = false;
-            this.BotonCrearQuiz.Click += new System.EventHandler(this.BotonCrearQuiz_Click);
-            // 
-            // BotonRealizarQuiz
-            // 
-            this.BotonRealizarQuiz.BackColor = System.Drawing.Color.Aqua;
-            this.BotonRealizarQuiz.Location = new System.Drawing.Point(3, 237);
-            this.BotonRealizarQuiz.Name = "BotonRealizarQuiz";
-            this.BotonRealizarQuiz.Size = new System.Drawing.Size(163, 79);
-            this.BotonRealizarQuiz.TabIndex = 9;
-            this.BotonRealizarQuiz.Text = "Realizar Quiz";
-            this.BotonRealizarQuiz.UseVisualStyleBackColor = false;
-            this.BotonRealizarQuiz.Click += new System.EventHandler(this.BotonRealizarQuiz_Click);
-            // 
-            // BotonEstadisticas
-            // 
-            this.BotonEstadisticas.BackColor = System.Drawing.Color.Aqua;
-            this.BotonEstadisticas.Location = new System.Drawing.Point(3, 358);
-            this.BotonEstadisticas.Name = "BotonEstadisticas";
-            this.BotonEstadisticas.Size = new System.Drawing.Size(163, 79);
-            this.BotonEstadisticas.TabIndex = 11;
-            this.BotonEstadisticas.Text = "Estadisticas";
-            this.BotonEstadisticas.UseVisualStyleBackColor = false;
-            this.BotonEstadisticas.Click += new System.EventHandler(this.BotonEstadisticas_Click);
-            // 
-            // BotonAjustes
-            // 
-            this.BotonAjustes.BackColor = System.Drawing.Color.Aqua;
-            this.BotonAjustes.Location = new System.Drawing.Point(64, 494);
-            this.BotonAjustes.Name = "BotonAjustes";
-            this.BotonAjustes.Size = new System.Drawing.Size(96, 45);
-            this.BotonAjustes.TabIndex = 12;
-            this.BotonAjustes.Text = "Ajustes";
-            this.BotonAjustes.UseVisualStyleBackColor = false;
-            this.BotonAjustes.Click += new System.EventHandler(this.BotonAjustes_Click);
+            this.PanelPrincipal.BackColor = System.Drawing.Color.White;
+            this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PanelPrincipal.Location = new System.Drawing.Point(166, 81);
+            this.PanelPrincipal.Name = "PanelPrincipal";
+            this.PanelPrincipal.Size = new System.Drawing.Size(1143, 542);
+            this.PanelPrincipal.TabIndex = 3;
+            this.PanelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1309, 664);
-            this.Controls.Add(this.PanelPrincipal);
+            this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.BarraModificarVentana);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.BarraModificarVentana.ResumeLayout(false);
-            this.PanelPrincipal.ResumeLayout(false);
+            this.PanelContenedor.ResumeLayout(false);
             this.NavbarIzquierda.ResumeLayout(false);
             this.NavbarSuperior.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -241,7 +255,7 @@ namespace QuizifyGUI
 
         private System.Windows.Forms.Panel BarraModificarVentana;
         private System.Windows.Forms.Button BotonInicio;
-        private System.Windows.Forms.Panel PanelPrincipal;
+        private System.Windows.Forms.Panel PanelContenedor;
         private System.Windows.Forms.Panel NavbarIzquierda;
         private System.Windows.Forms.Panel NavbarSuperior;
         private MetroSet_UI.Controls.MetroSetBadge BotonPerfil;
@@ -251,5 +265,6 @@ namespace QuizifyGUI
         private System.Windows.Forms.Button BotonAjustes;
         private System.Windows.Forms.Button BotonRealizarQuiz;
         private System.Windows.Forms.Button BotonEstadisticas;
+        private System.Windows.Forms.Panel PanelPrincipal;
     }
 }

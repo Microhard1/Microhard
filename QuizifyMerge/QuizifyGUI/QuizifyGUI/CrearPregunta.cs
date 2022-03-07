@@ -17,8 +17,52 @@ namespace QuizifyGUI
             InitializeComponent();
         }
 
-        private void metroSetPanel1_Paint(object sender, PaintEventArgs e)
+        private void abrirFormHijo(object formHijo)
         {
+            if (this.PanelCentralPreguntas.Controls.Count > 0)
+            {
+                this.PanelCentralPreguntas.Controls.RemoveAt(0);
+            }
+            Form formularioHijo = formHijo as Form;
+            formularioHijo.TopLevel = false;
+            formularioHijo.Dock = DockStyle.Fill;
+            this.PanelCentralPreguntas.Controls.Add(formularioHijo);
+            this.PanelCentralPreguntas.Tag = formularioHijo;
+            formularioHijo.Show();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BotonBuscarPregunta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SelectorTipoQuiz_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String tipoQuizSeleccionado=SelectorTipoQuiz.SelectedItem.ToString();
+
+            switch (tipoQuizSeleccionado)
+            {
+                case "Tipo Test":
+                    abrirFormHijo(new TipoTest()) ;
+                    break;
+                case  "Respuesta Abierta":
+                    abrirFormHijo(new RespuestaAbierta());
+                    break;
+                case "Verdadero/Falso":
+                    abrirFormHijo(new VerdaderoFalso());
+                    break;
+                default:
+                    Console.WriteLine("No saco nada");
+                    break;
+
+            }
+
+
 
         }
     }

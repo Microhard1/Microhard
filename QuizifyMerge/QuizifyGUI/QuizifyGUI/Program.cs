@@ -16,7 +16,11 @@ namespace QuizifyGUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Inicio());
+<<<<<<< HEAD
+            Application.Run(new Inicio()) ;
+=======
+            Application.Run(new Registrar());
+>>>>>>> b10178a4e8f29352c7af2b83bbd67d45de00b009
         }
     }
 }
