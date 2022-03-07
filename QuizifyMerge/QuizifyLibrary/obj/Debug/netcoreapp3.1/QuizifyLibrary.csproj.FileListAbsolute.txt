@@ -1,7 +1,6 @@
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\netcoreapp3.1\QuizifyLibrary.deps.json
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\netcoreapp3.1\QuizifyLibrary.dll
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\netcoreapp3.1\QuizifyLibrary.pdb
-C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.csproj.AssemblyReference.cache
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.AssemblyInfoInputs.cache
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.AssemblyInfo.cs

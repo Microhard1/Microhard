@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Jafk8syQAAgeOk31GxtMkLL7uimJFTV6f2rHk0JyKgopsayza/ycmMCBvYeeOIFCL1ahzi2IbdXjDL1kRmkoqA==",
+  "dgSpecHash": "BDPvkNJni4fDnbidwhA0Jp/a7v2LvHdOiylqgRYUTSWCpZtRsKdfJkr0fIgnFmiAHbdc4dE3QziY8fuNIiszhg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hugo\\Repositorio_PSW\\Microhard\\QuizifyMerge\\QuizifyLibrary\\QuizifyLibrary.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\upv\\software\\psw\\Microhard\\QuizifyMerge\\QuizifyLibrary\\QuizifyLibrary.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Hugo\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512"
   ],
   "logs": []
 }
