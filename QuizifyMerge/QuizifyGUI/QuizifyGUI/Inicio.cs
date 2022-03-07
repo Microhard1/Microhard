@@ -48,7 +48,10 @@ namespace QuizifyGUI
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            if (this.PanelPrincipal.Controls.Count > 0)
+            {
+               this.PanelPrincipal.Controls.RemoveAt(0);
+            }
         }
 
         private void metroSetBadge1_Click(object sender, EventArgs e)
@@ -77,6 +80,21 @@ namespace QuizifyGUI
         }
 
         private void BotonAjustes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NavbarSuperior_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void NavbarIzquierda_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
