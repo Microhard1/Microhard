@@ -23,6 +23,13 @@ namespace QuizifyLibrary.BussinessLogic.Clases
             this.imagen = imagen;
         }
 
+        public Pregunta(string enunciado, double puntuacion, string explicacion)
+        {
+            this.enunciado = enunciado;
+            this.explicacion = explicacion;
+            this.puntuacion = puntuacion;
+        }
+
         public void añadirRespuesta(string enunciado) 
         {
             Respuesta r = crearRespuesta(enunciado);

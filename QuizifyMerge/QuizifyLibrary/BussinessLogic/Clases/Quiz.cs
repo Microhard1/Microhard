@@ -24,9 +24,15 @@ namespace QuizifyLibrary.BussinessLogic.Clases
         public string dificultad;
         public string nombreQuiz;
 
-        public Quiz(string nombreQuiz) 
+        public Quiz(string nombreQuiz, Instructor creadoPor, int duracion, string dificultad,
+                DateTime inicio, DateTime fin) 
         {
             this.nombreQuiz = nombreQuiz;
+            this.creadoPor = creadoPor;
+            this.duracion = duracion;
+            this.dificultad = dificultad;
+            this.fechaDeInicio = inicio;
+            this.fechaFin = fin;
         
         }
 

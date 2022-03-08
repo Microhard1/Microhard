@@ -11,5 +11,7 @@ namespace QuizifyLibrary.BussinessLogic.Servicios
     {
         public Alumno GetAlumnoById(string username);
         public Instructor GetInstructorById(string username);
+
+
     }
 }

@@ -35,6 +35,14 @@ namespace QuizifyLibrary.BussinessLogic.Servicios
             return ins;
         }
 
+        public bool PreguntaAbiertaRepetida(PreguntaAbierta pA) 
+        {
+            
+            FirebaseResponse preguntasAbiertas = c.client.Get(@"Pregunta/Abierta");
+            
+            return true;
+        }
+
         
     }
 }
