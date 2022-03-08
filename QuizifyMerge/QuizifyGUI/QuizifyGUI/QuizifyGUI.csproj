@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConexionFirebaseTemp.cs" />
     <Compile Include="CrearQuiz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +67,7 @@
     <Compile Include="CrearPregunta.Designer.cs">
       <DependentUpon>CrearPregunta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data.cs" />
     <Compile Include="Estadisticas.cs">
       <SubType>Form</SubType>
     </Compile>

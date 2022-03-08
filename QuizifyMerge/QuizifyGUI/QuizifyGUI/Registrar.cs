@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
 
 namespace QuizifyGUI
 {
@@ -69,7 +72,18 @@ namespace QuizifyGUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+           /* var data = new Data
+            {
+                Nombre = NombreUsuario.Text,
+                PrimerApellido = PrimerApellido.Text,
+                SegundoApellido = SegundoApellido.Text,
+                Contrasenya = Contrasenya.Text,
+                CorreoElectronico = Email.Text
+            };
+            ConexionFirebaseTemp c = ConexionFirebaseTemp.getInstancia();
+            c.client.Set("Alumno/" + NombreUsuario.Text, data);
+           SetResponse response = c.client.Set("Alumno/" + NombreUsuario.Text, data);
+            Data result = response.ResultAs<Data>();*/
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -93,6 +107,16 @@ namespace QuizifyGUI
         }
 
         private void bunifuMaterialTextbox6_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PrimerApellido_OnValueChanged(object sender, EventArgs e)
         {
 
         }

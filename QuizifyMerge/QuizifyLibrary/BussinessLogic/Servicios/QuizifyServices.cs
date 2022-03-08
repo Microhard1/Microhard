@@ -26,7 +26,6 @@ namespace QuizifyLibrary.BussinessLogic.Servicios
             alu.Username = username;
             var correoBD = c.client.Get("Alumnos/" + username + "/correo");
             string correo = correoBD.ResultAs<string>();
-            alu.Correo = correo;
             return alu;
             
         }
@@ -37,7 +36,6 @@ namespace QuizifyLibrary.BussinessLogic.Servicios
             ins.Username = username;
             var correoBD = c.client.Get("Instructores/" + username + "/correo");
             string correo = correoBD.ResultAs<string>();
-            ins.Correo = correo;
             return ins;
         }
 

@@ -40,7 +40,6 @@ namespace QuizifyGUI
             
             InitializeComponent();
             GridDatosPreguntas.Rows.Clear();
-            FirebaseResponse res = cliente.Get(@"Pregunta/Abierta");
         }
 
         private void metroSetPanel1_Paint(object sender, PaintEventArgs e)
