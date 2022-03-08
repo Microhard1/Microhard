@@ -44,5 +44,16 @@ namespace QuizifyLibrary.BussinessLogic.Clases
 
         public abstract Pregunta crearPregunta(string enunciado, string imagen, double puntuacion, string explicacion);
         
+        public bool PreguntasRepetidas()
+        {
+            for(int i = 0; i < preguntasQuiz.Count - 1; i++)
+            {
+                if(preguntasQuiz.ToArray<Pregunta>()[i] == preguntasQuiz.ToArray<Pregunta>()[i + 1])
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
