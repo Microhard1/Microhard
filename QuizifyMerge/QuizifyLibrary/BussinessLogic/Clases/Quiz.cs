@@ -52,7 +52,7 @@ namespace QuizifyLibrary.BussinessLogic.Clases
 
             for (int i = 0; i < longitud - 1; i++)
             {
-                if (myArray[i].enunciado == myArray[i + 1].enunciado)
+                if (myArray[i].enunciado.Equals(myArray[i + 1].enunciado))
                 {
                     return true;
                 }
@@ -62,7 +62,7 @@ namespace QuizifyLibrary.BussinessLogic.Clases
 
             for (int i = 0; i < preguntasQuiz.Count - 1; i++)
             {
-                if(preguntasQuiz.ToArray<Pregunta>()[i].enunciado == preguntasQuiz.ToArray<Pregunta>()[i + 1].enunciado)
+                if(preguntasQuiz.ToArray<Pregunta>()[i].enunciado.Equals(preguntasQuiz.ToArray<Pregunta>()[i + 1].enunciado))
                 {
                     return true;
                 }
