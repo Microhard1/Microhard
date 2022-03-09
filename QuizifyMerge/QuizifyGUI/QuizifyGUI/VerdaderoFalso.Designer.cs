@@ -30,9 +30,9 @@ namespace QuizifyGUI
         private void InitializeComponent()
         {
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.BotonFalso = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.metroSetTextBox1 = new MetroSet_UI.Controls.MetroSetTextBox();
+            this.EnunciadoVerdaderoFalso = new MetroSet_UI.Controls.MetroSetTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,19 +44,20 @@ namespace QuizifyGUI
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
-            // radioButton2
+            // BotonFalso
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Red;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(575, 370);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(134, 40);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "FALSO";
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.BotonFalso.AutoSize = true;
+            this.BotonFalso.BackColor = System.Drawing.Color.Red;
+            this.BotonFalso.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotonFalso.ForeColor = System.Drawing.Color.White;
+            this.BotonFalso.Location = new System.Drawing.Point(575, 370);
+            this.BotonFalso.Name = "BotonFalso";
+            this.BotonFalso.Size = new System.Drawing.Size(134, 40);
+            this.BotonFalso.TabIndex = 6;
+            this.BotonFalso.TabStop = true;
+            this.BotonFalso.Text = "FALSO";
+            this.BotonFalso.UseVisualStyleBackColor = false;
+            this.BotonFalso.CheckedChanged += new System.EventHandler(this.BotonFalso_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -72,35 +73,35 @@ namespace QuizifyGUI
             this.radioButton1.Text = "VERDADERO";
             this.radioButton1.UseVisualStyleBackColor = false;
             // 
-            // metroSetTextBox1
+            // EnunciadoVerdaderoFalso
             // 
-            this.metroSetTextBox1.AutoCompleteCustomSource = null;
-            this.metroSetTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.metroSetTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.metroSetTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetTextBox1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.metroSetTextBox1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetTextBox1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.metroSetTextBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroSetTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroSetTextBox1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.metroSetTextBox1.Image = null;
-            this.metroSetTextBox1.IsDerivedStyle = true;
-            this.metroSetTextBox1.Lines = null;
-            this.metroSetTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.metroSetTextBox1.MaxLength = 32767;
-            this.metroSetTextBox1.Multiline = false;
-            this.metroSetTextBox1.Name = "metroSetTextBox1";
-            this.metroSetTextBox1.ReadOnly = false;
-            this.metroSetTextBox1.Size = new System.Drawing.Size(800, 49);
-            this.metroSetTextBox1.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetTextBox1.StyleManager = null;
-            this.metroSetTextBox1.TabIndex = 4;
-            this.metroSetTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.metroSetTextBox1.ThemeAuthor = "Narwin";
-            this.metroSetTextBox1.ThemeName = "MetroLite";
-            this.metroSetTextBox1.UseSystemPasswordChar = false;
-            this.metroSetTextBox1.WatermarkText = "PREGUNTA";
+            this.EnunciadoVerdaderoFalso.AutoCompleteCustomSource = null;
+            this.EnunciadoVerdaderoFalso.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.EnunciadoVerdaderoFalso.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.EnunciadoVerdaderoFalso.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.EnunciadoVerdaderoFalso.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.EnunciadoVerdaderoFalso.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.EnunciadoVerdaderoFalso.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.EnunciadoVerdaderoFalso.Dock = System.Windows.Forms.DockStyle.Top;
+            this.EnunciadoVerdaderoFalso.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EnunciadoVerdaderoFalso.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.EnunciadoVerdaderoFalso.Image = null;
+            this.EnunciadoVerdaderoFalso.IsDerivedStyle = true;
+            this.EnunciadoVerdaderoFalso.Lines = null;
+            this.EnunciadoVerdaderoFalso.Location = new System.Drawing.Point(0, 0);
+            this.EnunciadoVerdaderoFalso.MaxLength = 32767;
+            this.EnunciadoVerdaderoFalso.Multiline = false;
+            this.EnunciadoVerdaderoFalso.Name = "EnunciadoVerdaderoFalso";
+            this.EnunciadoVerdaderoFalso.ReadOnly = false;
+            this.EnunciadoVerdaderoFalso.Size = new System.Drawing.Size(800, 49);
+            this.EnunciadoVerdaderoFalso.Style = MetroSet_UI.Enums.Style.Light;
+            this.EnunciadoVerdaderoFalso.StyleManager = null;
+            this.EnunciadoVerdaderoFalso.TabIndex = 4;
+            this.EnunciadoVerdaderoFalso.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.EnunciadoVerdaderoFalso.ThemeAuthor = "Narwin";
+            this.EnunciadoVerdaderoFalso.ThemeName = "MetroLite";
+            this.EnunciadoVerdaderoFalso.UseSystemPasswordChar = false;
+            this.EnunciadoVerdaderoFalso.WatermarkText = "PREGUNTA";
             // 
             // VerdaderoFalso
             // 
@@ -108,9 +109,9 @@ namespace QuizifyGUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.BotonFalso);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.metroSetTextBox1);
+            this.Controls.Add(this.EnunciadoVerdaderoFalso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VerdaderoFalso";
             this.Text = "VerdaderoFalso";
@@ -123,8 +124,8 @@ namespace QuizifyGUI
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton BotonFalso;
         private System.Windows.Forms.RadioButton radioButton1;
-        private MetroSet_UI.Controls.MetroSetTextBox metroSetTextBox1;
+        private MetroSet_UI.Controls.MetroSetTextBox EnunciadoVerdaderoFalso;
     }
 }

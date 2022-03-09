@@ -193,11 +193,5 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\QuizifyLibrary\QuizifyLibrary.csproj">
-      <Project>{64d2703b-1aab-4f27-8848-6943cdebd42c}</Project>
-      <Name>QuizifyLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,7 +8,7 @@ namespace QuizifyLibrary.BussinessLogic.Clases
 {
     public class PreguntaVerdaderoFalso : Pregunta
     {
-        public PreguntaVerdaderoFalso(string enunciado, string imagen, double puntuacion, string explicacion):base(enunciado,imagen,puntuacion,explicacion)
+        public PreguntaVerdaderoFalso(bool respuesta,string enunciado, string imagen, double puntuacion, string explicacion):base(enunciado,imagen,puntuacion,explicacion)
         {
 
         }

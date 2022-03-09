@@ -15,5 +15,6 @@ namespace QuizifyLibrary.BussinessLogic.Servicios
                                         string segundoApellido, string contrasenya, string email);
         public void RegistrarAlumno(string nombreAlumno, string primerApellido,
                                         string segundoApellido, string contrasenya, string email);
+        public void RegistrarPreguntaVerdaderoFalso(PreguntaVerdaderoFalso pregunta);
     }
 }

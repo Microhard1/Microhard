@@ -16,5 +16,10 @@ namespace QuizifyGUI
         {
             InitializeComponent();
         }
+
+        private void BotonFalso_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

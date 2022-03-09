@@ -48,8 +48,14 @@ namespace QuizifyLibrary.BussinessLogic.Servicios
             SetResponse set = c.client.Set("Instructor/" + nombreAlumno, alumno);
         }
 
+        public void RegistrarPregunta()
+        {
 
+        }
 
-
+        public void RegistrarPreguntaVerdaderoFalso(PreguntaVerdaderoFalso pregunta)
+        {
+            c.client.Set(@"Pregunta/VerdaderoFalso");
+        }
     }
 }

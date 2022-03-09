@@ -32,7 +32,6 @@ namespace QuizifyGUI
             this.metroSetPanel2 = new MetroSet_UI.Controls.MetroSetPanel();
             this.SelectorTipoQuiz = new System.Windows.Forms.ComboBox();
             this.metroSetDivider2 = new MetroSet_UI.Controls.MetroSetDivider();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.BotonCrearPregunta = new MetroSet_UI.Controls.MetroSetButton();
             this.BotonBuscarPregunta = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -40,6 +39,11 @@ namespace QuizifyGUI
             this.PanelCentralPreguntas = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.metroSetRichTextBox1 = new MetroSet_UI.Controls.MetroSetRichTextBox();
+            this.Descripcion = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Puntuacion = new System.Windows.Forms.TextBox();
             this.metroSetPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -51,9 +55,13 @@ namespace QuizifyGUI
             this.metroSetPanel2.BackgroundColor = System.Drawing.Color.White;
             this.metroSetPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.metroSetPanel2.BorderThickness = 1;
+            this.metroSetPanel2.Controls.Add(this.Puntuacion);
+            this.metroSetPanel2.Controls.Add(this.label2);
+            this.metroSetPanel2.Controls.Add(this.label1);
+            this.metroSetPanel2.Controls.Add(this.Descripcion);
+            this.metroSetPanel2.Controls.Add(this.metroSetRichTextBox1);
             this.metroSetPanel2.Controls.Add(this.SelectorTipoQuiz);
             this.metroSetPanel2.Controls.Add(this.metroSetDivider2);
-            this.metroSetPanel2.Controls.Add(this.textBox1);
             this.metroSetPanel2.Controls.Add(this.BotonCrearPregunta);
             this.metroSetPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.metroSetPanel2.IsDerivedStyle = true;
@@ -73,7 +81,7 @@ namespace QuizifyGUI
             "Tipo Test",
             "Respuesta Abierta",
             "Verdadero/Falso"});
-            this.SelectorTipoQuiz.Location = new System.Drawing.Point(26, 27);
+            this.SelectorTipoQuiz.Location = new System.Drawing.Point(26, 50);
             this.SelectorTipoQuiz.Name = "SelectorTipoQuiz";
             this.SelectorTipoQuiz.Size = new System.Drawing.Size(138, 24);
             this.SelectorTipoQuiz.TabIndex = 5;
@@ -82,7 +90,7 @@ namespace QuizifyGUI
             // metroSetDivider2
             // 
             this.metroSetDivider2.IsDerivedStyle = true;
-            this.metroSetDivider2.Location = new System.Drawing.Point(12, 178);
+            this.metroSetDivider2.Location = new System.Drawing.Point(12, 483);
             this.metroSetDivider2.Name = "metroSetDivider2";
             this.metroSetDivider2.Orientation = MetroSet_UI.Enums.DividerStyle.Horizontal;
             this.metroSetDivider2.Size = new System.Drawing.Size(175, 4);
@@ -94,13 +102,6 @@ namespace QuizifyGUI
             this.metroSetDivider2.ThemeName = "MetroLite";
             this.metroSetDivider2.Thickness = 1;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(26, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 22);
-            this.textBox1.TabIndex = 2;
-            // 
             // BotonCrearPregunta
             // 
             this.BotonCrearPregunta.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -111,7 +112,7 @@ namespace QuizifyGUI
             this.BotonCrearPregunta.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.BotonCrearPregunta.HoverTextColor = System.Drawing.Color.White;
             this.BotonCrearPregunta.IsDerivedStyle = true;
-            this.BotonCrearPregunta.Location = new System.Drawing.Point(26, 433);
+            this.BotonCrearPregunta.Location = new System.Drawing.Point(26, 529);
             this.BotonCrearPregunta.Name = "BotonCrearPregunta";
             this.BotonCrearPregunta.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.BotonCrearPregunta.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -126,6 +127,7 @@ namespace QuizifyGUI
             this.BotonCrearPregunta.Text = "Crear Pregunta";
             this.BotonCrearPregunta.ThemeAuthor = null;
             this.BotonCrearPregunta.ThemeName = null;
+            this.BotonCrearPregunta.Click += new System.EventHandler(this.BotonCrearPregunta_Click);
             // 
             // BotonBuscarPregunta
             // 
@@ -187,6 +189,66 @@ namespace QuizifyGUI
             this.panel3.Size = new System.Drawing.Size(200, 606);
             this.panel3.TabIndex = 12;
             // 
+            // metroSetRichTextBox1
+            // 
+            this.metroSetRichTextBox1.AutoWordSelection = false;
+            this.metroSetRichTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.metroSetRichTextBox1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.metroSetRichTextBox1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.metroSetRichTextBox1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.metroSetRichTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.metroSetRichTextBox1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.metroSetRichTextBox1.IsDerivedStyle = true;
+            this.metroSetRichTextBox1.Lines = null;
+            this.metroSetRichTextBox1.Location = new System.Drawing.Point(26, 200);
+            this.metroSetRichTextBox1.MaxLength = 32767;
+            this.metroSetRichTextBox1.Name = "metroSetRichTextBox1";
+            this.metroSetRichTextBox1.ReadOnly = false;
+            this.metroSetRichTextBox1.Size = new System.Drawing.Size(138, 277);
+            this.metroSetRichTextBox1.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetRichTextBox1.StyleManager = null;
+            this.metroSetRichTextBox1.TabIndex = 0;
+            this.metroSetRichTextBox1.ThemeAuthor = "Narwin";
+            this.metroSetRichTextBox1.ThemeName = "MetroLite";
+            this.metroSetRichTextBox1.WordWrap = true;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.AutoSize = true;
+            this.Descripcion.ForeColor = System.Drawing.Color.Black;
+            this.Descripcion.Location = new System.Drawing.Point(23, 170);
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.Size = new System.Drawing.Size(82, 17);
+            this.Descripcion.TabIndex = 6;
+            this.Descripcion.Text = "Descripcion";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(23, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Puntuacion";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(23, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 17);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Tipo de pregunta";
+            // 
+            // Puntuacion
+            // 
+            this.Puntuacion.Location = new System.Drawing.Point(26, 130);
+            this.Puntuacion.Name = "Puntuacion";
+            this.Puntuacion.Size = new System.Drawing.Size(138, 22);
+            this.Puntuacion.TabIndex = 0;
+            // 
             // CrearPregunta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -213,7 +275,6 @@ namespace QuizifyGUI
 
         private MetroSet_UI.Controls.MetroSetPanel metroSetPanel2;
         private MetroSet_UI.Controls.MetroSetDivider metroSetDivider2;
-        private System.Windows.Forms.TextBox textBox1;
         private MetroSet_UI.Controls.MetroSetButton BotonCrearPregunta;
         private System.Windows.Forms.Button BotonBuscarPregunta;
         private System.Windows.Forms.TextBox textBox4;
@@ -222,5 +283,10 @@ namespace QuizifyGUI
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ComboBox SelectorTipoQuiz;
         private System.Windows.Forms.Panel PanelCentralPreguntas;
+        private MetroSet_UI.Controls.MetroSetRichTextBox metroSetRichTextBox1;
+        private System.Windows.Forms.Label Descripcion;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox Puntuacion;
     }
 }

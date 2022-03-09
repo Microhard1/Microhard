@@ -12,6 +12,9 @@ namespace QuizifyGUI
 {
     public partial class CrearPregunta : Form
     {
+
+        String tipoQuizSeleccionado="";
+        Form FormularioActual = null;
         public CrearPregunta()
         {
             InitializeComponent();
@@ -23,11 +26,13 @@ namespace QuizifyGUI
             {
                 this.PanelCentralPreguntas.Controls.RemoveAt(0);
             }
+            
             Form formularioHijo = formHijo as Form;
             formularioHijo.TopLevel = false;
             formularioHijo.Dock = DockStyle.Fill;
             this.PanelCentralPreguntas.Controls.Add(formularioHijo);
             this.PanelCentralPreguntas.Tag = formularioHijo;
+            FormularioActual = formularioHijo;
             formularioHijo.Show();
         }
 
@@ -43,7 +48,7 @@ namespace QuizifyGUI
 
         private void SelectorTipoQuiz_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String tipoQuizSeleccionado=SelectorTipoQuiz.SelectedItem.ToString();
+            tipoQuizSeleccionado=SelectorTipoQuiz.SelectedItem.ToString();
 
             switch (tipoQuizSeleccionado)
             {
@@ -69,6 +74,77 @@ namespace QuizifyGUI
         private void PanelCentralPreguntas_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void BotonCrearPregunta_Click(object sender, EventArgs e)
+        {
+            int puntuacion;
+            string descripcion = Descripcion.Text ;
+            puntuacion = ConseguirPuntuacion(Puntuacion.Text);
+
+            string enunciado;
+            bool verdaderoOFalso;
+            
+
+            switch (tipoQuizSeleccionado)
+            {
+               
+                case "Tipo Test":
+                   
+                    break;
+                case "Respuesta Abierta":
+                    abrirFormHijo(new RespuestaAbierta());
+                    break;
+                case "Verdadero/Falso":
+                    ControlCollection objetosDelFormulario = (ControlCollection)FormularioActual.Controls;
+                    foreach (Control c in objetosDelFormulario)
+                    {
+                        if (c.GetType() == typeof(RadioButton))
+                        {
+                            RadioButton aux = (RadioButton)c;
+                            if (aux.Name == "BotonFalso")
+                            {
+                                if (aux.Checked)
+                                {
+                                    verdaderoOFalso = false;
+                                }
+                                else
+                                {
+                                    verdaderoOFalso = true;
+                                }
+                            }
+                        }
+                        if (c.GetType() == typeof(TextBox))
+                        {
+                            enunciado=((TextBox)c).Text;
+                        }
+                    }
+                    break;
+                default:
+                    MessageBox.Show("Seleccione el tipo de pregunta y rellénela antes.");
+                    break;
+
+            }
+
+        }
+
+        private int ConseguirPuntuacion(String texto) {
+            int puntuacionAux=-1;
+            try
+            {
+                puntuacionAux = int.Parse(texto);
+                if(puntuacionAux>10 || puntuacionAux<0) throw new Exception();
+            }
+            catch{
+                MessageBox.Show("Introduce una puntuacion correcta");
+            }
+
+            return puntuacionAux;
+        }
+
+        private void Puntuacion_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
