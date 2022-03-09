@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
@@ -13,11 +14,10 @@ namespace QuizifyGUI
     {
 
         private static ConexionFirebaseTemp instancia;
-        public IFirebaseClient client;
-        public IFirebaseConfig conexion;
+        private IFirebaseClient client;
+        private IFirebaseConfig conexion;
         private ConexionFirebaseTemp()
         {
-
             conexion = new FirebaseConfig()
             {
                 AuthSecret = "G8JyRbxDwLBglP0vwXdm7G0cX1Raa8nXQud4rtgw",
@@ -30,8 +30,21 @@ namespace QuizifyGUI
             if (instancia == null)
             {
                 instancia = new ConexionFirebaseTemp();
+                try
+                {
+                    instancia.client = new FireSharp.FirebaseClient(instancia.conexion);
+                }
+                catch
+                {
+                    Console.WriteLine("Algo ha salido mal");
+                }
             }
             return instancia;
+        }
+
+        public IFirebaseClient getCliente()
+        {
+            return client;
         }
 
     }

@@ -27,3 +27,4 @@ C:\Users\Hugo\Repositorio_PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\ne
 C:\Users\Hugo\Repositorio_PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Hugo\Repositorio_PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.dll
 C:\Users\Hugo\Repositorio_PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.pdb
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.csproj.AssemblyReference.cache

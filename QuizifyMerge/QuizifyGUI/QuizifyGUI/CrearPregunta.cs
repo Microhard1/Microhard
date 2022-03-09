@@ -65,5 +65,10 @@ namespace QuizifyGUI
 
 
         }
+
+        private void PanelCentralPreguntas_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

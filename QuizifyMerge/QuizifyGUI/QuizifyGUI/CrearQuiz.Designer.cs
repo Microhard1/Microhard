@@ -65,14 +65,16 @@ namespace QuizifyGUI
             // BotonBuscarPregunta
             // 
             this.BotonBuscarPregunta.BackColor = System.Drawing.Color.Transparent;
+            this.BotonBuscarPregunta.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.BotonBuscarPregunta.ForeColor = System.Drawing.Color.Transparent;
             this.BotonBuscarPregunta.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BotonBuscarPregunta.Location = new System.Drawing.Point(662, 16);
             this.BotonBuscarPregunta.Name = "BotonBuscarPregunta";
-            this.BotonBuscarPregunta.Size = new System.Drawing.Size(43, 33);
+            this.BotonBuscarPregunta.Size = new System.Drawing.Size(72, 33);
             this.BotonBuscarPregunta.TabIndex = 9;
-            this.BotonBuscarPregunta.Text = "W";
+            this.BotonBuscarPregunta.Text = "Bucar";
             this.BotonBuscarPregunta.UseVisualStyleBackColor = false;
+            this.BotonBuscarPregunta.Click += new System.EventHandler(this.BotonBuscarPregunta_Click);
             // 
             // metroSetPanel2
             // 
@@ -139,10 +141,10 @@ namespace QuizifyGUI
             this.BotonCrearPregunta.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.BotonCrearPregunta.HoverTextColor = System.Drawing.Color.White;
             this.BotonCrearPregunta.IsDerivedStyle = true;
-            this.BotonCrearPregunta.Location = new System.Drawing.Point(26, 433);
+            this.BotonCrearPregunta.Location = new System.Drawing.Point(26, 503);
             this.BotonCrearPregunta.Name = "BotonCrearPregunta";
             this.BotonCrearPregunta.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.BotonCrearPregunta.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.BotonCrearPregunta.NormalColor = System.Drawing.Color.Cyan;
             this.BotonCrearPregunta.NormalTextColor = System.Drawing.Color.White;
             this.BotonCrearPregunta.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
             this.BotonCrearPregunta.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
@@ -151,7 +153,7 @@ namespace QuizifyGUI
             this.BotonCrearPregunta.Style = MetroSet_UI.Enums.Style.Light;
             this.BotonCrearPregunta.StyleManager = null;
             this.BotonCrearPregunta.TabIndex = 1;
-            this.BotonCrearPregunta.Text = "Crear Pregunta";
+            this.BotonCrearPregunta.Text = "Crear Quiz";
             this.BotonCrearPregunta.ThemeAuthor = null;
             this.BotonCrearPregunta.ThemeName = null;
             // 
@@ -169,6 +171,7 @@ namespace QuizifyGUI
             this.GridDatosPreguntas.RowTemplate.Height = 24;
             this.GridDatosPreguntas.Size = new System.Drawing.Size(849, 525);
             this.GridDatosPreguntas.TabIndex = 15;
+            this.GridDatosPreguntas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridDatosPreguntas_CellContentClick);
             // 
             // Agregar
             // 
@@ -180,6 +183,7 @@ namespace QuizifyGUI
             // 
             // Pregunta
             // 
+            this.Pregunta.DataPropertyName = "Pregunta";
             this.Pregunta.FillWeight = 1000F;
             this.Pregunta.HeaderText = "Pregunta";
             this.Pregunta.MinimumWidth = 6;

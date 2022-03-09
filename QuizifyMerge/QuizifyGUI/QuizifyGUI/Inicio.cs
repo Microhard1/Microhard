@@ -56,7 +56,7 @@ namespace QuizifyGUI
 
         private void metroSetBadge1_Click(object sender, EventArgs e)
         {
-
+            abrirFormHijo(new Perfil());
         }
 
         private void BotonCrearPregunta_Click(object sender, EventArgs e)

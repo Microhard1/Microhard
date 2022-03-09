@@ -30,16 +30,16 @@ namespace QuizifyGUI
         private void InitializeComponent()
         {
             this.metroSetPanel2 = new MetroSet_UI.Controls.MetroSetPanel();
+            this.SelectorTipoQuiz = new System.Windows.Forms.ComboBox();
             this.metroSetDivider2 = new MetroSet_UI.Controls.MetroSetDivider();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.BotonCrearPregunta = new MetroSet_UI.Controls.MetroSetButton();
             this.BotonBuscarPregunta = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.PanelCentralPreguntas = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.SelectorTipoQuiz = new System.Windows.Forms.ComboBox();
-            this.PanelCentralPreguntas = new System.Windows.Forms.Panel();
             this.metroSetPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -65,6 +65,19 @@ namespace QuizifyGUI
             this.metroSetPanel2.TabIndex = 7;
             this.metroSetPanel2.ThemeAuthor = null;
             this.metroSetPanel2.ThemeName = null;
+            // 
+            // SelectorTipoQuiz
+            // 
+            this.SelectorTipoQuiz.FormattingEnabled = true;
+            this.SelectorTipoQuiz.Items.AddRange(new object[] {
+            "Tipo Test",
+            "Respuesta Abierta",
+            "Verdadero/Falso"});
+            this.SelectorTipoQuiz.Location = new System.Drawing.Point(26, 27);
+            this.SelectorTipoQuiz.Name = "SelectorTipoQuiz";
+            this.SelectorTipoQuiz.Size = new System.Drawing.Size(138, 24);
+            this.SelectorTipoQuiz.TabIndex = 5;
+            this.SelectorTipoQuiz.SelectedIndexChanged += new System.EventHandler(this.SelectorTipoQuiz_SelectedIndexChanged);
             // 
             // metroSetDivider2
             // 
@@ -145,6 +158,16 @@ namespace QuizifyGUI
             this.panel1.Size = new System.Drawing.Size(801, 532);
             this.panel1.TabIndex = 10;
             // 
+            // PanelCentralPreguntas
+            // 
+            this.PanelCentralPreguntas.BackColor = System.Drawing.Color.DarkRed;
+            this.PanelCentralPreguntas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelCentralPreguntas.Location = new System.Drawing.Point(0, 0);
+            this.PanelCentralPreguntas.Name = "PanelCentralPreguntas";
+            this.PanelCentralPreguntas.Size = new System.Drawing.Size(801, 532);
+            this.PanelCentralPreguntas.TabIndex = 0;
+            this.PanelCentralPreguntas.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelCentralPreguntas_Paint);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.textBox4);
@@ -164,29 +187,7 @@ namespace QuizifyGUI
             this.panel3.Size = new System.Drawing.Size(200, 606);
             this.panel3.TabIndex = 12;
             // 
-            // SelectorTipoQuiz
-            // 
-            this.SelectorTipoQuiz.FormattingEnabled = true;
-            this.SelectorTipoQuiz.Items.AddRange(new object[] {
-            "Tipo Test",
-            "Respuesta Abierta",
-            "Verdadero/Falso"});
-            this.SelectorTipoQuiz.Location = new System.Drawing.Point(26, 27);
-            this.SelectorTipoQuiz.Name = "SelectorTipoQuiz";
-            this.SelectorTipoQuiz.Size = new System.Drawing.Size(138, 24);
-            this.SelectorTipoQuiz.TabIndex = 5;
-            this.SelectorTipoQuiz.SelectedIndexChanged += new System.EventHandler(this.SelectorTipoQuiz_SelectedIndexChanged);
-            // 
-            // PanelCentralPreguntas
-            // 
-            this.PanelCentralPreguntas.BackColor = System.Drawing.Color.DarkRed;
-            this.PanelCentralPreguntas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelCentralPreguntas.Location = new System.Drawing.Point(0, 0);
-            this.PanelCentralPreguntas.Name = "PanelCentralPreguntas";
-            this.PanelCentralPreguntas.Size = new System.Drawing.Size(801, 532);
-            this.PanelCentralPreguntas.TabIndex = 0;
-            // 
-            // CrearQuiz
+            // CrearPregunta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -195,7 +196,7 @@ namespace QuizifyGUI
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CrearQuiz";
+            this.Name = "CrearPregunta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "CrearQuiz";
             this.metroSetPanel2.ResumeLayout(false);

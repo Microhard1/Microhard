@@ -7,13 +7,13 @@ using FireSharp.Response;
 
 namespace QuizifyLibrary.Persistencia
 {
-    public sealed class ConexionFirebase
+    public class ConexionFirebase
     {
         
         private static ConexionFirebase instancia;
         public IFirebaseClient client;
         public IFirebaseConfig conexion;
-        private ConexionFirebase() {
+        public ConexionFirebase() {
             
             conexion = new FirebaseConfig()
             {
