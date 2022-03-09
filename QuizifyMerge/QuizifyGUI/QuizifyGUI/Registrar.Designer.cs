@@ -38,8 +38,8 @@ namespace QuizifyGUI
             this.label10 = new System.Windows.Forms.Label();
             this.PrimerApellido = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label9 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonAlumno = new System.Windows.Forms.RadioButton();
+            this.RadioButtonInstructor = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
@@ -99,8 +99,8 @@ namespace QuizifyGUI
             this.panelDerecho.Controls.Add(this.label10);
             this.panelDerecho.Controls.Add(this.PrimerApellido);
             this.panelDerecho.Controls.Add(this.label9);
-            this.panelDerecho.Controls.Add(this.radioButton2);
-            this.panelDerecho.Controls.Add(this.radioButton1);
+            this.panelDerecho.Controls.Add(this.radioButtonAlumno);
+            this.panelDerecho.Controls.Add(this.RadioButtonInstructor);
             this.panelDerecho.Controls.Add(this.label8);
             this.panelDerecho.Controls.Add(this.label7);
             this.panelDerecho.Controls.Add(this.bunifuCheckbox1);
@@ -187,33 +187,34 @@ namespace QuizifyGUI
             this.label9.Text = "Primer apellido:";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // radioButton2
+            // radioButtonAlumno
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.radioButton2.Location = new System.Drawing.Point(263, 588);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(131, 34);
-            this.radioButton2.TabIndex = 17;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Alumno";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonAlumno.AutoSize = true;
+            this.radioButtonAlumno.Checked = true;
+            this.radioButtonAlumno.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonAlumno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.radioButtonAlumno.Location = new System.Drawing.Point(263, 588);
+            this.radioButtonAlumno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radioButtonAlumno.Name = "radioButtonAlumno";
+            this.radioButtonAlumno.Size = new System.Drawing.Size(131, 34);
+            this.radioButtonAlumno.TabIndex = 17;
+            this.radioButtonAlumno.TabStop = true;
+            this.radioButtonAlumno.Text = "Alumno";
+            this.radioButtonAlumno.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // RadioButtonInstructor
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.radioButton1.Location = new System.Drawing.Point(44, 588);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(132, 34);
-            this.radioButton1.TabIndex = 16;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Profesor";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.RadioButtonInstructor.AutoSize = true;
+            this.RadioButtonInstructor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RadioButtonInstructor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.RadioButtonInstructor.Location = new System.Drawing.Point(44, 588);
+            this.RadioButtonInstructor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.RadioButtonInstructor.Name = "RadioButtonInstructor";
+            this.RadioButtonInstructor.Size = new System.Drawing.Size(146, 34);
+            this.RadioButtonInstructor.TabIndex = 16;
+            this.RadioButtonInstructor.TabStop = true;
+            this.RadioButtonInstructor.Text = "Instructor";
+            this.RadioButtonInstructor.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -452,8 +453,8 @@ namespace QuizifyGUI
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButtonAlumno;
+        private System.Windows.Forms.RadioButton RadioButtonInstructor;
         private Bunifu.Framework.UI.BunifuMaterialTextbox SegundoApellido;
         private System.Windows.Forms.Label label10;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PrimerApellido;

@@ -774,25 +774,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sanco\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Hugo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sanco\\source\\repos\\Microhard\\Microhard\\QuizifyMerge\\QuizifyGUI\\QuizifyGUI\\QuizifyGUI.csproj",
+      "projectUniqueName": "C:\\Users\\Hugo\\Repositorio_PSW\\Microhard\\QuizifyMerge\\QuizifyGUI\\QuizifyGUI\\QuizifyGUI.csproj",
       "projectName": "QuizifyGUI",
-      "projectPath": "C:\\Users\\sanco\\source\\repos\\Microhard\\Microhard\\QuizifyMerge\\QuizifyGUI\\QuizifyGUI\\QuizifyGUI.csproj",
-      "packagesPath": "C:\\Users\\sanco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sanco\\source\\repos\\Microhard\\Microhard\\QuizifyMerge\\QuizifyGUI\\QuizifyGUI\\obj\\",
+      "projectPath": "C:\\Users\\Hugo\\Repositorio_PSW\\Microhard\\QuizifyMerge\\QuizifyGUI\\QuizifyGUI\\QuizifyGUI.csproj",
+      "packagesPath": "C:\\Users\\Hugo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hugo\\Repositorio_PSW\\Microhard\\QuizifyMerge\\QuizifyGUI\\QuizifyGUI\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\sanco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Hugo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -72,20 +72,25 @@ namespace QuizifyGUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-           /* var data = new Data
+            if (string.IsNullOrWhiteSpace(NombreUsuario.Text) ||
+               string.IsNullOrWhiteSpace(PrimerApellido.Text) ||
+               string.IsNullOrWhiteSpace(SegundoApellido.Text) ||
+               string.IsNullOrWhiteSpace(Contrasenya.Text) ||
+               string.IsNullOrWhiteSpace(Email.Text)) { MessageBox.Show("Porfavor, rellene todos los campos"); }
+            else
             {
-                Nombre = NombreUsuario.Text,
-                PrimerApellido = PrimerApellido.Text,
-                SegundoApellido = SegundoApellido.Text,
-                Contrasenya = Contrasenya.Text,
-                CorreoElectronico = Email.Text
-            };
-            ConexionFirebaseTemp c = ConexionFirebaseTemp.getInstancia();
-            c.client.Set("Alumno/" + NombreUsuario.Text, data);
-           SetResponse response = c.client.Set("Alumno/" + NombreUsuario.Text, data);
-            Data result = response.ResultAs<Data>();*/
+                if (radioButtonAlumno.Checked)
+                {
+                    //QuizifyServices.RegistrarAlumno();
+                }
+                else
+                {
+                    //QuizifyServices.RegistrarInstructor();
+                }
+                MessageBox.Show("Se registro correctamente");
+            }
         }
-
+           
         private void label7_Click(object sender, EventArgs e)
         {
 

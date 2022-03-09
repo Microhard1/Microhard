@@ -67,7 +67,6 @@
     <Compile Include="CrearPregunta.Designer.cs">
       <DependentUpon>CrearPregunta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data.cs" />
     <Compile Include="Estadisticas.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -35,8 +35,21 @@ namespace QuizifyLibrary.BussinessLogic.Servicios
             return ins;
         }
 
-        
+        public void RegistrarInstructor(string nombreInstructor, string primerApellido,
+                                        string segundoApellido, string contrasenya, string email)
+        {
+            Instructor ins = new Instructor(nombreInstructor, contrasenya);
+            SetResponse set = c.client.Set("Instructor/" + nombreInstructor, ins);
+        }
+        public void RegistrarAlumno(string nombreAlumno, string primerApellido,
+                                        string segundoApellido, string contrasenya, string email)
+        {
+            Instructor alumno = new Instructor(nombreAlumno, contrasenya);
+            SetResponse set = c.client.Set("Instructor/" + nombreAlumno, alumno);
+        }
 
-        
+
+
+
     }
 }
