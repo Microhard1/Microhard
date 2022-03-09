@@ -1,17 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mcqjtR8K5HG+uVXzKCBqSf2mre0TPu289oOVoFa6+qxQlggZxbTHZkBF6ftfzO8Yyin7zMTJj8+J+sZSdlQVig==",
+  "dgSpecHash": "4cC353PVkI5M4rBL6W8zpyXS4DTNL36+Cb0Co0xFYZ6fG+9BVz61IGBtHClkIDHqlA89ijKxMQizQAu0D71W+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\upv\\software\\psw\\Microhard\\QuizifyMerge\\QuizifyGUI\\QuizifyGUI\\QuizifyGUI.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\firesharp\\2.0.4\\firesharp.2.0.4.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\mahapps.metro.iconpacks.material\\4.11.0\\mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.bcl\\1.1.9\\microsoft.bcl.1.1.9.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.bcl.async\\1.0.168\\microsoft.bcl.async.1.0.168.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.bcl.build\\1.0.14\\microsoft.bcl.build.1.0.14.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.net.http\\2.2.28\\microsoft.net.http.2.2.28.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\sanco\\source\\repos\\Microhard\\Microhard\\QuizifyMerge\\QuizifyGUI\\QuizifyGUI\\QuizifyGUI.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
