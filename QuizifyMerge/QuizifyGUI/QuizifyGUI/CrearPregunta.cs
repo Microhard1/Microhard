@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroSet_UI.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -78,12 +79,11 @@ namespace QuizifyGUI
 
         private void BotonCrearPregunta_Click(object sender, EventArgs e)
         {
-            int puntuacion;
+            int puntuacion= ConseguirPuntuacion(Puntuacion.Text);
             string descripcion = Descripcion.Text ;
-            puntuacion = ConseguirPuntuacion(Puntuacion.Text);
 
-            string enunciado;
-            bool verdaderoOFalso;
+            string enunciado="";
+            bool verdaderoOFalso=false;
             
 
             switch (tipoQuizSeleccionado)
@@ -114,11 +114,16 @@ namespace QuizifyGUI
                                 }
                             }
                         }
-                        if (c.GetType() == typeof(TextBox))
+                        if (c.GetType() == typeof(MetroSetTextBox))
                         {
-                            enunciado=((TextBox)c).Text;
+                            if(c.Name== "EnunciadoVerdaderoFalso") {
+                                enunciado = ((MetroSetTextBox)c).Text;
+                            }
+                           
                         }
                     }
+                    MessageBox.Show("Pregunta creada" + "\n Enunciado " + enunciado + "\n Puntuacion " + puntuacion +
+                            "\n Descripcion " + descripcion + "\n Respuesta " + verdaderoOFalso);
                     break;
                 default:
                     MessageBox.Show("Seleccione el tipo de pregunta y rellénela antes.");
@@ -145,6 +150,11 @@ namespace QuizifyGUI
         private void Puntuacion_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void metroSetRichTextBox1_TextChanged(object sender)
+        {
+
         }
     }
 }

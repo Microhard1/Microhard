@@ -55,7 +55,7 @@ namespace QuizifyLibrary.BussinessLogic.Servicios
 
         public void RegistrarPreguntaVerdaderoFalso(PreguntaVerdaderoFalso pregunta)
         {
-            c.client.Set(@"Pregunta/VerdaderoFalso");
+            c.client.Set(@"Pregunta/VerdaderoFalso",pregunta);
         }
     }
 }

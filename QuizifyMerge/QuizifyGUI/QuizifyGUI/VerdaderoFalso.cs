@@ -21,5 +21,10 @@ namespace QuizifyGUI
         {
             
         }
+
+        private void EnunciadoVerdaderoFalso_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

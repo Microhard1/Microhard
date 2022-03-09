@@ -102,6 +102,7 @@ namespace QuizifyGUI
             this.EnunciadoVerdaderoFalso.ThemeName = "MetroLite";
             this.EnunciadoVerdaderoFalso.UseSystemPasswordChar = false;
             this.EnunciadoVerdaderoFalso.WatermarkText = "PREGUNTA";
+            this.EnunciadoVerdaderoFalso.Click += new System.EventHandler(this.EnunciadoVerdaderoFalso_Click);
             // 
             // VerdaderoFalso
             // 
