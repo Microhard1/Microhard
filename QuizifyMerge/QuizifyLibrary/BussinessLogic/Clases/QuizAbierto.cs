@@ -8,7 +8,9 @@ namespace QuizifyLibrary.BussinessLogic.Clases
 {
     public class QuizAbierto : Quiz
     {
-        public QuizAbierto(string nombreQuiz) : base(nombreQuiz) { 
+        public QuizAbierto(string nombreQuiz, Instructor creadoPor, int duracion, string dificultad,
+                DateTime inicio, DateTime fin) :
+                base(nombreQuiz, creadoPor, duracion, dificultad, inicio, fin) { 
         
 
         }
