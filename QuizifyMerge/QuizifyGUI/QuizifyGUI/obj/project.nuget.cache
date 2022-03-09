@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "mcqjtR8K5HG+uVXzKCBqSf2mre0TPu289oOVoFa6+qxQlggZxbTHZkBF6ftfzO8Yyin7zMTJj8+J+sZSdlQVig==",
-  "success": true,
+  "dgSpecHash": "3Q7b8+LUEHQIYMx9AaMYlL0NMK3yP13UaP5xMb9GOrv/LoDCDayFSoFMlfOyP9hIlIrl+zunX0oeM/3ulQyjkw==",
+  "success": false,
   "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\upv\\software\\psw\\Microhard\\QuizifyMerge\\QuizifyGUI\\QuizifyGUI\\QuizifyGUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\firesharp\\2.0.4\\firesharp.2.0.4.nupkg.sha512",
@@ -13,5 +13,42 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.net.http\\2.2.28\\microsoft.net.http.2.2.28.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto QuizifyLibrary no es compatible con net472 (.NETFramework,Version=v4.7.2). El proyecto QuizifyLibrary admite: netcoreapp3.1 (.NETCoreApp,Version=v3.1)",
+      "libraryId": "QuizifyLibrary",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto QuizifyLibrary no es compatible con net472 (.NETFramework,Version=v4.7.2) / win. El proyecto QuizifyLibrary admite: netcoreapp3.1 (.NETCoreApp,Version=v3.1)",
+      "libraryId": "QuizifyLibrary",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2/win"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto QuizifyLibrary no es compatible con net472 (.NETFramework,Version=v4.7.2) / win-x64. El proyecto QuizifyLibrary admite: netcoreapp3.1 (.NETCoreApp,Version=v3.1)",
+      "libraryId": "QuizifyLibrary",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2/win-x64"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto QuizifyLibrary no es compatible con net472 (.NETFramework,Version=v4.7.2) / win-x86. El proyecto QuizifyLibrary admite: netcoreapp3.1 (.NETCoreApp,Version=v3.1)",
+      "libraryId": "QuizifyLibrary",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
 }

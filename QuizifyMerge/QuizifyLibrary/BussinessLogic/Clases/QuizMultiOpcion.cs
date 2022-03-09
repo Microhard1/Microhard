@@ -8,8 +8,9 @@ namespace QuizifyLibrary.BussinessLogic.Clases
 {
     public class QuizMultiOpcion : Quiz
     {
-        public QuizMultiOpcion(string nombreQuiz) : base(nombreQuiz) { 
-        
+        public QuizMultiOpcion(string nombreQuiz, Instructor creadoPor, int duracion, string dificultad, DateTime inicio, DateTime fin) :
+            base(nombreQuiz, creadoPor, duracion, dificultad, inicio, fin)
+        { 
 
         }
 
