@@ -14,7 +14,7 @@ namespace QuizifyGUI
     public partial class CrearPregunta : Form
     {
 
-        String tipoQuizSeleccionado="";
+        string tipoQuizSeleccionado="";
         Form FormularioActual = null;
         public CrearPregunta()
         {
@@ -122,6 +122,15 @@ namespace QuizifyGUI
                            
                         }
                     }
+
+                    try {
+
+                    }
+                    catch
+                    {
+
+                    }
+
                     MessageBox.Show("Pregunta creada" + "\n Enunciado " + enunciado + "\n Puntuacion " + puntuacion +
                             "\n Descripcion " + descripcion + "\n Respuesta " + verdaderoOFalso);
                     break;
@@ -133,7 +142,7 @@ namespace QuizifyGUI
 
         }
 
-        private int ConseguirPuntuacion(String texto) {
+        private int ConseguirPuntuacion(string texto) {
             int puntuacionAux=-1;
             try
             {
