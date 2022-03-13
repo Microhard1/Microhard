@@ -66,8 +66,9 @@ namespace QuizifyGUI
             this.metroSetPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.metroSetPanel2.IsDerivedStyle = true;
             this.metroSetPanel2.Location = new System.Drawing.Point(0, 0);
+            this.metroSetPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroSetPanel2.Name = "metroSetPanel2";
-            this.metroSetPanel2.Size = new System.Drawing.Size(200, 606);
+            this.metroSetPanel2.Size = new System.Drawing.Size(150, 492);
             this.metroSetPanel2.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetPanel2.StyleManager = null;
             this.metroSetPanel2.TabIndex = 7;
@@ -76,18 +77,20 @@ namespace QuizifyGUI
             // 
             // Puntuacion
             // 
-            this.Puntuacion.Location = new System.Drawing.Point(26, 130);
+            this.Puntuacion.Location = new System.Drawing.Point(20, 93);
+            this.Puntuacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Puntuacion.Name = "Puntuacion";
-            this.Puntuacion.Size = new System.Drawing.Size(138, 22);
+            this.Puntuacion.Size = new System.Drawing.Size(104, 20);
             this.Puntuacion.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(23, 26);
+            this.label2.Location = new System.Drawing.Point(17, 21);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 17);
+            this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Tipo de pregunta";
             // 
@@ -95,9 +98,10 @@ namespace QuizifyGUI
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(23, 93);
+            this.label1.Location = new System.Drawing.Point(17, 76);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 17);
+            this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Puntuacion";
             // 
@@ -105,9 +109,10 @@ namespace QuizifyGUI
             // 
             this.LabelDesc.AutoSize = true;
             this.LabelDesc.ForeColor = System.Drawing.Color.Black;
-            this.LabelDesc.Location = new System.Drawing.Point(23, 170);
+            this.LabelDesc.Location = new System.Drawing.Point(17, 162);
+            this.LabelDesc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelDesc.Name = "LabelDesc";
-            this.LabelDesc.Size = new System.Drawing.Size(82, 17);
+            this.LabelDesc.Size = new System.Drawing.Size(63, 13);
             this.LabelDesc.TabIndex = 6;
             this.LabelDesc.Text = "Descripcion";
             // 
@@ -122,11 +127,12 @@ namespace QuizifyGUI
             this.Descripcion.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.Descripcion.IsDerivedStyle = true;
             this.Descripcion.Lines = null;
-            this.Descripcion.Location = new System.Drawing.Point(26, 200);
+            this.Descripcion.Location = new System.Drawing.Point(20, 177);
+            this.Descripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Descripcion.MaxLength = 32767;
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.ReadOnly = false;
-            this.Descripcion.Size = new System.Drawing.Size(138, 277);
+            this.Descripcion.Size = new System.Drawing.Size(104, 225);
             this.Descripcion.Style = MetroSet_UI.Enums.Style.Light;
             this.Descripcion.StyleManager = null;
             this.Descripcion.TabIndex = 0;
@@ -142,19 +148,21 @@ namespace QuizifyGUI
             "Tipo Test",
             "Respuesta Abierta",
             "Verdadero/Falso"});
-            this.SelectorTipoQuiz.Location = new System.Drawing.Point(26, 50);
+            this.SelectorTipoQuiz.Location = new System.Drawing.Point(20, 41);
+            this.SelectorTipoQuiz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SelectorTipoQuiz.Name = "SelectorTipoQuiz";
-            this.SelectorTipoQuiz.Size = new System.Drawing.Size(138, 24);
+            this.SelectorTipoQuiz.Size = new System.Drawing.Size(104, 21);
             this.SelectorTipoQuiz.TabIndex = 5;
             this.SelectorTipoQuiz.SelectedIndexChanged += new System.EventHandler(this.SelectorTipoQuiz_SelectedIndexChanged);
             // 
             // metroSetDivider2
             // 
             this.metroSetDivider2.IsDerivedStyle = true;
-            this.metroSetDivider2.Location = new System.Drawing.Point(12, 483);
+            this.metroSetDivider2.Location = new System.Drawing.Point(11, 406);
+            this.metroSetDivider2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroSetDivider2.Name = "metroSetDivider2";
             this.metroSetDivider2.Orientation = MetroSet_UI.Enums.DividerStyle.Horizontal;
-            this.metroSetDivider2.Size = new System.Drawing.Size(175, 4);
+            this.metroSetDivider2.Size = new System.Drawing.Size(131, 4);
             this.metroSetDivider2.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetDivider2.StyleManager = null;
             this.metroSetDivider2.TabIndex = 4;
@@ -173,7 +181,8 @@ namespace QuizifyGUI
             this.BotonCrearPregunta.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.BotonCrearPregunta.HoverTextColor = System.Drawing.Color.White;
             this.BotonCrearPregunta.IsDerivedStyle = true;
-            this.BotonCrearPregunta.Location = new System.Drawing.Point(26, 493);
+            this.BotonCrearPregunta.Location = new System.Drawing.Point(20, 414);
+            this.BotonCrearPregunta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BotonCrearPregunta.Name = "BotonCrearPregunta";
             this.BotonCrearPregunta.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.BotonCrearPregunta.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -181,7 +190,7 @@ namespace QuizifyGUI
             this.BotonCrearPregunta.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
             this.BotonCrearPregunta.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
             this.BotonCrearPregunta.PressTextColor = System.Drawing.Color.White;
-            this.BotonCrearPregunta.Size = new System.Drawing.Size(138, 44);
+            this.BotonCrearPregunta.Size = new System.Drawing.Size(104, 36);
             this.BotonCrearPregunta.Style = MetroSet_UI.Enums.Style.Light;
             this.BotonCrearPregunta.StyleManager = null;
             this.BotonCrearPregunta.TabIndex = 1;
@@ -195,9 +204,10 @@ namespace QuizifyGUI
             this.BotonBuscarPregunta.BackColor = System.Drawing.Color.Transparent;
             this.BotonBuscarPregunta.ForeColor = System.Drawing.Color.Transparent;
             this.BotonBuscarPregunta.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BotonBuscarPregunta.Location = new System.Drawing.Point(662, 16);
+            this.BotonBuscarPregunta.Location = new System.Drawing.Point(496, 13);
+            this.BotonBuscarPregunta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BotonBuscarPregunta.Name = "BotonBuscarPregunta";
-            this.BotonBuscarPregunta.Size = new System.Drawing.Size(43, 33);
+            this.BotonBuscarPregunta.Size = new System.Drawing.Size(32, 27);
             this.BotonBuscarPregunta.TabIndex = 9;
             this.BotonBuscarPregunta.Text = "W";
             this.BotonBuscarPregunta.UseVisualStyleBackColor = false;
@@ -205,9 +215,10 @@ namespace QuizifyGUI
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(102, 21);
+            this.textBox4.Location = new System.Drawing.Point(76, 17);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(533, 22);
+            this.textBox4.Size = new System.Drawing.Size(401, 20);
             this.textBox4.TabIndex = 8;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -216,9 +227,10 @@ namespace QuizifyGUI
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.PanelCentralPreguntas);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(200, 74);
+            this.panel1.Location = new System.Drawing.Point(150, 60);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(801, 532);
+            this.panel1.Size = new System.Drawing.Size(601, 432);
             this.panel1.TabIndex = 10;
             // 
             // PanelCentralPreguntas
@@ -226,8 +238,9 @@ namespace QuizifyGUI
             this.PanelCentralPreguntas.BackColor = System.Drawing.Color.DarkRed;
             this.PanelCentralPreguntas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelCentralPreguntas.Location = new System.Drawing.Point(0, 0);
+            this.PanelCentralPreguntas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PanelCentralPreguntas.Name = "PanelCentralPreguntas";
-            this.PanelCentralPreguntas.Size = new System.Drawing.Size(801, 532);
+            this.PanelCentralPreguntas.Size = new System.Drawing.Size(601, 432);
             this.PanelCentralPreguntas.TabIndex = 0;
             this.PanelCentralPreguntas.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelCentralPreguntas_Paint);
             // 
@@ -236,9 +249,10 @@ namespace QuizifyGUI
             this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.BotonBuscarPregunta);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Location = new System.Drawing.Point(150, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(801, 74);
+            this.panel2.Size = new System.Drawing.Size(601, 60);
             this.panel2.TabIndex = 11;
             // 
             // panel3
@@ -246,19 +260,21 @@ namespace QuizifyGUI
             this.panel3.Controls.Add(this.metroSetPanel2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 606);
+            this.panel3.Size = new System.Drawing.Size(150, 492);
             this.panel3.TabIndex = 12;
             // 
             // CrearPregunta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1001, 606);
+            this.ClientSize = new System.Drawing.Size(751, 492);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CrearPregunta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "CrearQuiz";
