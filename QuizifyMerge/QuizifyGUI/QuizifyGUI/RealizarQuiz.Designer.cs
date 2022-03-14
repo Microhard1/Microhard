@@ -129,6 +129,7 @@ namespace QuizifyGUI
             this.pictureBox4.Size = new System.Drawing.Size(215, 256);
             this.pictureBox4.TabIndex = 17;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // metroSetProgressBar1
             // 
@@ -165,7 +166,7 @@ namespace QuizifyGUI
             this.Controls.Add(this.metroSetTextBox2);
             this.Controls.Add(this.metroSetRichTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RealizarQuiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "RealizarQuiz";

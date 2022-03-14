@@ -29,23 +29,23 @@ namespace QuizifyGUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.imagenPregunta = new System.Windows.Forms.PictureBox();
             this.BotonFalso = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.EnunciadoVerdaderoFalso = new MetroSet_UI.Controls.MetroSetTextBox();
             this.botonAñadirImagen = new MetroSet_UI.Controls.MetroSetButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox2
+            // imagenPregunta
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(203, 62);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(205, 176);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.imagenPregunta.Location = new System.Drawing.Point(203, 62);
+            this.imagenPregunta.Margin = new System.Windows.Forms.Padding(2);
+            this.imagenPregunta.Name = "imagenPregunta";
+            this.imagenPregunta.Size = new System.Drawing.Size(205, 176);
+            this.imagenPregunta.TabIndex = 7;
+            this.imagenPregunta.TabStop = false;
+            this.imagenPregunta.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // BotonFalso
             // 
@@ -54,7 +54,7 @@ namespace QuizifyGUI
             this.BotonFalso.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonFalso.ForeColor = System.Drawing.Color.White;
             this.BotonFalso.Location = new System.Drawing.Point(431, 301);
-            this.BotonFalso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BotonFalso.Margin = new System.Windows.Forms.Padding(2);
             this.BotonFalso.Name = "BotonFalso";
             this.BotonFalso.Size = new System.Drawing.Size(109, 33);
             this.BotonFalso.TabIndex = 6;
@@ -70,7 +70,7 @@ namespace QuizifyGUI
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.ForeColor = System.Drawing.Color.White;
             this.radioButton1.Location = new System.Drawing.Point(30, 301);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(180, 33);
             this.radioButton1.TabIndex = 5;
@@ -94,7 +94,7 @@ namespace QuizifyGUI
             this.EnunciadoVerdaderoFalso.IsDerivedStyle = true;
             this.EnunciadoVerdaderoFalso.Lines = null;
             this.EnunciadoVerdaderoFalso.Location = new System.Drawing.Point(0, 0);
-            this.EnunciadoVerdaderoFalso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EnunciadoVerdaderoFalso.Margin = new System.Windows.Forms.Padding(2);
             this.EnunciadoVerdaderoFalso.MaxLength = 32767;
             this.EnunciadoVerdaderoFalso.Multiline = false;
             this.EnunciadoVerdaderoFalso.Name = "EnunciadoVerdaderoFalso";
@@ -143,15 +143,15 @@ namespace QuizifyGUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.botonAñadirImagen);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.imagenPregunta);
             this.Controls.Add(this.BotonFalso);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.EnunciadoVerdaderoFalso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VerdaderoFalso";
             this.Text = "VerdaderoFalso";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,7 +159,7 @@ namespace QuizifyGUI
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox imagenPregunta;
         private System.Windows.Forms.RadioButton BotonFalso;
         private System.Windows.Forms.RadioButton radioButton1;
         private MetroSet_UI.Controls.MetroSetTextBox EnunciadoVerdaderoFalso;

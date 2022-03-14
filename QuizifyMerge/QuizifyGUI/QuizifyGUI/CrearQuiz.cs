@@ -42,22 +42,28 @@ namespace QuizifyGUI
             GridDatosPreguntas.Rows.Clear();
             ConexionFirebaseTemp ConexionFirebase = ConexionFirebaseTemp.getInstancia();
             IFirebaseClient cliente = ConexionFirebase.getCliente();
-            FirebaseResponse datosBDD = cliente.Get(@"Pregunta/Abierta");
-            
-
             Cursor.Current = Cursors.WaitCursor;
-            for (int i = 0; i <=ContarElementosBDD(datosBDD) ; i++)
-            {
-                FirebaseResponse PreguntasBDD = ConexionFirebase.getCliente().Get(@"Pregunta/Abierta/" + i + "/Pregunta");
-                //Aqui en vez de un string iria un objeto pregunta, pero antes hay que crear las properties
-                string pregunta = PreguntasBDD.ResultAs<String>();
 
-                if (pregunta != "" && pregunta!=" " && pregunta!="\n" && pregunta!=null)
-                {
-                    GridDatosPreguntas.Rows.Add(false,pregunta);
-                }
+            if (SelectorTipoQuiz.Text== "Tipo Test") {
+
+                añadirPreguntas(cliente, "Multiopcion"); 
             }
+            else if (SelectorTipoQuiz.Text == "Respuesta Abierta") {
 
+                añadirPreguntas(cliente, "Abierta");
+            }
+            else if (SelectorTipoQuiz.Text == "Verdadero/Falso") {
+
+                añadirPreguntas(cliente, "VerdaderoFalso");
+            }
+            else
+            {
+                añadirPreguntas(cliente, "Multiopcion");
+                añadirPreguntas(cliente, "Abierta");
+                añadirPreguntas(cliente, "VerdaderoFalso");
+            }
+            
+           
             Cursor.Current = Cursors.Default;
         }
 
@@ -67,9 +73,31 @@ namespace QuizifyGUI
             return Regex.Matches(datos, ",{").Count;
         }
 
-        private void metroSetButton1_Click(object sender, EventArgs e)
+        public void añadirPreguntas(IFirebaseClient cliente, String path)
         {
-           
+            FirebaseResponse datosBDD = cliente.Get(@"Pregunta/"+path);
+
+            for (int i = 0; i <= ContarElementosBDD(datosBDD); i++)
+            {
+                FirebaseResponse PreguntasBDD = cliente.Get(@"Pregunta/"+path+"/" + i + "/Pregunta");
+                //Aqui en vez de un string iria un objeto pregunta, pero antes hay que crear las properties
+                string pregunta = PreguntasBDD.ResultAs<String>();
+
+                if (pregunta != "" && pregunta != " " && pregunta != "\n" && pregunta != null)
+                {
+                    GridDatosPreguntas.Rows.Add(false, pregunta);
+                }
+            }
+        }
+
+
+        private void BotonCrearPregunta_Click(object sender, EventArgs e)
+        {
+            ConexionFirebaseTemp ConexionFirebase = ConexionFirebaseTemp.getInstancia();
+            IFirebaseClient cliente = ConexionFirebase.getCliente();
+            FirebaseResponse datosBDD = cliente.Get(@"Quiz");
+            int indice = ContarElementosBDD(datosBDD);
+
         }
     }
 }

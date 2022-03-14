@@ -78,3 +78,4 @@ C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.CopyComplete
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.exe
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.pdb
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.RealizarQuiz.resources

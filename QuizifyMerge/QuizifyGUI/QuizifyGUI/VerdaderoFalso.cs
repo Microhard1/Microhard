@@ -15,6 +15,7 @@ namespace QuizifyGUI
         public VerdaderoFalso()
         {
             InitializeComponent();
+            imagenPregunta.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void BotonFalso_CheckedChanged(object sender, EventArgs e)
@@ -40,7 +41,7 @@ namespace QuizifyGUI
             if (open.ShowDialog() == DialogResult.OK)
             {
                 // display image in picture box  
-                pictureBox2.Image = new Bitmap(open.FileName);
+                imagenPregunta.Image = new Bitmap(open.FileName);
 
             }
         }

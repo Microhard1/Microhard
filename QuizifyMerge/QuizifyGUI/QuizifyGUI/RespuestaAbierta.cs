@@ -15,6 +15,7 @@ namespace QuizifyGUI
         public RespuestaAbierta()
         {
             InitializeComponent();
+            imagenPregunta.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -35,7 +36,7 @@ namespace QuizifyGUI
             if (open.ShowDialog() == DialogResult.OK)
             {
                 // display image in picture box  
-                pictureBox4.Image = new Bitmap(open.FileName);
+                imagenPregunta.Image = new Bitmap(open.FileName);
 
             }
         }

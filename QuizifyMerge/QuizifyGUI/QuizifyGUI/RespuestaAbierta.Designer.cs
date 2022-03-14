@@ -31,10 +31,10 @@ namespace QuizifyGUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RespuestaAbierta));
             this.metroSetRichTextBox1 = new MetroSet_UI.Controls.MetroSetRichTextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.imagenPregunta = new System.Windows.Forms.PictureBox();
             this.metroSetTextBox3 = new MetroSet_UI.Controls.MetroSetTextBox();
             this.botonAñadirImagen = new MetroSet_UI.Controls.MetroSetButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).BeginInit();
             this.SuspendLayout();
             // 
             // metroSetRichTextBox1
@@ -50,7 +50,7 @@ namespace QuizifyGUI
             this.metroSetRichTextBox1.IsDerivedStyle = true;
             this.metroSetRichTextBox1.Lines = null;
             this.metroSetRichTextBox1.Location = new System.Drawing.Point(17, 82);
-            this.metroSetRichTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.metroSetRichTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.metroSetRichTextBox1.MaxLength = 32767;
             this.metroSetRichTextBox1.Name = "metroSetRichTextBox1";
             this.metroSetRichTextBox1.ReadOnly = false;
@@ -63,16 +63,16 @@ namespace QuizifyGUI
             this.metroSetRichTextBox1.ThemeName = "MetroLite";
             this.metroSetRichTextBox1.WordWrap = true;
             // 
-            // pictureBox4
+            // imagenPregunta
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox4.Location = new System.Drawing.Point(371, 82);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(209, 264);
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.imagenPregunta.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.imagenPregunta.Location = new System.Drawing.Point(371, 82);
+            this.imagenPregunta.Margin = new System.Windows.Forms.Padding(2);
+            this.imagenPregunta.Name = "imagenPregunta";
+            this.imagenPregunta.Size = new System.Drawing.Size(209, 264);
+            this.imagenPregunta.TabIndex = 12;
+            this.imagenPregunta.TabStop = false;
+            this.imagenPregunta.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // metroSetTextBox3
             // 
@@ -90,7 +90,7 @@ namespace QuizifyGUI
             this.metroSetTextBox3.IsDerivedStyle = true;
             this.metroSetTextBox3.Lines = null;
             this.metroSetTextBox3.Location = new System.Drawing.Point(0, 0);
-            this.metroSetTextBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.metroSetTextBox3.Margin = new System.Windows.Forms.Padding(2);
             this.metroSetTextBox3.MaxLength = 32767;
             this.metroSetTextBox3.Multiline = false;
             this.metroSetTextBox3.Name = "metroSetTextBox3";
@@ -139,13 +139,13 @@ namespace QuizifyGUI
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.botonAñadirImagen);
             this.Controls.Add(this.metroSetRichTextBox1);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.imagenPregunta);
             this.Controls.Add(this.metroSetTextBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RespuestaAbierta";
             this.Text = "RespuestaAbierta";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -153,7 +153,7 @@ namespace QuizifyGUI
         #endregion
 
         private MetroSet_UI.Controls.MetroSetRichTextBox metroSetRichTextBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox imagenPregunta;
         private MetroSet_UI.Controls.MetroSetTextBox metroSetTextBox3;
         private MetroSet_UI.Controls.MetroSetButton botonAñadirImagen;
     }
