@@ -32,6 +32,7 @@ namespace QuizifyGUI
             this.BarraModificarVentana = new System.Windows.Forms.Panel();
             this.BotonesModificarVentana = new MetroSet_UI.Controls.MetroSetControlBox();
             this.tituloQuiz = new System.Windows.Forms.Label();
+            this.labelEnunciado = new System.Windows.Forms.Label();
             this.BarraModificarVentana.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,11 +84,23 @@ namespace QuizifyGUI
             this.tituloQuiz.Text = "label1";
             this.tituloQuiz.Click += new System.EventHandler(this.tituloQuiz_Click);
             // 
+            // labelEnunciado
+            // 
+            this.labelEnunciado.AutoSize = true;
+            this.labelEnunciado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEnunciado.Location = new System.Drawing.Point(44, 120);
+            this.labelEnunciado.Name = "labelEnunciado";
+            this.labelEnunciado.Size = new System.Drawing.Size(86, 31);
+            this.labelEnunciado.TabIndex = 3;
+            this.labelEnunciado.Text = "label1";
+            this.labelEnunciado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // JuegoQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 496);
+            this.Controls.Add(this.labelEnunciado);
             this.Controls.Add(this.tituloQuiz);
             this.Controls.Add(this.BarraModificarVentana);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -104,5 +117,6 @@ namespace QuizifyGUI
         private System.Windows.Forms.Panel BarraModificarVentana;
         private MetroSet_UI.Controls.MetroSetControlBox BotonesModificarVentana;
         private System.Windows.Forms.Label tituloQuiz;
+        private System.Windows.Forms.Label labelEnunciado;
     }
 }

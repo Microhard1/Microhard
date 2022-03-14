@@ -46,7 +46,6 @@ namespace QuizifyGUI
 
             añadirPreguntas(cliente, "Quiz");
 
-
             Cursor.Current = Cursors.Default;
         }
 
@@ -82,7 +81,7 @@ namespace QuizifyGUI
             {
                 String TituloQuiz = GridDatosPreguntas.Rows[e.RowIndex].Cells[0].Value.ToString();
 
-                Form Quiz = new JuegoQuiz(TituloQuiz,e.RowIndex);
+                Form Quiz = new JuegoQuiz(TituloQuiz,e.RowIndex+1);
                 Quiz.Show();
             }
         }
