@@ -12,6 +12,9 @@ namespace QuizifyGUI
 {
     public partial class VerdaderoFalso : Form
     {
+
+        String PathImagen = "";
+
         public VerdaderoFalso()
         {
             InitializeComponent();
@@ -42,6 +45,7 @@ namespace QuizifyGUI
             {
                 // display image in picture box  
                 imagenPregunta.Image = new Bitmap(open.FileName);
+                PathImagen = open.FileName;
 
             }
         }

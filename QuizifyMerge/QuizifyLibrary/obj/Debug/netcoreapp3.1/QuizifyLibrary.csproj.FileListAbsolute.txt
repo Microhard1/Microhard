@@ -1,0 +1,10 @@
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\netcoreapp3.1\QuizifyLibrary.deps.json
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\netcoreapp3.1\QuizifyLibrary.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\netcoreapp3.1\QuizifyLibrary.pdb
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.csproj.AssemblyReference.cache
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.AssemblyInfoInputs.cache
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.AssemblyInfo.cs
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\netcoreapp3.1\QuizifyLibrary.pdb

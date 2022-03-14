@@ -29,158 +29,180 @@ namespace QuizifyGUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RealizarQuiz));
-            this.metroSetRichTextBox1 = new MetroSet_UI.Controls.MetroSetRichTextBox();
-            this.metroSetTextBox2 = new MetroSet_UI.Controls.MetroSetTextBox();
-            this.botonAñadirImagen = new MetroSet_UI.Controls.MetroSetButton();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.metroSetProgressBar1 = new MetroSet_UI.Controls.MetroSetProgressBar();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.metroSetPanel2 = new MetroSet_UI.Controls.MetroSetPanel();
+            this.SelectorTipoQuiz = new System.Windows.Forms.ComboBox();
+            this.metroSetDivider2 = new MetroSet_UI.Controls.MetroSetDivider();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.BotonBuscarPregunta = new System.Windows.Forms.Button();
+            this.GridDatosPreguntas = new System.Windows.Forms.DataGridView();
+            this.Pregunta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Jugar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.metroSetPanel2.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridDatosPreguntas)).BeginInit();
             this.SuspendLayout();
             // 
-            // metroSetRichTextBox1
+            // metroSetPanel2
             // 
-            this.metroSetRichTextBox1.AutoWordSelection = false;
-            this.metroSetRichTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetRichTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.metroSetRichTextBox1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.metroSetRichTextBox1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetRichTextBox1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.metroSetRichTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.metroSetRichTextBox1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.metroSetRichTextBox1.IsDerivedStyle = true;
-            this.metroSetRichTextBox1.Lines = null;
-            this.metroSetRichTextBox1.Location = new System.Drawing.Point(2, 117);
-            this.metroSetRichTextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.metroSetRichTextBox1.MaxLength = 32767;
-            this.metroSetRichTextBox1.Name = "metroSetRichTextBox1";
-            this.metroSetRichTextBox1.ReadOnly = false;
-            this.metroSetRichTextBox1.Size = new System.Drawing.Size(247, 256);
-            this.metroSetRichTextBox1.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetRichTextBox1.StyleManager = null;
-            this.metroSetRichTextBox1.TabIndex = 14;
-            this.metroSetRichTextBox1.Text = resources.GetString("metroSetRichTextBox1.Text");
-            this.metroSetRichTextBox1.ThemeAuthor = "Narwin";
-            this.metroSetRichTextBox1.ThemeName = "MetroLite";
-            this.metroSetRichTextBox1.WordWrap = true;
+            this.metroSetPanel2.BackgroundColor = System.Drawing.Color.White;
+            this.metroSetPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.metroSetPanel2.BorderThickness = 1;
+            this.metroSetPanel2.Controls.Add(this.SelectorTipoQuiz);
+            this.metroSetPanel2.Controls.Add(this.metroSetDivider2);
+            this.metroSetPanel2.Controls.Add(this.textBox1);
+            this.metroSetPanel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.metroSetPanel2.IsDerivedStyle = true;
+            this.metroSetPanel2.Location = new System.Drawing.Point(0, 0);
+            this.metroSetPanel2.Margin = new System.Windows.Forms.Padding(2);
+            this.metroSetPanel2.Name = "metroSetPanel2";
+            this.metroSetPanel2.Size = new System.Drawing.Size(150, 480);
+            this.metroSetPanel2.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetPanel2.StyleManager = null;
+            this.metroSetPanel2.TabIndex = 13;
+            this.metroSetPanel2.ThemeAuthor = null;
+            this.metroSetPanel2.ThemeName = null;
             // 
-            // metroSetTextBox2
+            // SelectorTipoQuiz
             // 
-            this.metroSetTextBox2.AutoCompleteCustomSource = null;
-            this.metroSetTextBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.metroSetTextBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.metroSetTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetTextBox2.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.metroSetTextBox2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetTextBox2.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.metroSetTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroSetTextBox2.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.metroSetTextBox2.Image = null;
-            this.metroSetTextBox2.IsDerivedStyle = true;
-            this.metroSetTextBox2.Lines = null;
-            this.metroSetTextBox2.Location = new System.Drawing.Point(2, 62);
-            this.metroSetTextBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.metroSetTextBox2.MaxLength = 32767;
-            this.metroSetTextBox2.Multiline = false;
-            this.metroSetTextBox2.Name = "metroSetTextBox2";
-            this.metroSetTextBox2.ReadOnly = false;
-            this.metroSetTextBox2.Size = new System.Drawing.Size(669, 40);
-            this.metroSetTextBox2.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetTextBox2.StyleManager = null;
-            this.metroSetTextBox2.TabIndex = 15;
-            this.metroSetTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.metroSetTextBox2.ThemeAuthor = "Narwin";
-            this.metroSetTextBox2.ThemeName = "MetroLite";
-            this.metroSetTextBox2.UseSystemPasswordChar = false;
-            this.metroSetTextBox2.WatermarkText = "PREGUNTA";
+            this.SelectorTipoQuiz.FormattingEnabled = true;
+            this.SelectorTipoQuiz.Items.AddRange(new object[] {
+            "Tipo Test",
+            "Respuesta Abierta",
+            "Verdadero/Falso"});
+            this.SelectorTipoQuiz.Location = new System.Drawing.Point(20, 88);
+            this.SelectorTipoQuiz.Margin = new System.Windows.Forms.Padding(2);
+            this.SelectorTipoQuiz.Name = "SelectorTipoQuiz";
+            this.SelectorTipoQuiz.Size = new System.Drawing.Size(104, 21);
+            this.SelectorTipoQuiz.TabIndex = 5;
             // 
-            // botonAñadirImagen
+            // metroSetDivider2
             // 
-            this.botonAñadirImagen.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.botonAñadirImagen.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.botonAñadirImagen.DisabledForeColor = System.Drawing.Color.Gray;
-            this.botonAñadirImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.botonAñadirImagen.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.botonAñadirImagen.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.botonAñadirImagen.HoverTextColor = System.Drawing.Color.White;
-            this.botonAñadirImagen.IsDerivedStyle = true;
-            this.botonAñadirImagen.Location = new System.Drawing.Point(269, 410);
-            this.botonAñadirImagen.Name = "botonAñadirImagen";
-            this.botonAñadirImagen.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.botonAñadirImagen.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.botonAñadirImagen.NormalTextColor = System.Drawing.Color.White;
-            this.botonAñadirImagen.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.botonAñadirImagen.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.botonAñadirImagen.PressTextColor = System.Drawing.Color.White;
-            this.botonAñadirImagen.Size = new System.Drawing.Size(108, 43);
-            this.botonAñadirImagen.Style = MetroSet_UI.Enums.Style.Light;
-            this.botonAñadirImagen.StyleManager = null;
-            this.botonAñadirImagen.TabIndex = 16;
-            this.botonAñadirImagen.Text = "Siguiente";
-            this.botonAñadirImagen.ThemeAuthor = "Narwin";
-            this.botonAñadirImagen.ThemeName = "MetroLite";
+            this.metroSetDivider2.IsDerivedStyle = true;
+            this.metroSetDivider2.Location = new System.Drawing.Point(11, 382);
+            this.metroSetDivider2.Margin = new System.Windows.Forms.Padding(2);
+            this.metroSetDivider2.Name = "metroSetDivider2";
+            this.metroSetDivider2.Orientation = MetroSet_UI.Enums.DividerStyle.Horizontal;
+            this.metroSetDivider2.Size = new System.Drawing.Size(131, 4);
+            this.metroSetDivider2.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetDivider2.StyleManager = null;
+            this.metroSetDivider2.TabIndex = 4;
+            this.metroSetDivider2.Text = "metroSetDivider2";
+            this.metroSetDivider2.ThemeAuthor = "Narwin";
+            this.metroSetDivider2.ThemeName = "MetroLite";
+            this.metroSetDivider2.Thickness = 1;
             // 
-            // pictureBox4
+            // textBox1
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox4.Location = new System.Drawing.Point(430, 117);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(215, 256);
-            this.pictureBox4.TabIndex = 17;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.textBox1.Location = new System.Drawing.Point(20, 212);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(104, 20);
+            this.textBox1.TabIndex = 2;
             // 
-            // metroSetProgressBar1
+            // panel2
             // 
-            this.metroSetProgressBar1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.metroSetProgressBar1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.metroSetProgressBar1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.metroSetProgressBar1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.metroSetProgressBar1.DisabledProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.metroSetProgressBar1.IsDerivedStyle = true;
-            this.metroSetProgressBar1.Location = new System.Drawing.Point(221, 25);
-            this.metroSetProgressBar1.Margin = new System.Windows.Forms.Padding(2);
-            this.metroSetProgressBar1.Maximum = 100;
-            this.metroSetProgressBar1.Minimum = 0;
-            this.metroSetProgressBar1.Name = "metroSetProgressBar1";
-            this.metroSetProgressBar1.Orientation = MetroSet_UI.Enums.ProgressOrientation.Horizontal;
-            this.metroSetProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.metroSetProgressBar1.Size = new System.Drawing.Size(238, 19);
-            this.metroSetProgressBar1.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetProgressBar1.StyleManager = null;
-            this.metroSetProgressBar1.TabIndex = 18;
-            this.metroSetProgressBar1.Text = "metroSetProgressBar1";
-            this.metroSetProgressBar1.ThemeAuthor = null;
-            this.metroSetProgressBar1.ThemeName = null;
-            this.metroSetProgressBar1.Value = 50;
+            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.BotonBuscarPregunta);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(150, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(587, 60);
+            this.panel2.TabIndex = 14;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(76, 17);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(401, 20);
+            this.textBox4.TabIndex = 8;
+            // 
+            // BotonBuscarPregunta
+            // 
+            this.BotonBuscarPregunta.BackColor = System.Drawing.Color.Transparent;
+            this.BotonBuscarPregunta.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.BotonBuscarPregunta.ForeColor = System.Drawing.Color.Transparent;
+            this.BotonBuscarPregunta.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BotonBuscarPregunta.Location = new System.Drawing.Point(496, 13);
+            this.BotonBuscarPregunta.Margin = new System.Windows.Forms.Padding(2);
+            this.BotonBuscarPregunta.Name = "BotonBuscarPregunta";
+            this.BotonBuscarPregunta.Size = new System.Drawing.Size(54, 27);
+            this.BotonBuscarPregunta.TabIndex = 9;
+            this.BotonBuscarPregunta.Text = "Bucar";
+            this.BotonBuscarPregunta.UseVisualStyleBackColor = false;
+            this.BotonBuscarPregunta.Click += new System.EventHandler(this.BotonBuscarPregunta_Click);
+            // 
+            // GridDatosPreguntas
+            // 
+            this.GridDatosPreguntas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridDatosPreguntas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Pregunta,
+            this.Jugar});
+            this.GridDatosPreguntas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GridDatosPreguntas.Location = new System.Drawing.Point(150, 60);
+            this.GridDatosPreguntas.Margin = new System.Windows.Forms.Padding(2);
+            this.GridDatosPreguntas.Name = "GridDatosPreguntas";
+            this.GridDatosPreguntas.ReadOnly = true;
+            this.GridDatosPreguntas.RowHeadersWidth = 51;
+            this.GridDatosPreguntas.RowTemplate.Height = 24;
+            this.GridDatosPreguntas.Size = new System.Drawing.Size(587, 420);
+            this.GridDatosPreguntas.TabIndex = 16;
+            this.GridDatosPreguntas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridDatosPreguntas_CellContentClick);
+            // 
+            // Pregunta
+            // 
+            this.Pregunta.DataPropertyName = "Pregunta";
+            this.Pregunta.FillWeight = 1000F;
+            this.Pregunta.HeaderText = "Nombre del Quiz";
+            this.Pregunta.MinimumWidth = 6;
+            this.Pregunta.Name = "Pregunta";
+            this.Pregunta.ReadOnly = true;
+            this.Pregunta.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Pregunta.Width = 125;
+            // 
+            // Jugar
+            // 
+            this.Jugar.HeaderText = "Jugar";
+            this.Jugar.Name = "Jugar";
+            this.Jugar.ReadOnly = true;
             // 
             // RealizarQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 476);
-            this.Controls.Add(this.metroSetProgressBar1);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.botonAñadirImagen);
-            this.Controls.Add(this.metroSetTextBox2);
-            this.Controls.Add(this.metroSetRichTextBox1);
+            this.ClientSize = new System.Drawing.Size(737, 480);
+            this.Controls.Add(this.GridDatosPreguntas);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.metroSetPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RealizarQuiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "RealizarQuiz";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.Load += new System.EventHandler(this.RealizarQuiz_Load);
+            this.metroSetPanel2.ResumeLayout(false);
+            this.metroSetPanel2.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridDatosPreguntas)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private MetroSet_UI.Controls.MetroSetRichTextBox metroSetRichTextBox1;
-        private MetroSet_UI.Controls.MetroSetTextBox metroSetTextBox2;
-        private MetroSet_UI.Controls.MetroSetButton botonAñadirImagen;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private MetroSet_UI.Controls.MetroSetProgressBar metroSetProgressBar1;
+        private MetroSet_UI.Controls.MetroSetPanel metroSetPanel2;
+        private System.Windows.Forms.ComboBox SelectorTipoQuiz;
+        private MetroSet_UI.Controls.MetroSetDivider metroSetDivider2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button BotonBuscarPregunta;
+        private System.Windows.Forms.DataGridView GridDatosPreguntas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pregunta;
+        private System.Windows.Forms.DataGridViewButtonColumn Jugar;
     }
 }

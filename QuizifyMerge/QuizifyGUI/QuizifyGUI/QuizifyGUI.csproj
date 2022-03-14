@@ -117,6 +117,12 @@
     <Compile Include="InterfazPrincipal.Designer.cs">
       <DependentUpon>InterfazPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="JuegoQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JuegoQuiz.Designer.cs">
+      <DependentUpon>JuegoQuiz.cs</DependentUpon>
+    </Compile>
     <Compile Include="Perfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InterfazPrincipal.resx">
       <DependentUpon>InterfazPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JuegoQuiz.resx">
+      <DependentUpon>JuegoQuiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Perfil.resx">
       <DependentUpon>Perfil.cs</DependentUpon>
