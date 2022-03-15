@@ -43,7 +43,7 @@ namespace QuizifyGUI
 
             FirebaseResponse datosBDD = cliente.Get(@"Quiz/"+indice+"/");
 
-           if(PreguntaActual <= ContarElementosBDD(datosBDD))
+           if(PreguntaActual < ContarElementosBDD(datosBDD))
             {
                 PreguntaActual++;
                 FirebaseResponse PreguntaQuiz = cliente.Get(@"Quiz/" + indice + "/" + PreguntaActual + "/");

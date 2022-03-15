@@ -159,9 +159,10 @@ namespace QuizifyGUI
             FirebaseResponse datosBDD = cliente.Get(@"Pregunta/VerdaderoFalso/");
             int indice = ContarElementosBDD(datosBDD)+1;
 
-            PreguntaVF pregunta = new PreguntaVF(" ", enunciado, "True");
+            PreguntaVF pregunta = new PreguntaVF("saxdasds", enunciado, "True");
 
-            cliente.Set("Pruebas/"+indice,pregunta);
+
+            cliente.Set("Pregunta/VerdaderoFalso/" + indice,pregunta);
 
             MessageBox.Show("Se ha insertado una pregunta: " + indice);
         }

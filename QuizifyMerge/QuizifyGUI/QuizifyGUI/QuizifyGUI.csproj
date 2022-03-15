@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{71BB257C-BFF2-4B81-8D1E-0E2B774D8C8F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>QuizifyGUI</RootNamespace>
+    <RootNamespace>Quizify</RootNamespace>
     <AssemblyName>QuizifyGUI</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -111,12 +111,6 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterfazPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InterfazPrincipal.Designer.cs">
-      <DependentUpon>InterfazPrincipal.cs</DependentUpon>
-    </Compile>
     <Compile Include="JuegoQuiz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,9 +168,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InterfazPrincipal.resx">
-      <DependentUpon>InterfazPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JuegoQuiz.resx">
       <DependentUpon>JuegoQuiz.cs</DependentUpon>

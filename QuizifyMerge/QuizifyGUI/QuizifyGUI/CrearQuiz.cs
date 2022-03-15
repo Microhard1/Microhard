@@ -34,7 +34,14 @@ namespace QuizifyGUI
 
         private void GridDatosPreguntas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            var senderGrid = (DataGridView)sender;
 
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewCheckBoxColumn &&
+                e.RowIndex >= 0)
+            {
+                
+                //((CheckBox)GridDatosPreguntas.Rows[e.RowIndex].Cells[0]).Checked = true;
+            }
         }
 
         private void BotonBuscarPregunta_Click(object sender, EventArgs e)

@@ -26,9 +26,7 @@ C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\Qui
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.CrearQuiz.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.CrearPregunta.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Inicio.resources
-C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.InterfazPrincipal.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Perfil.resources
-C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Properties.Resources.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Registrar.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.RespuestaAbierta.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.TipoTest.resources
@@ -80,3 +78,6 @@ C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.pdb
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.RealizarQuiz.resources
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.JuegoQuiz.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.JuegoQuiz.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.RealizarQuiz.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\Quizify.Properties.Resources.resources
