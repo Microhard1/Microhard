@@ -47,6 +47,34 @@ namespace QuizifyLibrary.BussinessLogic.Servicios
             Instructor alumno = new Instructor(nombreAlumno, contrasenya);
             SetResponse set = c.client.Set("Instructor/" + nombreAlumno, alumno);
         }
+        public Boolean UsuarioExiste(string nombreUsuario)
+        {
+            Alumno alu = GetAlumnoById(nombreUsuario);
+            Instructor ins = GetInstructorById(nombreUsuario);
+            if(alu == null && ins == null)
+            {
+                return false;
+            }
+            return true;
+        }
+        public Boolean EsAlumno(string nombreUsuario) 
+        {
+            if(GetAlumnoById(nombreUsuario) == null) { return false; }
+            return true;
+        }
+        public Boolean VerificarCredenciales(string nombreUsuario, string contrasenya) 
+        {
+                if (EsAlumno(nombreUsuario))
+                {
+                    Alumno alu = GetAlumnoById(nombreUsuario);
+                    return contrasenya == alu.Password;
+                }
+                else
+                {
+                    Instructor ins = GetInstructorById(nombreUsuario);
+                    return contrasenya == ins.Password;
+                }
+        }
 
         public void RegistrarPregunta()
         {
@@ -56,6 +84,10 @@ namespace QuizifyLibrary.BussinessLogic.Servicios
         public void RegistrarPreguntaVerdaderoFalso(PreguntaVerdaderoFalso pregunta)
         {
             c.client.Set(@"Pregunta/VerdaderoFalso",pregunta);
+        }
+        public void ClonarQuiz(Quiz quiz, Instructor ins)
+        {
+            ins.addQuiz(quiz);
         }
     }
 }

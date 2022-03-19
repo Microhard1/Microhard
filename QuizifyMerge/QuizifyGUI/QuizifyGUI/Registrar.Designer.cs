@@ -67,7 +67,7 @@ namespace QuizifyGUI
             this.panelIzquierdo.Location = new System.Drawing.Point(0, 0);
             this.panelIzquierdo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelIzquierdo.Name = "panelIzquierdo";
-            this.panelIzquierdo.Size = new System.Drawing.Size(378, 986);
+            this.panelIzquierdo.Size = new System.Drawing.Size(378, 745);
             this.panelIzquierdo.TabIndex = 0;
             // 
             // label1
@@ -118,7 +118,7 @@ namespace QuizifyGUI
             this.panelDerecho.Location = new System.Drawing.Point(378, 0);
             this.panelDerecho.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDerecho.Name = "panelDerecho";
-            this.panelDerecho.Size = new System.Drawing.Size(489, 986);
+            this.panelDerecho.Size = new System.Drawing.Size(489, 745);
             this.panelDerecho.TabIndex = 1;
             // 
             // SegundoApellido
@@ -417,7 +417,7 @@ namespace QuizifyGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(867, 986);
+            this.ClientSize = new System.Drawing.Size(867, 745);
             this.Controls.Add(this.panelDerecho);
             this.Controls.Add(this.panelIzquierdo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -77,18 +77,23 @@ namespace QuizifyGUI
                string.IsNullOrWhiteSpace(SegundoApellido.Text) ||
                string.IsNullOrWhiteSpace(Contrasenya.Text) ||
                string.IsNullOrWhiteSpace(Email.Text)) { MessageBox.Show("Porfavor, rellene todos los campos"); }
-            else
-            {
-                if (radioButtonAlumno.Checked)
+                else if (true/*QuizifyServices.UsuarioExiste(NombreUsuario.Text)*/)
                 {
-                    //QuizifyServices.RegistrarAlumno();
+                    MessageBox.Show("Ese nombre de usuario ya existe");
                 }
                 else
                 {
-                    //QuizifyServices.RegistrarInstructor();
+                    if (radioButtonAlumno.Checked)
+                    {
+                        //QuizifyServices.RegistrarAlumno();
+                        MessageBox.Show("Se registro correctamente");
+                    }
+                    else
+                    {
+                        //QuizifyServices.RegistrarInstructor();
+                        MessageBox.Show("Se registro correctamente");
+                    }
                 }
-                MessageBox.Show("Se registro correctamente");
-            }
         }
            
         private void label7_Click(object sender, EventArgs e)
