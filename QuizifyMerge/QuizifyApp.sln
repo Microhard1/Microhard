@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizifyLibrary", "QuizifyLibrary\QuizifyLibrary.csproj", "{64D2703B-1AAB-4F27-8848-6943CDEBD42C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizifyGUI", "QuizifyGUI\QuizifyGUI\QuizifyGUI.csproj", "{71BB257C-BFF2-4B81-8D1E-0E2B774D8C8F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64D2703B-1AAB-4F27-8848-6943CDEBD42C} = {64D2703B-1AAB-4F27-8848-6943CDEBD42C}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
