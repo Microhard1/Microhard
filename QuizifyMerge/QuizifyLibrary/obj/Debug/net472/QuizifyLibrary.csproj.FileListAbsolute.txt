@@ -1,0 +1,5 @@
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.csproj.AssemblyReference.cache
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.AssemblyInfoInputs.cache
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.AssemblyInfo.cs
+C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.csproj.CoreCompileInputs.cache
