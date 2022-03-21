@@ -1,6 +1,7 @@
 ﻿using FireSharp.Interfaces;
 using FireSharp.Response;
 using Quizify.BussinessLogic.Servicios;
+using QuizifyLibrary.Persistencia;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -77,10 +78,28 @@ namespace QuizifyGUI
                 e.RowIndex >= 0)
             {
                 String TituloQuiz = GridDatosPreguntas.Rows[e.RowIndex].Cells[0].Value.ToString();
+                string tipoQuiz = getTipoQuiz(e.RowIndex+1);
 
-                Form Quiz = new JuegoQuiz(TituloQuiz,e.RowIndex+1);
+                Form Quiz;
+                if (tipoQuiz=="Abierta")
+               {
+                     Quiz = new JuegoQuizRespuestaAbierta(TituloQuiz, e.RowIndex + 1);
+                }
+                else
+                {
+                    Quiz = new JuegoQuiz(TituloQuiz, e.RowIndex + 1);
+                }
                 Quiz.Show();
             }
+        }
+
+        private string getTipoQuiz(int indice)
+        {
+            ConexionFirebaseTemp ConexionFirebase = ConexionFirebaseTemp.getInstancia();
+            IFirebaseClient cliente = ConexionFirebase.getCliente();
+            FirebaseResponse tipoQuiz = cliente.Get("Quiz/"+ indice+ "/TipoDeQuiz");
+
+            return tipoQuiz.Body.ToString();
         }
     }
 }
