@@ -135,6 +135,7 @@ C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyGUI\QuizifyG
 C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.GenerateResource.cache
 C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.CoreCompileInputs.cache
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\Quizify.InicioSesion.resources
-C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\Quizify.Properties.Resources.resources
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\QuizifyLibrary.dll
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\QuizifyLibrary.pdb
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.JuegoQuizRespuestaAbierta.resources
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Properties.Resources.resources

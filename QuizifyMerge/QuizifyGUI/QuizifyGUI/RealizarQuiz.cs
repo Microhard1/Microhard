@@ -1,5 +1,6 @@
 ﻿using FireSharp.Interfaces;
 using FireSharp.Response;
+using Quizify.BussinessLogic.Servicios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace QuizifyGUI
 {
     public partial class RealizarQuiz : Form
     {
+
+        QuizifyServices servicio = new QuizifyServices();
         public RealizarQuiz()
         {
             InitializeComponent();
@@ -44,28 +47,22 @@ namespace QuizifyGUI
             IFirebaseClient cliente = ConexionFirebase.getCliente();
             Cursor.Current = Cursors.WaitCursor;
 
-            añadirPreguntas(cliente, "Quiz");
+            añadirQuizes(cliente, "Quiz");
 
             Cursor.Current = Cursors.Default;
         }
 
-        private int ContarElementosBDD(FirebaseResponse datosBDD)
+        public void añadirQuizes(IFirebaseClient cliente, String path)
         {
-            string datos = datosBDD.Body;
-            return Regex.Matches(datos, ",{").Count;
-        }
-
-        public void añadirPreguntas(IFirebaseClient cliente, String path)
-        {
-            FirebaseResponse datosBDD = cliente.Get(@""+ path);
-
-            for (int i = 0; i <= ContarElementosBDD(datosBDD); i++)
+            FirebaseResponse datosBDD = cliente.Get("/"+path);
+            int elementos = servicio.ContarQuizes(datosBDD);
+            for (int i = 0; i <=elementos ; i++)
             {
                 FirebaseResponse PreguntasBDD = cliente.Get(@"Quiz/"+i+"/Titulo");
                 //Aqui en vez de un string iria un objeto pregunta, pero antes hay que crear las properties
-                string pregunta = PreguntasBDD.ResultAs<String>();
+                string pregunta = PreguntasBDD.Body.ToString();
 
-                if (pregunta != "" && pregunta != " " && pregunta != "\n" && pregunta != null)
+                if (pregunta != "null" && pregunta != " " && pregunta != "\n" && pregunta != null)
                 {
                     GridDatosPreguntas.Rows.Add(pregunta);
                 }

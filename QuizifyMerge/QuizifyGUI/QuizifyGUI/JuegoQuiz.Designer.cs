@@ -106,6 +106,7 @@ namespace QuizifyGUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "JuegoQuiz";
             this.Text = "JuegoQuiz";
+            this.Load += new System.EventHandler(this.JuegoQuiz_Load);
             this.BarraModificarVentana.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

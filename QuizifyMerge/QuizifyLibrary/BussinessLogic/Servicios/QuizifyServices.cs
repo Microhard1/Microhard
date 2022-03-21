@@ -8,17 +8,23 @@ using QuizifyLibrary.Persistencia;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
+using System.Text.RegularExpressions;
+using Newtonsoft.Json.Linq;
 
 namespace Quizify.BussinessLogic.Servicios
 {
     public class QuizifyServices : IServices
     {
-        private readonly ConexionFirebase c;
-        
-        public QuizifyServices(ConexionFirebase c)
+        ConexionFirebase c =ConexionFirebase.getInstancia();
+
+        public object JSonConvert { get; private set; }
+
+        public QuizifyServices()
         {
-            this.c = c;
+
         }
+       
+
         public Alumno GetAlumnoById(string username) 
         {
             var result = c.client.Get("Alumnos/" + username);
@@ -88,6 +94,17 @@ namespace Quizify.BussinessLogic.Servicios
         public void ClonarQuiz(Quiz quiz, Instructor ins)
         {
             ins.addQuiz(quiz);
+        }
+
+        public int ContarElementosBDD(FirebaseResponse datosBDD)
+        {
+            string datos = datosBDD.Body;
+            return Regex.Matches(datos, ",{").Count;
+        }
+        public int ContarQuizes(FirebaseResponse datosBDD)
+        {
+            string datos = datosBDD.Body;
+            return Regex.Matches(datos, ":{").Count -7;
         }
     }
 }

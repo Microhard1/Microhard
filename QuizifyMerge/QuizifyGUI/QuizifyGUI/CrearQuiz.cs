@@ -3,7 +3,7 @@ using FireSharp.Response;
 using System;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-
+using Quizify.BussinessLogic.Servicios;
 
 
 
@@ -13,7 +13,7 @@ namespace QuizifyGUI
     public partial class CrearQuiz : Form
     {
 
-
+        QuizifyServices servicio = new QuizifyServices();
         public CrearQuiz()
         {
             
@@ -74,23 +74,20 @@ namespace QuizifyGUI
             Cursor.Current = Cursors.Default;
         }
 
-        private int ContarElementosBDD(FirebaseResponse datosBDD)
-        {
-            string datos = datosBDD.Body;
-            return Regex.Matches(datos, ",{").Count;
-        }
+        
 
         public void añadirPreguntas(IFirebaseClient cliente, String path)
         {
             FirebaseResponse datosBDD = cliente.Get(@"Pregunta/"+path);
 
-            for (int i = 0; i <= ContarElementosBDD(datosBDD); i++)
+            int elementosBDD = servicio.ContarElementosBDD(datosBDD);
+            for (int i = 0; i <=elementosBDD ; i++)
             {
-                FirebaseResponse PreguntasBDD = cliente.Get(@"Pregunta/"+path+"/" + i + "/Pregunta");
+                FirebaseResponse PreguntasBDD = cliente.Get("Pregunta/"+path+"/" + i + "/Pregunta");
                 //Aqui en vez de un string iria un objeto pregunta, pero antes hay que crear las properties
-                string pregunta = PreguntasBDD.ResultAs<String>();
+                string pregunta = PreguntasBDD.Body.ToString();
 
-                if (pregunta != "" && pregunta != " " && pregunta != "\n" && pregunta != null)
+                if (pregunta != "null" && pregunta != " " && pregunta != "\n" && pregunta != null)
                 {
                     GridDatosPreguntas.Rows.Add(false, pregunta);
                 }
@@ -103,7 +100,7 @@ namespace QuizifyGUI
             ConexionFirebaseTemp ConexionFirebase = ConexionFirebaseTemp.getInstancia();
             IFirebaseClient cliente = ConexionFirebase.getCliente();
             FirebaseResponse datosBDD = cliente.Get(@"Quiz");
-            int indice = ContarElementosBDD(datosBDD);
+            int indice = servicio.ContarElementosBDD(datosBDD);
 
         }
     }
