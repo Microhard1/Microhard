@@ -3,3 +3,23 @@ C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\
 C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.AssemblyInfoInputs.cache
 C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.AssemblyInfo.cs
 C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.csproj.AssemblyReference.cache
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.AssemblyInfoInputs.cache
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.AssemblyInfo.cs
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\net472\QuizifyLibrary.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\net472\QuizifyLibrary.pdb
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\net472\FireSharp.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\net472\MahApps.Metro.IconPacks.Core.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\net472\MahApps.Metro.IconPacks.Material.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\net472\MetroSet UI.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\net472\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\net472\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\net472\Microsoft.Threading.Tasks.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\net472\System.Net.Http.Extensions.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\net472\System.Net.Http.Primitives.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\bin\Debug\net472\Newtonsoft.Json.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.csproj.CopyComplete
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyLibrary\obj\Debug\net472\QuizifyLibrary.pdb

@@ -46,7 +46,6 @@ C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Microsoft.Threading.Tasks.dll
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
-C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\System.Net.Http.Extensions.dll
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\System.Net.Http.Primitives.dll
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
@@ -56,17 +55,13 @@ C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Microsoft.Threading.Tasks.xml
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
-C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\System.Net.Http.Primitives.xml
-C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.App.config
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.AssemblyReference.cache
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.CrearQuiz.resources
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.CrearPregunta.resources
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Inicio.resources
-C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.InterfazPrincipal.resources
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Perfil.resources
-C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Properties.Resources.resources
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Registrar.resources
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.RespuestaAbierta.resources
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.TipoTest.resources
@@ -139,3 +134,7 @@ C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyGUI\QuizifyG
 C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.VerdaderoFalso.resources
 C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.GenerateResource.cache
 C:\Users\sanco\source\repos\Microhard\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\Quizify.InicioSesion.resources
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\Quizify.Properties.Resources.resources
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\QuizifyLibrary.dll
+C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\QuizifyLibrary.pdb

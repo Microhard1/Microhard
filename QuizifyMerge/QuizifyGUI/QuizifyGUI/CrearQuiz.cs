@@ -1,7 +1,5 @@
 ﻿using FireSharp.Interfaces;
 using FireSharp.Response;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;

@@ -9,15 +9,15 @@ namespace Quizify.BussinessLogic.Servicios
 {
     interface IServices
     {
-        public Alumno GetAlumnoById(string username);
-        public Instructor GetInstructorById(string username);
-        public void RegistrarInstructor(string nombreInstructor, string primerApellido,
+         Alumno GetAlumnoById(string username);
+         Instructor GetInstructorById(string username);
+         void RegistrarInstructor(string nombreInstructor, string primerApellido,
                                         string segundoApellido, string contrasenya, string email);
-        public void RegistrarAlumno(string nombreAlumno, string primerApellido,
+         void RegistrarAlumno(string nombreAlumno, string primerApellido,
                                         string segundoApellido, string contrasenya, string email);
-        public Boolean UsuarioExiste(string nombreUsuario);
-        public Boolean EsAlumno(string nombreUsuario);
-        public Boolean VerificarCredenciales(string nombreUsuario, string contrasenya);
-        public void RegistrarPreguntaVerdaderoFalso(PreguntaVerdaderoFalso pregunta);
+         Boolean UsuarioExiste(string nombreUsuario);
+         Boolean EsAlumno(string nombreUsuario);
+         Boolean VerificarCredenciales(string nombreUsuario, string contrasenya);
+         void RegistrarPreguntaVerdaderoFalso(PreguntaVerdaderoFalso pregunta);
     }
 }

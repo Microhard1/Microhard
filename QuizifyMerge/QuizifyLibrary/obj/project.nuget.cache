@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "w7u19CZt4OWaPwCMs25PN0EDhMqv+81kbMXfn6VST1c672IouPzxD/wpL7IiNsiRIIuE2a556wlBAIVtsGQU0w==",
+  "dgSpecHash": "81QLSVU/MCC2rsyjNUm1Nc92EkAiduukAwhlWAmBVCdRTAT2OA9dbiJom0k38ywANXeGM76cCn8M8H9e87TVyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sanco\\source\\repos\\Microhard\\Microhard\\QuizifyMerge\\QuizifyLibrary\\QuizifyLibrary.csproj",
+  "projectFilePath": "C:\\Users\\Pc\\Documents\\upv\\soft\\PSW\\Microhard\\QuizifyMerge\\QuizifyLibrary\\QuizifyLibrary.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\sanco\\.nuget\\packages\\firesharp\\2.0.4\\firesharp.2.0.4.nupkg.sha512",
-    "C:\\Users\\sanco\\.nuget\\packages\\mahapps.metro.iconpacks.material\\4.11.0\\mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512",
-    "C:\\Users\\sanco\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512",
-    "C:\\Users\\sanco\\.nuget\\packages\\microsoft.bcl\\1.1.9\\microsoft.bcl.1.1.9.nupkg.sha512",
-    "C:\\Users\\sanco\\.nuget\\packages\\microsoft.bcl.async\\1.0.168\\microsoft.bcl.async.1.0.168.nupkg.sha512",
-    "C:\\Users\\sanco\\.nuget\\packages\\microsoft.bcl.build\\1.0.14\\microsoft.bcl.build.1.0.14.nupkg.sha512",
-    "C:\\Users\\sanco\\.nuget\\packages\\microsoft.net.http\\2.2.28\\microsoft.net.http.2.2.28.nupkg.sha512",
-    "C:\\Users\\sanco\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512"
+    "C:\\Users\\Pc\\.nuget\\packages\\firesharp\\2.0.4\\firesharp.2.0.4.nupkg.sha512",
+    "C:\\Users\\Pc\\.nuget\\packages\\mahapps.metro.iconpacks.material\\4.11.0\\mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512",
+    "C:\\Users\\Pc\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512",
+    "C:\\Users\\Pc\\.nuget\\packages\\microsoft.bcl\\1.1.9\\microsoft.bcl.1.1.9.nupkg.sha512",
+    "C:\\Users\\Pc\\.nuget\\packages\\microsoft.bcl.async\\1.0.168\\microsoft.bcl.async.1.0.168.nupkg.sha512",
+    "C:\\Users\\Pc\\.nuget\\packages\\microsoft.bcl.build\\1.0.14\\microsoft.bcl.build.1.0.14.nupkg.sha512",
+    "C:\\Users\\Pc\\.nuget\\packages\\microsoft.net.http\\2.2.28\\microsoft.net.http.2.2.28.nupkg.sha512",
+    "C:\\Users\\Pc\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512"
   ],
   "logs": []
 }

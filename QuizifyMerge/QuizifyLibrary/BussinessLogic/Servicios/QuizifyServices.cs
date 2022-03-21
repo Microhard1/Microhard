@@ -11,7 +11,7 @@ using FireSharp.Response;
 
 namespace Quizify.BussinessLogic.Servicios
 {
-    class QuizifyServices : IServices
+    public class QuizifyServices : IServices
     {
         private readonly ConexionFirebase c;
         
