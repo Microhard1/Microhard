@@ -1,11 +1,13 @@
 ﻿using FireSharp.Interfaces;
 using FireSharp.Response;
+using FireSharp.Exceptions;
 using MetroSet_UI.Controls;
+using Quizify.BussinessLogic.Clases;
 using System;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-
-
+using QuizifyLibrary.Persistencia;
+using Quizify.BussinessLogic.Servicios;
 
 namespace QuizifyGUI
 {
@@ -14,9 +16,20 @@ namespace QuizifyGUI
 
         string tipoQuizSeleccionado="";
         Form FormularioActual = null;
+        string enunciado="";
+        int puntuacion=0;
+        string imagen = "";
+        string explicacion = "";
+        ConexionFirebase cf;
+
+        QuizifyServices servicio;
+        IFirebaseClient cliente;
+        
         public CrearPregunta()
         {
             InitializeComponent();
+            servicio = new QuizifyServices();
+            cf = ConexionFirebase.getInstancia();
         }
 
         private void abrirFormHijo(object formHijo)
@@ -84,7 +97,9 @@ namespace QuizifyGUI
                    
                     break;
                 case "Respuesta Abierta":
-                    abrirFormHijo(new RespuestaAbierta());
+                    CrearPreguntaAbierta();
+                    Pregunta p = new PreguntaAbierta(enunciado,imagen,puntuacion,explicacion) ;
+                    SetResponse resp = cf.client.Set("/Errores/" + NombrePregunta.Text, p);
                     break;
                 case "Verdadero/Falso":
                     CrearPreguntaVerdaderoFalso();
@@ -119,6 +134,25 @@ namespace QuizifyGUI
         private void metroSetRichTextBox1_TextChanged(object sender)
         {
 
+        }
+
+        public void CrearPreguntaAbierta()
+        {
+            ControlCollection objetosDelFormulario = (ControlCollection)FormularioActual.Controls;
+            puntuacion = ConseguirPuntuacion(Puntuacion.Text);
+            string descripcion = Descripcion.Text;
+
+            foreach (Control c in objetosDelFormulario)
+            {
+                if (c.GetType() == typeof(MetroSetTextBox))
+                {
+                    if (c.Name == "enunciadoRespuestaAbierta")
+                    {
+                        enunciado = ((MetroSetTextBox)c).Text;
+                    }
+
+                }
+            }
         }
 
         public void CrearPreguntaVerdaderoFalso()
@@ -169,7 +203,11 @@ namespace QuizifyGUI
             MessageBox.Show("Se ha insertado una pregunta: " + indice);
         }
 
-
+        private void asignarDatos()
+        {
+            explicacion = Descripcion.Text;
+            puntuacion = int.Parse( Puntuacion.Text);
+        }
         private int ContarElementosBDD(FirebaseResponse datosBDD)
         {
             string datos = datosBDD.Body;
@@ -186,6 +224,16 @@ namespace QuizifyGUI
                 this.Pregunta = pregunta;
                 this.Respuesta = respuesta;
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

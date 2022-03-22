@@ -36,6 +36,10 @@ namespace QuizifyGUI
             this.metroSetTextBox2 = new MetroSet_UI.Controls.MetroSetTextBox();
             this.botonAñadirImagen = new MetroSet_UI.Controls.MetroSetButton();
             this.imagenPregunta = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,10 +50,9 @@ namespace QuizifyGUI
             this.radioButton6.Location = new System.Drawing.Point(80, 368);
             this.radioButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(176, 40);
+            this.radioButton6.Size = new System.Drawing.Size(17, 16);
             this.radioButton6.TabIndex = 15;
             this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "OPCION 4";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
             // radioButton5
@@ -59,10 +62,9 @@ namespace QuizifyGUI
             this.radioButton5.Location = new System.Drawing.Point(80, 274);
             this.radioButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(176, 40);
+            this.radioButton5.Size = new System.Drawing.Size(17, 16);
             this.radioButton5.TabIndex = 14;
             this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "OPCION 3";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton3
@@ -72,10 +74,9 @@ namespace QuizifyGUI
             this.radioButton3.Location = new System.Drawing.Point(80, 185);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(176, 40);
+            this.radioButton3.Size = new System.Drawing.Size(17, 16);
             this.radioButton3.TabIndex = 12;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "OPCION 2";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton4
@@ -85,10 +86,9 @@ namespace QuizifyGUI
             this.radioButton4.Location = new System.Drawing.Point(80, 101);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(176, 40);
+            this.radioButton4.Size = new System.Drawing.Size(17, 16);
             this.radioButton4.TabIndex = 11;
             this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "OPCION 1";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // metroSetTextBox2
@@ -160,11 +160,43 @@ namespace QuizifyGUI
             this.imagenPregunta.TabIndex = 17;
             this.imagenPregunta.TabStop = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(122, 95);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(270, 22);
+            this.textBox1.TabIndex = 18;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(122, 185);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(270, 22);
+            this.textBox2.TabIndex = 19;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(122, 268);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(270, 22);
+            this.textBox3.TabIndex = 20;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(122, 362);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(270, 22);
+            this.textBox4.TabIndex = 21;
+            // 
             // TipoTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 489);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.imagenPregunta);
             this.Controls.Add(this.botonAñadirImagen);
             this.Controls.Add(this.radioButton6);
@@ -191,5 +223,9 @@ namespace QuizifyGUI
         private MetroSet_UI.Controls.MetroSetTextBox metroSetTextBox2;
         private MetroSet_UI.Controls.MetroSetButton botonAñadirImagen;
         private System.Windows.Forms.PictureBox imagenPregunta;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }

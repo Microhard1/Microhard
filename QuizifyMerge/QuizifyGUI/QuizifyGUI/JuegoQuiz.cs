@@ -21,7 +21,7 @@ namespace QuizifyGUI
         int indice;
         int PreguntaActual = 0;
         int elementosBDD;
-
+        int nota=0;
         
         QuizifyServices servicio = new QuizifyServices();
         ConexionFirebase conexion;
@@ -79,9 +79,20 @@ namespace QuizifyGUI
 
                     labelEnunciado.Text = enunciado;
                 }
+            else
+            {
+                ProgresoQuiz.Value = 100;
+                var result = MessageBox.Show("Enhorabuena, tu nota es un: " + nota, "Nota final del test",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Information);
+                if (result == DialogResult.OK)
+                {
+                    this.Close();
+                }
 
-                
-            
+            }
+
+
         }
 
         private bool comprobarRespuestaVF()
@@ -105,7 +116,18 @@ namespace QuizifyGUI
             crearPreguntaVerdaderoFalso();
             count++;
             if(count == 2) { this.Close(); }
+            ProgresoQuiz.Value += progresoBarra();
             Cursor.Current = Cursors.Default;
+        }
+
+        private void ProgresoQuiz_ValueChanged(object sender)
+        {
+
+        }
+
+        private int progresoBarra()
+        {
+            return 100 / elementosBDD;
         }
     }
 }

@@ -21,6 +21,7 @@ namespace Quizify.BussinessLogic.Clases
             this.explicacion = explicacion;
             this.puntuacion = puntuacion;
             this.imagen = imagen;
+            respuestas = new List<Respuesta>();
         }
 
         public Pregunta(string enunciado, double puntuacion, string explicacion)

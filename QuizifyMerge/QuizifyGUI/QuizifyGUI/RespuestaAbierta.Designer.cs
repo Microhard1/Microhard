@@ -32,7 +32,7 @@ namespace QuizifyGUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RespuestaAbierta));
             this.metroSetRichTextBox1 = new MetroSet_UI.Controls.MetroSetRichTextBox();
             this.imagenPregunta = new System.Windows.Forms.PictureBox();
-            this.metroSetTextBox3 = new MetroSet_UI.Controls.MetroSetTextBox();
+            this.enunciadoRespuestaAbierta = new MetroSet_UI.Controls.MetroSetTextBox();
             this.botonAñadirImagen = new MetroSet_UI.Controls.MetroSetButton();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).BeginInit();
             this.SuspendLayout();
@@ -74,36 +74,36 @@ namespace QuizifyGUI
             this.imagenPregunta.TabStop = false;
             this.imagenPregunta.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // metroSetTextBox3
+            // enunciadoRespuestaAbierta
             // 
-            this.metroSetTextBox3.AutoCompleteCustomSource = null;
-            this.metroSetTextBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.metroSetTextBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.metroSetTextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetTextBox3.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.metroSetTextBox3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetTextBox3.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.metroSetTextBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroSetTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroSetTextBox3.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.metroSetTextBox3.Image = null;
-            this.metroSetTextBox3.IsDerivedStyle = true;
-            this.metroSetTextBox3.Lines = null;
-            this.metroSetTextBox3.Location = new System.Drawing.Point(0, 0);
-            this.metroSetTextBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.metroSetTextBox3.MaxLength = 32767;
-            this.metroSetTextBox3.Multiline = false;
-            this.metroSetTextBox3.Name = "metroSetTextBox3";
-            this.metroSetTextBox3.ReadOnly = false;
-            this.metroSetTextBox3.Size = new System.Drawing.Size(800, 49);
-            this.metroSetTextBox3.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetTextBox3.StyleManager = null;
-            this.metroSetTextBox3.TabIndex = 11;
-            this.metroSetTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.metroSetTextBox3.ThemeAuthor = "Narwin";
-            this.metroSetTextBox3.ThemeName = "MetroLite";
-            this.metroSetTextBox3.UseSystemPasswordChar = false;
-            this.metroSetTextBox3.WatermarkText = "PREGUNTA";
+            this.enunciadoRespuestaAbierta.AutoCompleteCustomSource = null;
+            this.enunciadoRespuestaAbierta.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.enunciadoRespuestaAbierta.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.enunciadoRespuestaAbierta.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.enunciadoRespuestaAbierta.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.enunciadoRespuestaAbierta.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.enunciadoRespuestaAbierta.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.enunciadoRespuestaAbierta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.enunciadoRespuestaAbierta.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enunciadoRespuestaAbierta.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.enunciadoRespuestaAbierta.Image = null;
+            this.enunciadoRespuestaAbierta.IsDerivedStyle = true;
+            this.enunciadoRespuestaAbierta.Lines = null;
+            this.enunciadoRespuestaAbierta.Location = new System.Drawing.Point(0, 0);
+            this.enunciadoRespuestaAbierta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.enunciadoRespuestaAbierta.MaxLength = 32767;
+            this.enunciadoRespuestaAbierta.Multiline = false;
+            this.enunciadoRespuestaAbierta.Name = "enunciadoRespuestaAbierta";
+            this.enunciadoRespuestaAbierta.ReadOnly = false;
+            this.enunciadoRespuestaAbierta.Size = new System.Drawing.Size(800, 49);
+            this.enunciadoRespuestaAbierta.Style = MetroSet_UI.Enums.Style.Light;
+            this.enunciadoRespuestaAbierta.StyleManager = null;
+            this.enunciadoRespuestaAbierta.TabIndex = 11;
+            this.enunciadoRespuestaAbierta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.enunciadoRespuestaAbierta.ThemeAuthor = "Narwin";
+            this.enunciadoRespuestaAbierta.ThemeName = "MetroLite";
+            this.enunciadoRespuestaAbierta.UseSystemPasswordChar = false;
+            this.enunciadoRespuestaAbierta.WatermarkText = "PREGUNTA";
             // 
             // botonAñadirImagen
             // 
@@ -116,7 +116,7 @@ namespace QuizifyGUI
             this.botonAñadirImagen.HoverTextColor = System.Drawing.Color.White;
             this.botonAñadirImagen.IsDerivedStyle = true;
             this.botonAñadirImagen.Location = new System.Drawing.Point(97, 373);
-            this.botonAñadirImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.botonAñadirImagen.Margin = new System.Windows.Forms.Padding(4);
             this.botonAñadirImagen.Name = "botonAñadirImagen";
             this.botonAñadirImagen.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.botonAñadirImagen.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -141,7 +141,7 @@ namespace QuizifyGUI
             this.Controls.Add(this.botonAñadirImagen);
             this.Controls.Add(this.metroSetRichTextBox1);
             this.Controls.Add(this.imagenPregunta);
-            this.Controls.Add(this.metroSetTextBox3);
+            this.Controls.Add(this.enunciadoRespuestaAbierta);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RespuestaAbierta";
@@ -155,7 +155,7 @@ namespace QuizifyGUI
 
         private MetroSet_UI.Controls.MetroSetRichTextBox metroSetRichTextBox1;
         private System.Windows.Forms.PictureBox imagenPregunta;
-        private MetroSet_UI.Controls.MetroSetTextBox metroSetTextBox3;
+        private MetroSet_UI.Controls.MetroSetTextBox enunciadoRespuestaAbierta;
         private MetroSet_UI.Controls.MetroSetButton botonAñadirImagen;
     }
 }
