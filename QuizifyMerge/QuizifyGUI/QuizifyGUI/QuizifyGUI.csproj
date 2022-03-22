@@ -133,6 +133,12 @@
     <Compile Include="JuegoQuiz.Designer.cs">
       <DependentUpon>JuegoQuiz.cs</DependentUpon>
     </Compile>
+    <Compile Include="JuegoQuizMultiopcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JuegoQuizMultiopcion.Designer.cs">
+      <DependentUpon>JuegoQuizMultiopcion.cs</DependentUpon>
+    </Compile>
     <Compile Include="JuegoQuizRespuestaAbierta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JuegoQuiz.resx">
       <DependentUpon>JuegoQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JuegoQuizMultiopcion.resx">
+      <DependentUpon>JuegoQuizMultiopcion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JuegoQuizRespuestaAbierta.resx">
       <DependentUpon>JuegoQuizRespuestaAbierta.cs</DependentUpon>

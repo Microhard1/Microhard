@@ -35,8 +35,8 @@ namespace QuizifyGUI
             this.textBoxRespuesta = new System.Windows.Forms.TextBox();
             this.botonSiguiente = new MetroSet_UI.Controls.MetroSetButton();
             this.Enunciado = new System.Windows.Forms.Label();
-            this.imagenPregunta = new System.Windows.Forms.PictureBox();
             this.ProgresoQuiz = new MetroSet_UI.Controls.MetroSetProgressBar();
+            this.imagenPregunta = new System.Windows.Forms.PictureBox();
             this.BarraModificarVentana.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).BeginInit();
             this.SuspendLayout();
@@ -132,28 +132,17 @@ namespace QuizifyGUI
             // 
             this.Enunciado.AutoSize = true;
             this.Enunciado.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Enunciado.Location = new System.Drawing.Point(42, 81);
+            this.Enunciado.Location = new System.Drawing.Point(41, 111);
             this.Enunciado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Enunciado.Name = "Enunciado";
             this.Enunciado.Size = new System.Drawing.Size(122, 44);
             this.Enunciado.TabIndex = 17;
             this.Enunciado.Text = "label1";
             // 
-            // imagenPregunta
-            // 
-            this.imagenPregunta.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.imagenPregunta.Location = new System.Drawing.Point(711, 190);
-            this.imagenPregunta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imagenPregunta.Name = "imagenPregunta";
-            this.imagenPregunta.Size = new System.Drawing.Size(425, 427);
-            this.imagenPregunta.TabIndex = 16;
-            this.imagenPregunta.TabStop = false;
-            this.imagenPregunta.Click += new System.EventHandler(this.imagenPregunta_Click);
-            // 
             // ProgresoQuiz
             // 
             this.ProgresoQuiz.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.ProgresoQuiz.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.ProgresoQuiz.BorderColor = System.Drawing.Color.Black;
             this.ProgresoQuiz.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ProgresoQuiz.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ProgresoQuiz.DisabledProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -173,6 +162,18 @@ namespace QuizifyGUI
             this.ProgresoQuiz.ThemeAuthor = null;
             this.ProgresoQuiz.ThemeName = null;
             this.ProgresoQuiz.Value = 0;
+            this.ProgresoQuiz.ValueChanged += new MetroSet_UI.Controls.MetroSetProgressBar.ValueChangedEventHandler(this.ProgresoQuiz_ValueChanged);
+            // 
+            // imagenPregunta
+            // 
+            this.imagenPregunta.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.imagenPregunta.Location = new System.Drawing.Point(711, 190);
+            this.imagenPregunta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imagenPregunta.Name = "imagenPregunta";
+            this.imagenPregunta.Size = new System.Drawing.Size(425, 427);
+            this.imagenPregunta.TabIndex = 16;
+            this.imagenPregunta.TabStop = false;
+            this.imagenPregunta.Click += new System.EventHandler(this.imagenPregunta_Click);
             // 
             // JuegoQuizRespuestaAbierta
             // 

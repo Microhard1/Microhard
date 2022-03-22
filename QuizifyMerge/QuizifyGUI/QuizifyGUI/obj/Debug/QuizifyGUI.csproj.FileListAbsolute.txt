@@ -141,3 +141,4 @@ C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\Qui
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\Quizify.InicioSesion.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.JuegoQuizRespuestaAbierta.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Properties.Resources.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.JuegoQuizMultiopcion.resources

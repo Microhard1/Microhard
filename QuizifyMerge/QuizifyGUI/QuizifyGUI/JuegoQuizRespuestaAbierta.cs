@@ -67,6 +67,7 @@ namespace QuizifyGUI
 
             else
             {
+                ProgresoQuiz.Value = 100;
                 var result = MessageBox.Show("Enhorabuena, tu nota es un: "+ nota, "Nota final del test",
                                  MessageBoxButtons.OK,
                                  MessageBoxIcon.Information);
@@ -91,6 +92,8 @@ namespace QuizifyGUI
             }
             textBoxRespuesta.Clear();
             CrearPregunta();
+
+            ProgresoQuiz.Value += progresoBarra();
             Cursor.Current = Cursors.Default;
         }
 
@@ -100,6 +103,16 @@ namespace QuizifyGUI
             string respuestaString = respuesta.Substring(1, respuesta.Length - 2);
 
             return textBoxRespuesta.Text.Contains(respuestaString);
+        }
+
+        private void ProgresoQuiz_ValueChanged(object sender)
+        {
+
+        }
+
+        public int progresoBarra()
+        {
+            return 100 / elementosBDD;
         }
     }
 }
