@@ -93,7 +93,7 @@ namespace QuizifyGUI
             // textBoxRespuesta
             // 
             this.textBoxRespuesta.Location = new System.Drawing.Point(40, 190);
-            this.textBoxRespuesta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxRespuesta.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxRespuesta.Multiline = true;
             this.textBoxRespuesta.Name = "textBoxRespuesta";
             this.textBoxRespuesta.Size = new System.Drawing.Size(480, 426);
@@ -111,7 +111,7 @@ namespace QuizifyGUI
             this.botonSiguiente.HoverTextColor = System.Drawing.Color.White;
             this.botonSiguiente.IsDerivedStyle = true;
             this.botonSiguiente.Location = new System.Drawing.Point(497, 647);
-            this.botonSiguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.botonSiguiente.Margin = new System.Windows.Forms.Padding(4);
             this.botonSiguiente.Name = "botonSiguiente";
             this.botonSiguiente.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.botonSiguiente.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -187,7 +187,7 @@ namespace QuizifyGUI
             this.Controls.Add(this.textBoxRespuesta);
             this.Controls.Add(this.BarraModificarVentana);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "JuegoQuizRespuestaAbierta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JuegoQuizRespuestaAbierta";
