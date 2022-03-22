@@ -20,16 +20,18 @@ namespace QuizifyGUI
         int puntuacion=0;
         string imagen = "";
         string explicacion = "";
-        ConexionFirebase cf;
 
-        QuizifyServices servicio;
+        ConexionFirebase ConexionFirebase;
         IFirebaseClient cliente;
+        QuizifyServices servicio;
+
         
         public CrearPregunta()
         {
             InitializeComponent();
+            ConexionFirebase = ConexionFirebase.getInstancia();
+            cliente = ConexionFirebase.client;
             servicio = new QuizifyServices();
-            cf = ConexionFirebase.getInstancia();
         }
 
         private void abrirFormHijo(object formHijo)
@@ -99,7 +101,7 @@ namespace QuizifyGUI
                 case "Respuesta Abierta":
                     CrearPreguntaAbierta();
                     Pregunta p = new PreguntaAbierta(enunciado,imagen,puntuacion,explicacion) ;
-                    SetResponse resp = cf.client.Set("/Errores/" + NombrePregunta.Text, p);
+                    //SetResponse resp = cf.client.Set("/Errores/" + NombrePregunta.Text, p);
                     break;
                 case "Verdadero/Falso":
                     CrearPreguntaVerdaderoFalso();
@@ -190,8 +192,6 @@ namespace QuizifyGUI
                 }
             }
 
-            ConexionFirebaseTemp ConexionFirebase = ConexionFirebaseTemp.getInstancia();
-            IFirebaseClient cliente = ConexionFirebase.getCliente();
             FirebaseResponse datosBDD = cliente.Get(@"Pregunta/VerdaderoFalso/");
             int indice = ContarElementosBDD(datosBDD)+1;
 

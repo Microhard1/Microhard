@@ -4,6 +4,7 @@ using System;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Quizify.BussinessLogic.Servicios;
+using QuizifyLibrary.Persistencia;
 
 
 
@@ -14,11 +15,14 @@ namespace QuizifyGUI
     {
 
         QuizifyServices servicio = new QuizifyServices();
+        ConexionFirebase ConexionFirebase;
+        IFirebaseClient cliente;
         public CrearQuiz()
         {
             
             InitializeComponent();
-            
+             ConexionFirebase= ConexionFirebase.getInstancia();
+            cliente = ConexionFirebase.client;
             GridDatosPreguntas.Columns[1].Width = GridDatosPreguntas.Width - GridDatosPreguntas.Columns[0].Width;
         }
 
@@ -47,8 +51,6 @@ namespace QuizifyGUI
         private void BotonBuscarPregunta_Click(object sender, EventArgs e)
         {
             GridDatosPreguntas.Rows.Clear();
-            ConexionFirebaseTemp ConexionFirebase = ConexionFirebaseTemp.getInstancia();
-            IFirebaseClient cliente = ConexionFirebase.getCliente();
             Cursor.Current = Cursors.WaitCursor;
 
             if (SelectorTipoQuiz.Text== "Tipo Test") {
@@ -97,11 +99,8 @@ namespace QuizifyGUI
 
         private void BotonCrearPregunta_Click(object sender, EventArgs e)
         {
-            ConexionFirebaseTemp ConexionFirebase = ConexionFirebaseTemp.getInstancia();
-            IFirebaseClient cliente = ConexionFirebase.getCliente();
             FirebaseResponse datosBDD = cliente.Get(@"Quiz");
             int indice = servicio.ContarElementosBDD(datosBDD);
-
         }
     }
 }
