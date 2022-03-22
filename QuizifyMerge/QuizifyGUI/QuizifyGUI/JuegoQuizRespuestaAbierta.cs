@@ -26,7 +26,7 @@ namespace QuizifyGUI
         {
             InitializeComponent();
             imagenPregunta.SizeMode = PictureBoxSizeMode.StretchImage;
-
+            ProgresoQuiz.BorderColor = Color.Black;
             tituloQuiz.Text = titulo;
             this.indice = indice;
 

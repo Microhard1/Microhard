@@ -85,6 +85,10 @@ namespace QuizifyGUI
                {
                      Quiz = new JuegoQuizRespuestaAbierta(TituloQuiz, e.RowIndex + 1);
                 }
+                else if (tipoQuiz.Contains("Multiopcion"))
+                {
+                    Quiz = new JuegoQuizMultiopcion(TituloQuiz,e.RowIndex+1);
+                }
                 else
                 {
                     Quiz = new JuegoQuiz(TituloQuiz, e.RowIndex + 1);
