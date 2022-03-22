@@ -51,18 +51,18 @@ namespace QuizifyGUI
             this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.BotonBuscarPregunta);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(225, 0);
+            this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(955, 92);
+            this.panel2.Size = new System.Drawing.Size(849, 74);
             this.panel2.TabIndex = 13;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(114, 26);
+            this.textBox4.Location = new System.Drawing.Point(101, 21);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(599, 26);
+            this.textBox4.Size = new System.Drawing.Size(533, 22);
             this.textBox4.TabIndex = 8;
             // 
             // BotonBuscarPregunta
@@ -71,10 +71,10 @@ namespace QuizifyGUI
             this.BotonBuscarPregunta.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.BotonBuscarPregunta.ForeColor = System.Drawing.Color.Transparent;
             this.BotonBuscarPregunta.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BotonBuscarPregunta.Location = new System.Drawing.Point(744, 20);
+            this.BotonBuscarPregunta.Location = new System.Drawing.Point(661, 16);
             this.BotonBuscarPregunta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BotonBuscarPregunta.Name = "BotonBuscarPregunta";
-            this.BotonBuscarPregunta.Size = new System.Drawing.Size(81, 41);
+            this.BotonBuscarPregunta.Size = new System.Drawing.Size(72, 33);
             this.BotonBuscarPregunta.TabIndex = 9;
             this.BotonBuscarPregunta.Text = "Bucar";
             this.BotonBuscarPregunta.UseVisualStyleBackColor = false;
@@ -95,7 +95,7 @@ namespace QuizifyGUI
             this.metroSetPanel2.Location = new System.Drawing.Point(0, 0);
             this.metroSetPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroSetPanel2.Name = "metroSetPanel2";
-            this.metroSetPanel2.Size = new System.Drawing.Size(225, 749);
+            this.metroSetPanel2.Size = new System.Drawing.Size(200, 599);
             this.metroSetPanel2.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetPanel2.StyleManager = null;
             this.metroSetPanel2.TabIndex = 12;
@@ -106,10 +106,10 @@ namespace QuizifyGUI
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.ForeColor = System.Drawing.Color.Black;
-            this.checkBox1.Location = new System.Drawing.Point(18, 219);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBox1.Location = new System.Drawing.Point(16, 175);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(170, 24);
+            this.checkBox1.Size = new System.Drawing.Size(151, 21);
             this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "Mostrar calificacion";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -121,21 +121,21 @@ namespace QuizifyGUI
             "Tipo Test",
             "Respuesta Abierta",
             "Verdadero/Falso"});
-            this.SelectorTipoQuiz.Location = new System.Drawing.Point(30, 34);
+            this.SelectorTipoQuiz.Location = new System.Drawing.Point(27, 27);
             this.SelectorTipoQuiz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SelectorTipoQuiz.Name = "SelectorTipoQuiz";
-            this.SelectorTipoQuiz.Size = new System.Drawing.Size(154, 28);
+            this.SelectorTipoQuiz.Size = new System.Drawing.Size(137, 24);
             this.SelectorTipoQuiz.TabIndex = 5;
             this.SelectorTipoQuiz.SelectedIndexChanged += new System.EventHandler(this.SelectorTipoQuiz_SelectedIndexChanged);
             // 
             // metroSetDivider2
             // 
             this.metroSetDivider2.IsDerivedStyle = true;
-            this.metroSetDivider2.Location = new System.Drawing.Point(17, 588);
+            this.metroSetDivider2.Location = new System.Drawing.Point(16, 426);
             this.metroSetDivider2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroSetDivider2.Name = "metroSetDivider2";
             this.metroSetDivider2.Orientation = MetroSet_UI.Enums.DividerStyle.Horizontal;
-            this.metroSetDivider2.Size = new System.Drawing.Size(197, 4);
+            this.metroSetDivider2.Size = new System.Drawing.Size(175, 4);
             this.metroSetDivider2.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetDivider2.StyleManager = null;
             this.metroSetDivider2.TabIndex = 4;
@@ -146,10 +146,10 @@ namespace QuizifyGUI
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(30, 142);
+            this.textBox1.Location = new System.Drawing.Point(27, 114);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 26);
+            this.textBox1.Size = new System.Drawing.Size(137, 22);
             this.textBox1.TabIndex = 2;
             // 
             // BotonCrearPregunta
@@ -162,7 +162,7 @@ namespace QuizifyGUI
             this.BotonCrearPregunta.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.BotonCrearPregunta.HoverTextColor = System.Drawing.Color.White;
             this.BotonCrearPregunta.IsDerivedStyle = true;
-            this.BotonCrearPregunta.Location = new System.Drawing.Point(30, 629);
+            this.BotonCrearPregunta.Location = new System.Drawing.Point(28, 461);
             this.BotonCrearPregunta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BotonCrearPregunta.Name = "BotonCrearPregunta";
             this.BotonCrearPregunta.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -171,7 +171,7 @@ namespace QuizifyGUI
             this.BotonCrearPregunta.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
             this.BotonCrearPregunta.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
             this.BotonCrearPregunta.PressTextColor = System.Drawing.Color.White;
-            this.BotonCrearPregunta.Size = new System.Drawing.Size(156, 55);
+            this.BotonCrearPregunta.Size = new System.Drawing.Size(139, 44);
             this.BotonCrearPregunta.Style = MetroSet_UI.Enums.Style.Light;
             this.BotonCrearPregunta.StyleManager = null;
             this.BotonCrearPregunta.TabIndex = 1;
@@ -187,12 +187,12 @@ namespace QuizifyGUI
             this.Agregar,
             this.Pregunta});
             this.GridDatosPreguntas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GridDatosPreguntas.Location = new System.Drawing.Point(225, 92);
+            this.GridDatosPreguntas.Location = new System.Drawing.Point(200, 74);
             this.GridDatosPreguntas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GridDatosPreguntas.Name = "GridDatosPreguntas";
             this.GridDatosPreguntas.RowHeadersWidth = 51;
             this.GridDatosPreguntas.RowTemplate.Height = 24;
-            this.GridDatosPreguntas.Size = new System.Drawing.Size(955, 657);
+            this.GridDatosPreguntas.Size = new System.Drawing.Size(849, 525);
             this.GridDatosPreguntas.TabIndex = 15;
             this.GridDatosPreguntas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridDatosPreguntas_CellContentClick);
             // 
@@ -215,9 +215,9 @@ namespace QuizifyGUI
             // 
             // CrearQuiz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1180, 749);
+            this.ClientSize = new System.Drawing.Size(1049, 599);
             this.Controls.Add(this.GridDatosPreguntas);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.metroSetPanel2);
