@@ -156,10 +156,14 @@ namespace QuizifyGUI
             FirebaseResponse respuestasFalsasFB = cliente.Get(@"Pregunta/Multiopcion" + "/" + PreguntaActual + "/RespuestaFalsa");
             string respuestasFalsas = respuestasFalsasFB.Body.ToString();
             string respuestasFalsasString = respuestasFalsas.Substring(1, respuestasFalsas.Length - 2);
-
-            Opcion2.Text = respuestasFalsasString.Substring(0,1);
-            Opcion3.Text = respuestasFalsasString.Substring(1, 1);
-            Opcion4.Text = respuestasFalsasString.Substring(2, 1);
+            string[] values = respuestasFalsasString.Split(',');
+            for (int i = 0; i < values.Length; i++)
+            {
+                values[i] = values[i].Trim();
+            }
+            Opcion2.Text = values[0];
+            Opcion3.Text = values[1];
+            Opcion4.Text = values[2];
         }
     }
 }
