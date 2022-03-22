@@ -1,4 +1,5 @@
-﻿using Quizify.BussinessLogic.Clases;
+﻿using FireSharp.Response;
+using Quizify.BussinessLogic.Clases;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,5 +20,9 @@ namespace Quizify.BussinessLogic.Servicios
          Boolean EsAlumno(string nombreUsuario);
          Boolean VerificarCredenciales(string nombreUsuario, string contrasenya);
          void RegistrarPreguntaVerdaderoFalso(PreguntaVerdaderoFalso pregunta);
+
+        int ContarElementosBDD(FirebaseResponse datosBDD);
+        int ContarQuizes(FirebaseResponse datosBDD);
+        int contarPreguntasQuiz(FirebaseResponse datosBDD);
     }
 }
