@@ -1,6 +1,7 @@
 ﻿using FireSharp.Interfaces;
 using FireSharp.Response;
 using Quizify.BussinessLogic.Servicios;
+using QuizifyLibrary.Persistencia;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,8 +22,8 @@ namespace QuizifyGUI
         int nota = 0;
         QuizifyServices servicio;
         IFirebaseClient cliente;
-
-        string respuesta;
+        ConexionFirebase ConexionFirebase;
+        
         public JuegoQuizMultiopcion(String titulo, int indice)
         {
             InitializeComponent();
@@ -33,8 +34,8 @@ namespace QuizifyGUI
             this.indice = indice;
 
             servicio = new QuizifyServices();
-            ConexionFirebaseTemp ConexionFirebase = ConexionFirebaseTemp.getInstancia();
-            cliente = ConexionFirebase.getCliente();
+            ConexionFirebase = ConexionFirebase.getInstancia();
+            cliente = ConexionFirebase.client;
             FirebaseResponse datosBDD = cliente.Get(@"Quiz/" + indice + "/");
             elementosBDD = servicio.contarPreguntasQuiz(datosBDD);
 
@@ -123,21 +124,21 @@ namespace QuizifyGUI
 
         private void Opcion1_CheckedChanged(object sender, EventArgs e)
         {
-            respuesta = Opcion1.Text;
+            
         }
         private void Opcion2_CheckedChanged(object sender, EventArgs e)
         {
-            respuesta = Opcion2.Text;
+           
         }
 
         private void Opcion3_CheckedChanged(object sender, EventArgs e)
         {
-            respuesta = Opcion3.Text;
+           
         }
 
         private void Opcion4_CheckedChanged(object sender, EventArgs e)
         {
-            respuesta = Opcion4.Text;
+           
         }
 
         private int progresoBarra()

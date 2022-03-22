@@ -1,6 +1,7 @@
 ﻿using FireSharp.Interfaces;
 using FireSharp.Response;
 using Quizify.BussinessLogic.Servicios;
+using QuizifyLibrary.Persistencia;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,7 @@ namespace QuizifyGUI
         int elementosBDD;
         int nota=0;
         QuizifyServices servicio;
+        ConexionFirebase ConexionFirebase;
         IFirebaseClient cliente;
 
         public JuegoQuizRespuestaAbierta(String titulo,int indice)
@@ -30,9 +32,9 @@ namespace QuizifyGUI
             tituloQuiz.Text = titulo;
             this.indice = indice;
 
+            ConexionFirebase = ConexionFirebase.getInstancia();
+            cliente = ConexionFirebase.client;
             servicio = new QuizifyServices();
-            ConexionFirebaseTemp ConexionFirebase = ConexionFirebaseTemp.getInstancia();
-            cliente = ConexionFirebase.getCliente();
             FirebaseResponse datosBDD = cliente.Get(@"Quiz/" + indice + "/");
             elementosBDD = servicio.contarPreguntasQuiz(datosBDD);
 

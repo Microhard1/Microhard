@@ -42,27 +42,6 @@ namespace QuizifyGUI
 
         }
 
-        public void crearQuiz()
-        {
-            ConexionFirebaseTemp ConexionFirebase = ConexionFirebaseTemp.getInstancia();
-            IFirebaseClient cliente = ConexionFirebase.getCliente();
-
-            FirebaseResponse datosBDD = cliente.Get(@"Quiz/"+indice+"/");
-
-           if(PreguntaActual < servicio.ContarElementosBDD(datosBDD))
-            {
-                PreguntaActual++;
-                FirebaseResponse PreguntaQuiz = cliente.Get(@"Quiz/" + indice + "/" + PreguntaActual + "/");
-                //Aqui en vez de un string iria un objeto pregunta, pero antes hay que crear las properties
-                string PreguntaConIndice = PreguntaQuiz.ResultAs<String>();
-                FirebaseResponse  enunciadoPregunta= cliente.Get(@"Pregunta" + PreguntaConIndice + "/Pregunta");
-                string enunciadoString = enunciadoPregunta.ResultAs<String>();
-
-                
-                labelEnunciado.Text = enunciadoString;
-            }
-        }
-
         public void crearPreguntaVerdaderoFalso()
         {
          
@@ -124,7 +103,6 @@ namespace QuizifyGUI
         {
 
         }
-
         private int progresoBarra()
         {
             return 100 / elementosBDD;

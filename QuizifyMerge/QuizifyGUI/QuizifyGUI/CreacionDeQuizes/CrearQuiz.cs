@@ -21,7 +21,7 @@ namespace QuizifyGUI
         {
             
             InitializeComponent();
-             ConexionFirebase= ConexionFirebase.getInstancia();
+            ConexionFirebase= ConexionFirebase.getInstancia();
             cliente = ConexionFirebase.client;
             GridDatosPreguntas.Columns[1].Width = GridDatosPreguntas.Width - GridDatosPreguntas.Columns[0].Width;
         }

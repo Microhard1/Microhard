@@ -17,11 +17,14 @@ namespace QuizifyGUI
 {
     public partial class RealizarQuiz : Form
     {
-
         QuizifyServices servicio = new QuizifyServices();
+        ConexionFirebase ConexionFirebase;
+        IFirebaseClient cliente;
         public RealizarQuiz()
         {
             InitializeComponent();
+            ConexionFirebase = ConexionFirebase.getInstancia();
+            cliente = ConexionFirebase.client;
             GridDatosPreguntas.Columns[0].Width = GridDatosPreguntas.Width - GridDatosPreguntas.Columns[1].Width;
 
         }
@@ -44,8 +47,6 @@ namespace QuizifyGUI
         private void BotonBuscarPregunta_Click(object sender, EventArgs e)
         {
             GridDatosPreguntas.Rows.Clear();
-            ConexionFirebaseTemp ConexionFirebase = ConexionFirebaseTemp.getInstancia();
-            IFirebaseClient cliente = ConexionFirebase.getCliente();
             Cursor.Current = Cursors.WaitCursor;
 
             añadirQuizes(cliente, "Quiz");
@@ -99,8 +100,6 @@ namespace QuizifyGUI
 
         private string getTipoQuiz(int indice)
         {
-            ConexionFirebaseTemp ConexionFirebase = ConexionFirebaseTemp.getInstancia();
-            IFirebaseClient cliente = ConexionFirebase.getCliente();
             FirebaseResponse tipoQuiz = cliente.Get("Quiz/"+ indice+ "/TipoDeQuiz");
 
             return tipoQuiz.Body.ToString();
