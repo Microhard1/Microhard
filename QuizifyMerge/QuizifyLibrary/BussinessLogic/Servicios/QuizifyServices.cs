@@ -106,5 +106,11 @@ namespace Quizify.BussinessLogic.Servicios
             string datos = datosBDD.Body;
             return Regex.Matches(datos, ":{").Count -7;
         }
+        public int contarPreguntasQuiz(FirebaseResponse datosBDD)
+        {
+            //{"1":2,"2":1,"TipoDeQuiz":"Abierta","Titulo":"Quiz respuesta abierta"}
+            string datos = datosBDD.Body;
+            return Regex.Matches(datos, @""":""").Count;
+        }
     }
 }

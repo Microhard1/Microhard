@@ -81,7 +81,7 @@ namespace QuizifyGUI
                 string tipoQuiz = getTipoQuiz(e.RowIndex+1);
 
                 Form Quiz;
-                if (tipoQuiz=="Abierta")
+                if (tipoQuiz.Contains("Abierta"))
                {
                      Quiz = new JuegoQuizRespuestaAbierta(TituloQuiz, e.RowIndex + 1);
                 }

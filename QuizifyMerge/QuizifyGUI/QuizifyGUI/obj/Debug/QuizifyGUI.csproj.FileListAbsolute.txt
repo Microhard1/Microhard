@@ -18,10 +18,8 @@ C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\Qui
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Microsoft.Threading.Tasks.xml
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
-C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\System.Net.Http.Primitives.xml
-C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.App.config
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.csproj.AssemblyReference.cache
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.CrearQuiz.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.CrearPregunta.resources
@@ -75,7 +73,6 @@ C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.JuegoQuiz.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.JuegoQuiz.resources
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.RealizarQuiz.resources
-C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\Quizify.Properties.Resources.resources
 C:\Users\Hugo\Repositorio_PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\QuizifyGUI.exe.config
 C:\Users\Hugo\Repositorio_PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\QuizifyGUI.exe
 C:\Users\Hugo\Repositorio_PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\QuizifyGUI.pdb
@@ -139,3 +136,8 @@ C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\QuizifyLibrary.pdb
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.JuegoQuizRespuestaAbierta.resources
 C:\Users\Pc\Documents\upv\soft\PSW\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Properties.Resources.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\QuizifyLibrary.dll
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\QuizifyLibrary.pdb
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\Quizify.InicioSesion.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.JuegoQuizRespuestaAbierta.resources
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.Properties.Resources.resources

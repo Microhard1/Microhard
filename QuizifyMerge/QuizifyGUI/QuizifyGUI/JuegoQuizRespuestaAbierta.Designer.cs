@@ -32,7 +32,7 @@ namespace QuizifyGUI
             this.BarraModificarVentana = new System.Windows.Forms.Panel();
             this.BotonesModificarVentana = new MetroSet_UI.Controls.MetroSetControlBox();
             this.tituloQuiz = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxRespuesta = new System.Windows.Forms.TextBox();
             this.botonSiguiente = new MetroSet_UI.Controls.MetroSetButton();
             this.Enunciado = new System.Windows.Forms.Label();
             this.imagenPregunta = new System.Windows.Forms.PictureBox();
@@ -47,9 +47,9 @@ namespace QuizifyGUI
             this.BarraModificarVentana.Controls.Add(this.tituloQuiz);
             this.BarraModificarVentana.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraModificarVentana.Location = new System.Drawing.Point(0, 0);
-            this.BarraModificarVentana.Margin = new System.Windows.Forms.Padding(2);
+            this.BarraModificarVentana.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BarraModificarVentana.Name = "BarraModificarVentana";
-            this.BarraModificarVentana.Size = new System.Drawing.Size(875, 33);
+            this.BarraModificarVentana.Size = new System.Drawing.Size(1167, 41);
             this.BarraModificarVentana.TabIndex = 2;
             // 
             // BotonesModificarVentana
@@ -60,8 +60,8 @@ namespace QuizifyGUI
             this.BotonesModificarVentana.CloseNormalForeColor = System.Drawing.Color.Gray;
             this.BotonesModificarVentana.DisabledForeColor = System.Drawing.Color.DimGray;
             this.BotonesModificarVentana.IsDerivedStyle = true;
-            this.BotonesModificarVentana.Location = new System.Drawing.Point(718, 1);
-            this.BotonesModificarVentana.Margin = new System.Windows.Forms.Padding(2);
+            this.BotonesModificarVentana.Location = new System.Drawing.Point(957, 1);
+            this.BotonesModificarVentana.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BotonesModificarVentana.MaximizeBox = true;
             this.BotonesModificarVentana.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.BotonesModificarVentana.MaximizeHoverForeColor = System.Drawing.Color.Gray;
@@ -83,19 +83,22 @@ namespace QuizifyGUI
             // 
             this.tituloQuiz.AutoSize = true;
             this.tituloQuiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tituloQuiz.Location = new System.Drawing.Point(3, 1);
+            this.tituloQuiz.Location = new System.Drawing.Point(4, 1);
+            this.tituloQuiz.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tituloQuiz.Name = "tituloQuiz";
-            this.tituloQuiz.Size = new System.Drawing.Size(79, 29);
+            this.tituloQuiz.Size = new System.Drawing.Size(95, 36);
             this.tituloQuiz.TabIndex = 3;
             this.tituloQuiz.Text = "label1";
             // 
-            // textBox1
+            // textBoxRespuesta
             // 
-            this.textBox1.Location = new System.Drawing.Point(30, 154);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(361, 347);
-            this.textBox1.TabIndex = 4;
+            this.textBoxRespuesta.Location = new System.Drawing.Point(40, 190);
+            this.textBoxRespuesta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxRespuesta.Multiline = true;
+            this.textBoxRespuesta.Name = "textBoxRespuesta";
+            this.textBoxRespuesta.Size = new System.Drawing.Size(480, 426);
+            this.textBoxRespuesta.TabIndex = 4;
+            this.textBoxRespuesta.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // botonSiguiente
             // 
@@ -107,7 +110,8 @@ namespace QuizifyGUI
             this.botonSiguiente.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.botonSiguiente.HoverTextColor = System.Drawing.Color.White;
             this.botonSiguiente.IsDerivedStyle = true;
-            this.botonSiguiente.Location = new System.Drawing.Point(373, 526);
+            this.botonSiguiente.Location = new System.Drawing.Point(497, 647);
+            this.botonSiguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.botonSiguiente.Name = "botonSiguiente";
             this.botonSiguiente.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.botonSiguiente.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -115,31 +119,33 @@ namespace QuizifyGUI
             this.botonSiguiente.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
             this.botonSiguiente.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
             this.botonSiguiente.PressTextColor = System.Drawing.Color.White;
-            this.botonSiguiente.Size = new System.Drawing.Size(108, 43);
+            this.botonSiguiente.Size = new System.Drawing.Size(144, 53);
             this.botonSiguiente.Style = MetroSet_UI.Enums.Style.Light;
             this.botonSiguiente.StyleManager = null;
             this.botonSiguiente.TabIndex = 15;
             this.botonSiguiente.Text = "Siguiente";
             this.botonSiguiente.ThemeAuthor = "Narwin";
             this.botonSiguiente.ThemeName = "MetroLite";
+            this.botonSiguiente.Click += new System.EventHandler(this.botonSiguiente_Click);
             // 
             // Enunciado
             // 
             this.Enunciado.AutoSize = true;
-            this.Enunciado.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Enunciado.Location = new System.Drawing.Point(375, 75);
+            this.Enunciado.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Enunciado.Location = new System.Drawing.Point(42, 81);
+            this.Enunciado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Enunciado.Name = "Enunciado";
-            this.Enunciado.Size = new System.Drawing.Size(152, 55);
+            this.Enunciado.Size = new System.Drawing.Size(122, 44);
             this.Enunciado.TabIndex = 17;
             this.Enunciado.Text = "label1";
             // 
             // imagenPregunta
             // 
             this.imagenPregunta.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.imagenPregunta.Location = new System.Drawing.Point(533, 154);
-            this.imagenPregunta.Margin = new System.Windows.Forms.Padding(2);
+            this.imagenPregunta.Location = new System.Drawing.Point(711, 190);
+            this.imagenPregunta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imagenPregunta.Name = "imagenPregunta";
-            this.imagenPregunta.Size = new System.Drawing.Size(319, 347);
+            this.imagenPregunta.Size = new System.Drawing.Size(425, 427);
             this.imagenPregunta.TabIndex = 16;
             this.imagenPregunta.TabStop = false;
             this.imagenPregunta.Click += new System.EventHandler(this.imagenPregunta_Click);
@@ -152,14 +158,14 @@ namespace QuizifyGUI
             this.ProgresoQuiz.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ProgresoQuiz.DisabledProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.ProgresoQuiz.IsDerivedStyle = true;
-            this.ProgresoQuiz.Location = new System.Drawing.Point(174, 54);
-            this.ProgresoQuiz.Margin = new System.Windows.Forms.Padding(2);
+            this.ProgresoQuiz.Location = new System.Drawing.Point(232, 66);
+            this.ProgresoQuiz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProgresoQuiz.Maximum = 100;
             this.ProgresoQuiz.Minimum = 0;
             this.ProgresoQuiz.Name = "ProgresoQuiz";
             this.ProgresoQuiz.Orientation = MetroSet_UI.Enums.ProgressOrientation.Horizontal;
             this.ProgresoQuiz.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.ProgresoQuiz.Size = new System.Drawing.Size(544, 19);
+            this.ProgresoQuiz.Size = new System.Drawing.Size(725, 23);
             this.ProgresoQuiz.Style = MetroSet_UI.Enums.Style.Light;
             this.ProgresoQuiz.StyleManager = null;
             this.ProgresoQuiz.TabIndex = 18;
@@ -170,17 +176,19 @@ namespace QuizifyGUI
             // 
             // JuegoQuizRespuestaAbierta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 596);
+            this.ClientSize = new System.Drawing.Size(1167, 734);
             this.Controls.Add(this.ProgresoQuiz);
             this.Controls.Add(this.Enunciado);
             this.Controls.Add(this.imagenPregunta);
             this.Controls.Add(this.botonSiguiente);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxRespuesta);
             this.Controls.Add(this.BarraModificarVentana);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "JuegoQuizRespuestaAbierta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JuegoQuizRespuestaAbierta";
             this.Load += new System.EventHandler(this.JuegoQuizRespuestaAbierta_Load);
             this.BarraModificarVentana.ResumeLayout(false);
@@ -196,7 +204,7 @@ namespace QuizifyGUI
         private System.Windows.Forms.Panel BarraModificarVentana;
         private MetroSet_UI.Controls.MetroSetControlBox BotonesModificarVentana;
         private System.Windows.Forms.Label tituloQuiz;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxRespuesta;
         private MetroSet_UI.Controls.MetroSetButton botonSiguiente;
         private System.Windows.Forms.Label Enunciado;
         private System.Windows.Forms.PictureBox imagenPregunta;
