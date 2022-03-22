@@ -20,6 +20,8 @@ namespace QuizifyLibrary.Persistencia
                 AuthSecret = "G8JyRbxDwLBglP0vwXdm7G0cX1Raa8nXQud4rtgw",
                 BasePath = "https://quizify-62e37-default-rtdb.firebaseio.com/"
             };
+
+            client = new FireSharp.FirebaseClient(conexion);
         }
 
         public static ConexionFirebase getInstancia() 

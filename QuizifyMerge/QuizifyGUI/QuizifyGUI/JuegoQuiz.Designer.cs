@@ -33,6 +33,9 @@ namespace QuizifyGUI
             this.BotonesModificarVentana = new MetroSet_UI.Controls.MetroSetControlBox();
             this.tituloQuiz = new System.Windows.Forms.Label();
             this.labelEnunciado = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.botonSiguiente = new System.Windows.Forms.Button();
             this.BarraModificarVentana.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,18 +91,59 @@ namespace QuizifyGUI
             // 
             this.labelEnunciado.AutoSize = true;
             this.labelEnunciado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEnunciado.Location = new System.Drawing.Point(44, 120);
+            this.labelEnunciado.Location = new System.Drawing.Point(74, 124);
             this.labelEnunciado.Name = "labelEnunciado";
             this.labelEnunciado.Size = new System.Drawing.Size(86, 31);
             this.labelEnunciado.TabIndex = 3;
             this.labelEnunciado.Text = "label1";
             this.labelEnunciado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Lime;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.radioButton1.Location = new System.Drawing.Point(148, 359);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(162, 29);
+            this.radioButton1.TabIndex = 4;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "VERDADERO";
+            this.radioButton1.UseVisualStyleBackColor = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.Red;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.ForeColor = System.Drawing.Color.Black;
+            this.radioButton2.Location = new System.Drawing.Point(460, 359);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(99, 29);
+            this.radioButton2.TabIndex = 5;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "FALSO";
+            this.radioButton2.UseVisualStyleBackColor = false;
+            // 
+            // botonSiguiente
+            // 
+            this.botonSiguiente.Location = new System.Drawing.Point(680, 433);
+            this.botonSiguiente.Name = "botonSiguiente";
+            this.botonSiguiente.Size = new System.Drawing.Size(75, 23);
+            this.botonSiguiente.TabIndex = 6;
+            this.botonSiguiente.Text = "Siguiente";
+            this.botonSiguiente.UseVisualStyleBackColor = true;
+            this.botonSiguiente.Click += new System.EventHandler(this.botonSiguiente_Click);
+            // 
             // JuegoQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 496);
+            this.Controls.Add(this.botonSiguiente);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.labelEnunciado);
             this.Controls.Add(this.tituloQuiz);
             this.Controls.Add(this.BarraModificarVentana);
@@ -119,5 +163,8 @@ namespace QuizifyGUI
         private MetroSet_UI.Controls.MetroSetControlBox BotonesModificarVentana;
         private System.Windows.Forms.Label tituloQuiz;
         private System.Windows.Forms.Label labelEnunciado;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Button botonSiguiente;
     }
 }
