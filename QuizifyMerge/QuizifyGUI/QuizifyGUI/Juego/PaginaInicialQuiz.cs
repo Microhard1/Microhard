@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuizifyGUI.InterfacesPrincipales
+namespace QuizifyGUI.Juego
 {
-    public partial class Estadisticas : Form
+    public partial class PaginaInicialQuiz : Form
     {
-        public Estadisticas()
+        public PaginaInicialQuiz()
         {
             InitializeComponent();
-        }
-
-        private void Estadisticas_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

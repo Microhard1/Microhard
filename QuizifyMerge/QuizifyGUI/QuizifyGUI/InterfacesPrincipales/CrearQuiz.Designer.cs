@@ -33,6 +33,7 @@ namespace QuizifyGUI
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.BotonBuscarPregunta = new System.Windows.Forms.Button();
             this.metroSetPanel2 = new MetroSet_UI.Controls.MetroSetPanel();
+            this.CrearNuevaPregunta = new MetroSet_UI.Controls.MetroSetButton();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SelectorTipoQuiz = new System.Windows.Forms.ComboBox();
             this.metroSetDivider2 = new MetroSet_UI.Controls.MetroSetDivider();
@@ -85,6 +86,7 @@ namespace QuizifyGUI
             this.metroSetPanel2.BackgroundColor = System.Drawing.Color.White;
             this.metroSetPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.metroSetPanel2.BorderThickness = 1;
+            this.metroSetPanel2.Controls.Add(this.CrearNuevaPregunta);
             this.metroSetPanel2.Controls.Add(this.checkBox1);
             this.metroSetPanel2.Controls.Add(this.SelectorTipoQuiz);
             this.metroSetPanel2.Controls.Add(this.metroSetDivider2);
@@ -102,12 +104,40 @@ namespace QuizifyGUI
             this.metroSetPanel2.ThemeAuthor = null;
             this.metroSetPanel2.ThemeName = null;
             // 
+            // CrearNuevaPregunta
+            // 
+            this.CrearNuevaPregunta.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.CrearNuevaPregunta.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.CrearNuevaPregunta.DisabledForeColor = System.Drawing.Color.Gray;
+            this.CrearNuevaPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CrearNuevaPregunta.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.CrearNuevaPregunta.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.CrearNuevaPregunta.HoverTextColor = System.Drawing.Color.White;
+            this.CrearNuevaPregunta.IsDerivedStyle = true;
+            this.CrearNuevaPregunta.Location = new System.Drawing.Point(28, 364);
+            this.CrearNuevaPregunta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CrearNuevaPregunta.Name = "CrearNuevaPregunta";
+            this.CrearNuevaPregunta.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.CrearNuevaPregunta.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.CrearNuevaPregunta.NormalTextColor = System.Drawing.Color.White;
+            this.CrearNuevaPregunta.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.CrearNuevaPregunta.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.CrearNuevaPregunta.PressTextColor = System.Drawing.Color.White;
+            this.CrearNuevaPregunta.Size = new System.Drawing.Size(139, 44);
+            this.CrearNuevaPregunta.Style = MetroSet_UI.Enums.Style.Light;
+            this.CrearNuevaPregunta.StyleManager = null;
+            this.CrearNuevaPregunta.TabIndex = 7;
+            this.CrearNuevaPregunta.Text = "Crear nueva pregunta";
+            this.CrearNuevaPregunta.ThemeAuthor = null;
+            this.CrearNuevaPregunta.ThemeName = null;
+            this.CrearNuevaPregunta.Click += new System.EventHandler(this.CrearNuevaPregunta_Click);
+            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.ForeColor = System.Drawing.Color.Black;
             this.checkBox1.Location = new System.Drawing.Point(16, 175);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(151, 21);
             this.checkBox1.TabIndex = 6;
@@ -249,5 +279,6 @@ namespace QuizifyGUI
         private System.Windows.Forms.DataGridViewCheckBoxColumn Agregar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pregunta;
         private System.Windows.Forms.CheckBox checkBox1;
+        private MetroSet_UI.Controls.MetroSetButton CrearNuevaPregunta;
     }
 }

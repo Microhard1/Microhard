@@ -20,6 +20,7 @@ namespace QuizifyGUI
         int PreguntaActual = 0;
         int elementosBDD;
         int nota = 0;
+        private int tiempo;
         QuizifyServices servicio;
         IFirebaseClient cliente;
         ConexionFirebase ConexionFirebase;
@@ -32,6 +33,7 @@ namespace QuizifyGUI
             ProgresoQuiz.BorderColor = Color.Black;
             tituloQuiz.Text = titulo;
             this.indice = indice;
+            EnviarTest.Enabled = false;
 
             servicio = new QuizifyServices();
             ConexionFirebase = ConexionFirebase.getInstancia();
@@ -72,10 +74,7 @@ namespace QuizifyGUI
                 var result = MessageBox.Show("Enhorabuena, tu nota es un: " + nota, "Nota final del test",
                                  MessageBoxButtons.OK,
                                  MessageBoxIcon.Information);
-                if (result == DialogResult.OK)
-                {
-                    this.Close();
-                }
+                EnviarTest.Enabled = true;
 
             }
         }
@@ -165,6 +164,23 @@ namespace QuizifyGUI
             Opcion2.Text = values[0];
             Opcion3.Text = values[1];
             Opcion4.Text = values[2];
+        }
+
+        private void EnviarTest_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Test enviado", "Envio",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Information);
+            if (result == DialogResult.OK)
+            {
+                this.Close();
+            }
+        }
+
+        private void TiempoQuiz_Tick(object sender, EventArgs e)
+        {
+            tiempo++;
+            labelTiempo.Text = tiempo.ToString();
         }
     }
 }

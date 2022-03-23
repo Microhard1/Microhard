@@ -29,6 +29,7 @@ namespace QuizifyGUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.siguientePregunta = new MetroSet_UI.Controls.MetroSetButton();
             this.Opcion4 = new System.Windows.Forms.RadioButton();
             this.Opcion3 = new System.Windows.Forms.RadioButton();
@@ -40,6 +41,9 @@ namespace QuizifyGUI
             this.BotonesModificarVentana = new MetroSet_UI.Controls.MetroSetControlBox();
             this.tituloQuiz = new System.Windows.Forms.Label();
             this.Enunciado = new System.Windows.Forms.Label();
+            this.EnviarTest = new MetroSet_UI.Controls.MetroSetButton();
+            this.TiempoQuiz = new System.Windows.Forms.Timer(this.components);
+            this.labelTiempo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).BeginInit();
             this.BarraModificarVentana.SuspendLayout();
             this.SuspendLayout();
@@ -221,11 +225,57 @@ namespace QuizifyGUI
             this.Enunciado.TabIndex = 26;
             this.Enunciado.Text = "label1";
             // 
+            // EnviarTest
+            // 
+            this.EnviarTest.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.EnviarTest.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.EnviarTest.DisabledForeColor = System.Drawing.Color.Gray;
+            this.EnviarTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.EnviarTest.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.EnviarTest.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.EnviarTest.HoverTextColor = System.Drawing.Color.White;
+            this.EnviarTest.IsDerivedStyle = true;
+            this.EnviarTest.Location = new System.Drawing.Point(704, 520);
+            this.EnviarTest.Margin = new System.Windows.Forms.Padding(4);
+            this.EnviarTest.Name = "EnviarTest";
+            this.EnviarTest.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.EnviarTest.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.EnviarTest.NormalTextColor = System.Drawing.Color.White;
+            this.EnviarTest.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.EnviarTest.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.EnviarTest.PressTextColor = System.Drawing.Color.White;
+            this.EnviarTest.Size = new System.Drawing.Size(144, 53);
+            this.EnviarTest.Style = MetroSet_UI.Enums.Style.Light;
+            this.EnviarTest.StyleManager = null;
+            this.EnviarTest.TabIndex = 27;
+            this.EnviarTest.Text = "Enviar test";
+            this.EnviarTest.ThemeAuthor = "Narwin";
+            this.EnviarTest.ThemeName = "MetroLite";
+            this.EnviarTest.Click += new System.EventHandler(this.EnviarTest_Click);
+            // 
+            // TiempoQuiz
+            // 
+            this.TiempoQuiz.Enabled = true;
+            this.TiempoQuiz.Interval = 1000;
+            this.TiempoQuiz.Tick += new System.EventHandler(this.TiempoQuiz_Tick);
+            // 
+            // labelTiempo
+            // 
+            this.labelTiempo.AutoSize = true;
+            this.labelTiempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTiempo.Location = new System.Drawing.Point(807, 54);
+            this.labelTiempo.Name = "labelTiempo";
+            this.labelTiempo.Size = new System.Drawing.Size(90, 25);
+            this.labelTiempo.TabIndex = 28;
+            this.labelTiempo.Text = "00:00:00";
+            // 
             // JuegoQuizMultiopcion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(944, 595);
+            this.Controls.Add(this.labelTiempo);
+            this.Controls.Add(this.EnviarTest);
             this.Controls.Add(this.Enunciado);
             this.Controls.Add(this.BarraModificarVentana);
             this.Controls.Add(this.ProgresoQuiz);
@@ -237,6 +287,7 @@ namespace QuizifyGUI
             this.Controls.Add(this.Opcion1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "JuegoQuizMultiopcion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JuegoQuizMultiopcion";
             ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).EndInit();
             this.BarraModificarVentana.ResumeLayout(false);
@@ -259,5 +310,8 @@ namespace QuizifyGUI
         private MetroSet_UI.Controls.MetroSetControlBox BotonesModificarVentana;
         private System.Windows.Forms.Label tituloQuiz;
         private System.Windows.Forms.Label Enunciado;
+        private MetroSet_UI.Controls.MetroSetButton EnviarTest;
+        private System.Windows.Forms.Timer TiempoQuiz;
+        private System.Windows.Forms.Label labelTiempo;
     }
 }

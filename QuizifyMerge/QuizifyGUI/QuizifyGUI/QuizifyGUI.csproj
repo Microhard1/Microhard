@@ -95,16 +95,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreacionDeQuizes\CrearQuiz.cs">
+    <Compile Include="InterfacesPrincipales\CrearQuiz.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreacionDeQuizes\CrearQuiz.Designer.cs">
+    <Compile Include="InterfacesPrincipales\CrearQuiz.Designer.cs">
       <DependentUpon>CrearQuiz.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterfacesPrincipales\CrearPregunta.cs">
+    <Compile Include="CreacionDePreguntas\CrearPregunta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterfacesPrincipales\CrearPregunta.Designer.cs">
+    <Compile Include="CreacionDePreguntas\CrearPregunta.Designer.cs">
       <DependentUpon>CrearPregunta.cs</DependentUpon>
     </Compile>
     <Compile Include="InterfacesPrincipales\Estadisticas.cs">
@@ -118,6 +118,12 @@
     </Compile>
     <Compile Include="InterfacesPrincipales\Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Juego\PaginaInicialQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Juego\PaginaInicialQuiz.Designer.cs">
+      <DependentUpon>PaginaInicialQuiz.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -168,32 +174,38 @@
     <Compile Include="SesionDeUsuarios\Registrar.Designer.cs">
       <DependentUpon>Registrar.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreacionDeQuizes\RespuestaAbierta.cs">
+    <Compile Include="CreacionDePreguntas\RespuestaAbierta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreacionDeQuizes\RespuestaAbierta.Designer.cs">
+    <Compile Include="CreacionDePreguntas\RespuestaAbierta.Designer.cs">
       <DependentUpon>RespuestaAbierta.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreacionDeQuizes\TipoTest.cs">
+    <Compile Include="CreacionDePreguntas\TipoTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreacionDeQuizes\TipoTest.Designer.cs">
+    <Compile Include="CreacionDePreguntas\TipoTest.Designer.cs">
       <DependentUpon>TipoTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreacionDeQuizes\VerdaderoFalso.cs">
+    <Compile Include="CreacionDePreguntas\VerdaderoFalso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreacionDeQuizes\VerdaderoFalso.Designer.cs">
+    <Compile Include="CreacionDePreguntas\VerdaderoFalso.Designer.cs">
       <DependentUpon>VerdaderoFalso.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CreacionDeQuizes\CrearQuiz.resx">
+    <EmbeddedResource Include="InterfacesPrincipales\CrearQuiz.resx">
       <DependentUpon>CrearQuiz.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InterfacesPrincipales\CrearPregunta.resx">
+    <EmbeddedResource Include="CreacionDePreguntas\CrearPregunta.resx">
       <DependentUpon>CrearPregunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfacesPrincipales\Estadisticas.resx">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterfacesPrincipales\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Juego\PaginaInicialQuiz.resx">
+      <DependentUpon>PaginaInicialQuiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SesionDeUsuarios\InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
@@ -221,13 +233,13 @@
     <EmbeddedResource Include="SesionDeUsuarios\Registrar.resx">
       <DependentUpon>Registrar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreacionDeQuizes\RespuestaAbierta.resx">
+    <EmbeddedResource Include="CreacionDePreguntas\RespuestaAbierta.resx">
       <DependentUpon>RespuestaAbierta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreacionDeQuizes\TipoTest.resx">
+    <EmbeddedResource Include="CreacionDePreguntas\TipoTest.resx">
       <DependentUpon>TipoTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreacionDeQuizes\VerdaderoFalso.resx">
+    <EmbeddedResource Include="CreacionDePreguntas\VerdaderoFalso.resx">
       <DependentUpon>VerdaderoFalso.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

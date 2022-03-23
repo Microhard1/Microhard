@@ -32,9 +32,7 @@ namespace QuizifyGUI
             this.metroSetPanel2 = new MetroSet_UI.Controls.MetroSetPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.NombrePregunta = new System.Windows.Forms.TextBox();
-            this.Puntuacion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.LabelDesc = new System.Windows.Forms.Label();
             this.Descripcion = new MetroSet_UI.Controls.MetroSetRichTextBox();
             this.SelectorTipoQuiz = new System.Windows.Forms.ComboBox();
@@ -56,9 +54,7 @@ namespace QuizifyGUI
             this.metroSetPanel2.BorderThickness = 1;
             this.metroSetPanel2.Controls.Add(this.label3);
             this.metroSetPanel2.Controls.Add(this.NombrePregunta);
-            this.metroSetPanel2.Controls.Add(this.Puntuacion);
             this.metroSetPanel2.Controls.Add(this.label2);
-            this.metroSetPanel2.Controls.Add(this.label1);
             this.metroSetPanel2.Controls.Add(this.LabelDesc);
             this.metroSetPanel2.Controls.Add(this.Descripcion);
             this.metroSetPanel2.Controls.Add(this.SelectorTipoQuiz);
@@ -80,7 +76,7 @@ namespace QuizifyGUI
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(24, 126);
+            this.label3.Location = new System.Drawing.Point(22, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(154, 17);
             this.label3.TabIndex = 10;
@@ -89,20 +85,12 @@ namespace QuizifyGUI
             // 
             // NombrePregunta
             // 
-            this.NombrePregunta.Location = new System.Drawing.Point(25, 145);
+            this.NombrePregunta.Location = new System.Drawing.Point(25, 103);
             this.NombrePregunta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NombrePregunta.Name = "NombrePregunta";
             this.NombrePregunta.Size = new System.Drawing.Size(137, 22);
             this.NombrePregunta.TabIndex = 9;
             this.NombrePregunta.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // Puntuacion
-            // 
-            this.Puntuacion.Location = new System.Drawing.Point(25, 86);
-            this.Puntuacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Puntuacion.Name = "Puntuacion";
-            this.Puntuacion.Size = new System.Drawing.Size(137, 22);
-            this.Puntuacion.TabIndex = 0;
             // 
             // label2
             // 
@@ -113,16 +101,6 @@ namespace QuizifyGUI
             this.label2.Size = new System.Drawing.Size(117, 17);
             this.label2.TabIndex = 8;
             this.label2.Text = "Tipo de pregunta";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(24, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 17);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Puntuacion";
             // 
             // LabelDesc
             // 
@@ -292,8 +270,6 @@ namespace QuizifyGUI
         private MetroSet_UI.Controls.MetroSetRichTextBox Descripcion;
         private System.Windows.Forms.Label LabelDesc;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Puntuacion;
         private System.Windows.Forms.TextBox NombrePregunta;
         private System.Windows.Forms.Label label3;
     }

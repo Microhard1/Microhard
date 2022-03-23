@@ -102,5 +102,13 @@ namespace QuizifyGUI
             FirebaseResponse datosBDD = cliente.Get(@"Quiz");
             int indice = servicio.ContarElementosBDD(datosBDD);
         }
+
+        private void CrearNuevaPregunta_Click(object sender, EventArgs e)
+        {
+            Form preguntaNueva = new CrearPregunta();
+            preguntaNueva.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            //preguntaNueva.
+            preguntaNueva.Show();
+        }
     }
 }
