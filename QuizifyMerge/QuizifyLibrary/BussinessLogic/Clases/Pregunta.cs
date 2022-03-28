@@ -14,7 +14,6 @@ namespace Quizify.BussinessLogic.Clases
         public double puntuacion { get; }
         public string explicacion { get; }
 
-        //public string getEnunciado() { return enunciado; }
         public Pregunta(string enunciado, string imagen, double puntuacion, string explicacion) 
         {
             this.enunciado = enunciado;

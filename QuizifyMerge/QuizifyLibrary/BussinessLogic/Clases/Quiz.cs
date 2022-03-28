@@ -36,9 +36,8 @@ namespace Quizify.BussinessLogic.Clases
         
         }
 
-        public void añadirPregunta(string enunciado, string imagen, double puntuacion, string explicacion)
+        public void añadirPregunta(Pregunta p)
         {
-            Pregunta p = crearPregunta(enunciado, imagen, puntuacion, explicacion);
             preguntasQuiz.Add(p);
         }
 

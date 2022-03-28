@@ -6,19 +6,17 @@ using System.Threading.Tasks;
 
 namespace Quizify.BussinessLogic.Clases
 {
-    public class QuizAbierto : Quiz
+    class QuizVerdaderoFalso : Quiz
     {
-        public QuizAbierto(string nombreQuiz, Instructor creadoPor, int duracion, string dificultad,
-                DateTime inicio, DateTime fin) :
-                base(nombreQuiz, creadoPor, duracion, dificultad, inicio, fin) { 
-        
+        public QuizVerdaderoFalso(string nombreQuiz, Instructor creadoPor, int duracion, string dificultad, DateTime inicio, DateTime fin) :
+            base(nombreQuiz, creadoPor, duracion, dificultad, inicio, fin)
+        {
 
         }
 
-
         public override Pregunta crearPregunta(string enunciado, string imagen, double puntuacion, string explicacion)
         {
-            Pregunta p = new PreguntaAbierta(enunciado, imagen, puntuacion, explicacion);
+            Pregunta p = new PreguntaVerdaderoFalso(enunciado, imagen, puntuacion, explicacion);
             this.añadirPregunta(p);
             return p;
         }
