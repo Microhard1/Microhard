@@ -10,5 +10,10 @@ namespace Quizify.BussinessLogic.Clases
         public RespuestaVerdaderoFalso(string enunciado):base(enunciado) {
             
         }
+
+        public override void inicialize(bool correcta)
+        {
+            this.correcta = correcta;
+        }
     }
 }

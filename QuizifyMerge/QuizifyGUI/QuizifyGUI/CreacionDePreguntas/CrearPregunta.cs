@@ -141,7 +141,6 @@ namespace QuizifyGUI
         public void CrearPreguntaAbierta()
         {
             ControlCollection objetosDelFormulario = (ControlCollection)FormularioActual.Controls;
-            puntuacion = ConseguirPuntuacion(Puntuacion.Text);
             string descripcion = Descripcion.Text;
 
             foreach (Control c in objetosDelFormulario)
@@ -162,7 +161,6 @@ namespace QuizifyGUI
             ControlCollection objetosDelFormulario = (ControlCollection)FormularioActual.Controls;
             string enunciado = "";
             bool verdaderoOFalso = false;
-            int puntuacion = ConseguirPuntuacion(Puntuacion.Text);
             string descripcion = Descripcion.Text;
 
             foreach (Control c in objetosDelFormulario)
@@ -191,11 +189,13 @@ namespace QuizifyGUI
 
                 }
             }
+            Pregunta pregunta = new PreguntaVerdaderoFalso(enunciado,imagen,puntuacion,explicacion);
+            Respuesta r= pregunta.crearRespuesta(verdaderoOFalso.ToString());
+            r.inicialize(verdaderoOFalso);
+            pregunta.añadirRespuesta(r);
 
             FirebaseResponse datosBDD = cliente.Get(@"Pregunta/VerdaderoFalso/");
             int indice = ContarElementosBDD(datosBDD)+1;
-
-            PreguntaVF pregunta = new PreguntaVF("saxdasds", enunciado, "True");
 
 
             cliente.Set("Pregunta/VerdaderoFalso/" + indice,pregunta);
@@ -206,7 +206,6 @@ namespace QuizifyGUI
         private void asignarDatos()
         {
             explicacion = Descripcion.Text;
-            puntuacion = int.Parse( Puntuacion.Text);
         }
         private int ContarElementosBDD(FirebaseResponse datosBDD)
         {

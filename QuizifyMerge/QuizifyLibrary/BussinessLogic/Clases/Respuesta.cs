@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Quizify.BussinessLogic.Clases
 {
-    public class Respuesta
+    public abstract class Respuesta
     {
        
-        public string enunciado;
+        public string enunciado { get; }
         public Respuesta(string enunciado) {
             this.enunciado = enunciado;
             
         }
+        public abstract void inicialize(bool correcta);
     }
 }

@@ -62,6 +62,7 @@ namespace QuizifyGUI
             this.metroSetRichTextBox1.ThemeAuthor = "Narwin";
             this.metroSetRichTextBox1.ThemeName = "MetroLite";
             this.metroSetRichTextBox1.WordWrap = true;
+            this.metroSetRichTextBox1.TextChanged += new MetroSet_UI.Controls.MetroSetRichTextBox.TextChangedEventHandler(this.metroSetRichTextBox1_TextChanged);
             // 
             // imagenPregunta
             // 

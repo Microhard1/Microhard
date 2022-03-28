@@ -14,5 +14,10 @@ namespace Quizify.BussinessLogic.Clases
 
            
         }
+
+        public override void inicialize(bool correcta)
+        {
+            this.correcta = correcta;
+        }
     }
 }

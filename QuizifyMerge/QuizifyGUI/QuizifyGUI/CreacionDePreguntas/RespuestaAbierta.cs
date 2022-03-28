@@ -45,5 +45,10 @@ namespace QuizifyGUI
         {
             
         }
+
+        private void metroSetRichTextBox1_TextChanged(object sender)
+        {
+
+        }
     }
 }

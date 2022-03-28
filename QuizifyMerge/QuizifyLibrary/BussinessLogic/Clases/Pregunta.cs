@@ -8,13 +8,13 @@ namespace Quizify.BussinessLogic.Clases
 {
     public abstract class Pregunta
     {
+        public ICollection<Respuesta> respuestas { get; }
+        public string enunciado { get; }
+        public string imagen { get; }
+        public double puntuacion { get; }
+        public string explicacion { get; }
 
-        public ICollection<Respuesta> respuestas;
-        public string enunciado;
-        public string imagen;
-        public double puntuacion;
-        private string explicacion;
-
+        //public string getEnunciado() { return enunciado; }
         public Pregunta(string enunciado, string imagen, double puntuacion, string explicacion) 
         {
             this.enunciado = enunciado;
@@ -31,13 +31,12 @@ namespace Quizify.BussinessLogic.Clases
             this.puntuacion = puntuacion;
         }
 
-        public void añadirRespuesta(string enunciado) 
+        public void añadirRespuesta(Respuesta r) 
         {
-            Respuesta r = crearRespuesta(enunciado);
             respuestas.Add(r);
         }
 
         public abstract Respuesta crearRespuesta(string enunciado);
-
+        
     }
 }

@@ -15,5 +15,9 @@ namespace Quizify.BussinessLogic.Clases
            
             
         }
+        public override void inicialize(bool correcta)
+        {
+            //No requiere mas argumentos
+        }
     }
 }
