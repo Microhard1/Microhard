@@ -35,5 +35,15 @@ namespace QuizifyGUI
 
             }
         }
+
+        private void TipoTest_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textPregunta1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

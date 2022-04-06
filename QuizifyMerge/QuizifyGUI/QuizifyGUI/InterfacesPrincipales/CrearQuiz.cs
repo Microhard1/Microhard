@@ -5,9 +5,7 @@ using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Quizify.BussinessLogic.Servicios;
 using QuizifyLibrary.Persistencia;
-
-
-
+using Quizify.BussinessLogic.Clases;
 
 namespace QuizifyGUI
 {
@@ -101,6 +99,8 @@ namespace QuizifyGUI
         {
             FirebaseResponse datosBDD = cliente.Get(@"Quiz");
             int indice = servicio.ContarElementosBDD(datosBDD);
+            Instructor instructorProvisional = new Instructor("Paco", "1234");
+            Quiz nuevoQuiz = new QuizAbierto(nombreQuiz.Text,instructorProvisional,Dificultad.Text,fechaInicio.Value.ToString(),fechaFin.Value.ToString());
         }
 
         private void CrearNuevaPregunta_Click(object sender, EventArgs e)

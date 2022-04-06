@@ -45,6 +45,10 @@
               "target": "Package",
               "version": "[2.0.4, )"
             },
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
             "MahApps.Metro.IconPacks.Material": {
               "target": "Package",
               "version": "[4.11.0, )"

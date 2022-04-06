@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using QuizifyLibrary.Persistencia;
 using Quizify.BussinessLogic.Servicios;
+using System.Collections.Generic;
 
 namespace QuizifyGUI
 {
@@ -96,12 +97,10 @@ namespace QuizifyGUI
             {
                
                 case "Tipo Test":
-                   
+                    CrearPreguntaTipoTest();
                     break;
                 case "Respuesta Abierta":
                     CrearPreguntaAbierta();
-                    Pregunta p = new PreguntaAbierta(enunciado,imagen,puntuacion,explicacion) ;
-                    //SetResponse resp = cf.client.Set("/Errores/" + NombrePregunta.Text, p);
                     break;
                 case "Verdadero/Falso":
                     CrearPreguntaVerdaderoFalso();
@@ -203,26 +202,114 @@ namespace QuizifyGUI
             MessageBox.Show("Se ha insertado una pregunta: " + indice);
         }
 
+        public void CrearPreguntaTipoTest()
+        {
+            List<TextBox> listaRespuestas = getListaRespuestas();
+            ControlCollection objetosDelFormulario = (ControlCollection)FormularioActual.Controls;
+            string enunciado = "";
+            string descripcion = Descripcion.Text;
+            Pregunta pregunta = new PreguntaMultiOpcion(enunciado, imagen, puntuacion, explicacion);
+            Respuesta r;
+            foreach (Control c in objetosDelFormulario)
+            {
+                if (c.GetType() == typeof(CheckBox))
+                {
+
+                    CheckBox aux = (CheckBox)c;
+
+                    
+                        if (aux.Name == "ckeckPregunta1")
+                        {
+                            foreach (TextBox t in listaRespuestas)
+                            {
+                                if (t.Name== "textPregunta1")
+                                {
+                                r = new RespuestaMultiOpcion(t.Text);
+                                if (aux.Checked) { r.inicialize(true); } else { r.inicialize(false); }
+                                    pregunta.añadirRespuesta(r);
+                                }
+                            }
+                        }
+                        else if (aux.Name == "ckeckPregunta2")
+                        {
+                            foreach (TextBox t in listaRespuestas)
+                            {
+                                if (t.Name == "textPregunta2")
+                                {
+                                    r = new RespuestaMultiOpcion(t.Text);
+                                    if (aux.Checked) { r.inicialize(true); } else { r.inicialize(false); }
+                                    pregunta.añadirRespuesta(r);
+                                }
+                                
+                            }
+                        }
+                        else if(aux.Name == "ckeckPregunta3")
+                        {
+                            foreach (TextBox t in listaRespuestas)
+                            {
+                                if (t.Name == "textPregunta3")
+                                {
+                                     r = new RespuestaMultiOpcion(t.Text);
+                                    if (aux.Checked) { r.inicialize(true); } else { r.inicialize(false); }
+                                    pregunta.añadirRespuesta(r);
+                                }
+                            }
+                        }
+                        else if(aux.Name == "ckeckPregunta4")
+                        {
+                            foreach (TextBox t in listaRespuestas)
+                            {
+                                if (t.Name == "textPregunta4")
+                                {
+                                r = new RespuestaMultiOpcion(t.Text);
+                                if (aux.Checked) { r.inicialize(true); } else { r.inicialize(false); }
+                                pregunta.añadirRespuesta(r);
+                             }
+                            }
+                        }
+                }
+                else if (c.GetType() == typeof(MetroSetTextBox))
+                {
+                    if (c.Name == "enunciadoTipoTest")
+                    {
+                        enunciado = ((MetroSetTextBox)c).Text;
+                    }
+
+                }
+            }
+
+            FirebaseResponse datosBDD = cliente.Get(@"Pregunta/Multiopcion/");
+            int indice = ContarElementosBDD(datosBDD) + 1;
+
+
+            cliente.Set("Pregunta/Multiopcion/" + indice, pregunta);
+
+            MessageBox.Show("Se ha insertado una pregunta: " + indice);
+        }
+
         private void asignarDatos()
         {
             explicacion = Descripcion.Text;
+        }
+
+        private List<TextBox> getListaRespuestas()
+        {
+            List<TextBox> respuestas = new List<TextBox>();
+            ControlCollection objetosDelFormulario = (ControlCollection)FormularioActual.Controls;
+            foreach (Control c in objetosDelFormulario)
+            {
+                if (c.GetType() == typeof(TextBox)) {
+                    TextBox aux= (TextBox)c;
+                    respuestas.Add(aux);
+                }
+            }
+
+            return respuestas;
         }
         private int ContarElementosBDD(FirebaseResponse datosBDD)
         {
             string datos = datosBDD.Body;
             return Regex.Matches(datos, ",{").Count;
-        }
-
-        private class PreguntaVF
-        {
-            private string PathImagen, Pregunta, Respuesta;
-
-            public PreguntaVF(string pathImagen, string pregunta, string respuesta)
-            {
-                this.PathImagen = pathImagen;
-                this.Pregunta = pregunta;
-                this.Respuesta = respuesta;
-            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
