@@ -104,12 +104,12 @@ namespace Quizify.BussinessLogic.Servicios
         public int ContarQuizes(FirebaseResponse datosBDD)
         {
             string datos = datosBDD.Body;
-            return Regex.Matches(datos, ":{").Count -7;
+            return Regex.Matches(datos, ",{").Count;
         }
         public int contarPreguntasQuiz(FirebaseResponse datosBDD)
         {
             string datos = datosBDD.Body;
-            return Regex.Matches(datos, @""":""").Count;
+            return Regex.Matches(datos, ",{").Count;
         }
     }
 }

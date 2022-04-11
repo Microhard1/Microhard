@@ -263,11 +263,12 @@ namespace QuizifyGUI
             // 
             this.labelTiempo.AutoSize = true;
             this.labelTiempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTiempo.Location = new System.Drawing.Point(807, 54);
+            this.labelTiempo.Location = new System.Drawing.Point(819, 56);
             this.labelTiempo.Name = "labelTiempo";
             this.labelTiempo.Size = new System.Drawing.Size(90, 25);
             this.labelTiempo.TabIndex = 28;
             this.labelTiempo.Text = "00:00:00";
+            this.labelTiempo.Click += new System.EventHandler(this.labelTiempo_Click);
             // 
             // JuegoQuizMultiopcion
             // 
@@ -289,6 +290,7 @@ namespace QuizifyGUI
             this.Name = "JuegoQuizMultiopcion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JuegoQuizMultiopcion";
+            this.Load += new System.EventHandler(this.JuegoQuizMultiopcion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imagenPregunta)).EndInit();
             this.BarraModificarVentana.ResumeLayout(false);
             this.BarraModificarVentana.PerformLayout();

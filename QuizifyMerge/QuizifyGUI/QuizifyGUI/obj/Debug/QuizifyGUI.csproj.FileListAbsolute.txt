@@ -76,4 +76,5 @@ C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\Qui
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\obj\Debug\QuizifyGUI.exe.config
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Usuario\OneDrive\Documentos\upv\software\psw\Microhard\QuizifyMerge\QuizifyGUI\QuizifyGUI\bin\Debug\Newtonsoft.Json.xml

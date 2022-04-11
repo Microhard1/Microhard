@@ -38,9 +38,10 @@ namespace QuizifyGUI
             servicio = new QuizifyServices();
             ConexionFirebase = ConexionFirebase.getInstancia();
             cliente = ConexionFirebase.client;
-            FirebaseResponse datosBDD = cliente.Get(@"Quiz/" + indice + "/");
+            FirebaseResponse datosBDD = cliente.Get(@"Pregunta/Multiopcion/");
             elementosBDD = servicio.contarPreguntasQuiz(datosBDD);
 
+            tiempo = getTiempo();
             CrearPregunta();
             iniciarRespuestas();
         }
@@ -48,6 +49,14 @@ namespace QuizifyGUI
         private void ProgresoQuiz_ValueChanged(object sender)
         {
 
+        }
+
+        private int getTiempo()
+        {
+            FirebaseResponse FBTipoDeQuiz = cliente.Get(@"Quiz/3" + "/Tiempo/");
+            string tipoDeQuizResp = FBTipoDeQuiz.Body.ToString();
+            string tipoDeQuiz = tipoDeQuizResp.Substring(1, tipoDeQuizResp.Length - 2);
+            return int.Parse(tipoDeQuiz);
         }
 
         private void CrearPregunta()
@@ -179,8 +188,33 @@ namespace QuizifyGUI
 
         private void TiempoQuiz_Tick(object sender, EventArgs e)
         {
-            tiempo++;
-            labelTiempo.Text = tiempo.ToString();
+            tiempo--;
+            if (tiempo == 0)
+            {
+                var result = MessageBox.Show("Se acabó el tiempo, su quiz se enviará automáticamente", "Envio",
+                 MessageBoxButtons.OK,
+                 MessageBoxIcon.Information);
+                if (result == DialogResult.OK)
+                {
+                    this.Close();
+                }
+            }
+            else
+            {
+                string minutos = tiempo / 60 + "";
+                string segundos = tiempo % 60 + "";
+                labelTiempo.Text = minutos + " : " + segundos;
+            }
+        }
+
+        private void labelTiempo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void JuegoQuizMultiopcion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

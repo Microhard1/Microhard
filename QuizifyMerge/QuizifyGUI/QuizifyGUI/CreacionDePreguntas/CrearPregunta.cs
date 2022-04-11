@@ -214,7 +214,7 @@ namespace QuizifyGUI
             {
                 if (c.GetType() == typeof(CheckBox))
                 {
-
+                    
                     CheckBox aux = (CheckBox)c;
 
                     
@@ -227,6 +227,7 @@ namespace QuizifyGUI
                                 r = new RespuestaMultiOpcion(t.Text);
                                 if (aux.Checked) { r.inicialize(true); } else { r.inicialize(false); }
                                     pregunta.añadirRespuesta(r);
+                                    
                                 }
                             }
                         }
@@ -239,7 +240,8 @@ namespace QuizifyGUI
                                     r = new RespuestaMultiOpcion(t.Text);
                                     if (aux.Checked) { r.inicialize(true); } else { r.inicialize(false); }
                                     pregunta.añadirRespuesta(r);
-                                }
+                                   
+                            }
                                 
                             }
                         }
@@ -252,7 +254,8 @@ namespace QuizifyGUI
                                      r = new RespuestaMultiOpcion(t.Text);
                                     if (aux.Checked) { r.inicialize(true); } else { r.inicialize(false); }
                                     pregunta.añadirRespuesta(r);
-                                }
+                                    
+                            }
                             }
                         }
                         else if(aux.Name == "ckeckPregunta4")
@@ -264,7 +267,7 @@ namespace QuizifyGUI
                                 r = new RespuestaMultiOpcion(t.Text);
                                 if (aux.Checked) { r.inicialize(true); } else { r.inicialize(false); }
                                 pregunta.añadirRespuesta(r);
-                             }
+                            }
                             }
                         }
                 }
@@ -281,10 +284,10 @@ namespace QuizifyGUI
             FirebaseResponse datosBDD = cliente.Get(@"Pregunta/Multiopcion/");
             int indice = ContarElementosBDD(datosBDD) + 1;
 
+            
+            FirebaseResponse resp= ConexionFirebase.client.Set("/Pregunta/Multiopcion/3", pregunta);
 
-            cliente.Set("Pregunta/Multiopcion/" + indice, pregunta);
-
-            MessageBox.Show("Se ha insertado una pregunta: " + indice);
+            MessageBox.Show(resp.ToString());
         }
 
         private void asignarDatos()

@@ -1,5 +1,6 @@
 ﻿using FireSharp.Interfaces;
 using FireSharp.Response;
+using Quizify.BussinessLogic.Clases;
 using Quizify.BussinessLogic.Servicios;
 using QuizifyLibrary.Persistencia;
 using System;
@@ -23,7 +24,8 @@ namespace QuizifyGUI
         QuizifyServices servicio;
         ConexionFirebase ConexionFirebase;
         IFirebaseClient cliente;
-
+        Alumno alumno = new Alumno("Paco", "1234");
+        Quiz quizActual;
         public JuegoQuizRespuestaAbierta(String titulo,int indice)
         {
             InitializeComponent();
@@ -64,6 +66,7 @@ namespace QuizifyGUI
                 string enunciadoResp = enunciadoPregunta.Body.ToString();
                 string enunciado = enunciadoResp.Substring(1, enunciadoResp.Length - 2);
 
+                
                 Enunciado.Text = enunciado;
             }
 
@@ -73,6 +76,7 @@ namespace QuizifyGUI
                 var result = MessageBox.Show("Enhorabuena, tu nota es un: "+ nota, "Nota final del test",
                                  MessageBoxButtons.OK,
                                  MessageBoxIcon.Information);
+                Calificacion c;
                 if(result==DialogResult.OK)
                 {
                     this.Close();
