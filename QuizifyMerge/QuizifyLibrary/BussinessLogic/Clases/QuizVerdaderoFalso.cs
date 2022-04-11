@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Quizify.BussinessLogic.Clases
 {
-    class QuizVerdaderoFalso : Quiz
+    public class QuizVerdaderoFalso : Quiz
     {
         public QuizVerdaderoFalso(string nombreQuiz, Instructor creadoPor, int duracion, string dificultad, DateTime inicio, DateTime fin) :
             base(nombreQuiz, creadoPor, duracion, dificultad, inicio, fin)

@@ -33,6 +33,13 @@ namespace QuizifyGUI
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.BotonBuscarPregunta = new System.Windows.Forms.Button();
             this.metroSetPanel2 = new MetroSet_UI.Controls.MetroSetPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.fechaFin = new System.Windows.Forms.DateTimePicker();
+            this.fechaInicio = new System.Windows.Forms.DateTimePicker();
+            this.Dificultad = new System.Windows.Forms.TextBox();
             this.CrearNuevaPregunta = new MetroSet_UI.Controls.MetroSetButton();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SelectorTipoQuiz = new System.Windows.Forms.ComboBox();
@@ -42,13 +49,8 @@ namespace QuizifyGUI
             this.GridDatosPreguntas = new System.Windows.Forms.DataGridView();
             this.Agregar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Pregunta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dificultad = new System.Windows.Forms.TextBox();
-            this.fechaInicio = new System.Windows.Forms.DateTimePicker();
-            this.fechaFin = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Duracion = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.metroSetPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridDatosPreguntas)).BeginInit();
@@ -93,6 +95,8 @@ namespace QuizifyGUI
             this.metroSetPanel2.BackgroundColor = System.Drawing.Color.White;
             this.metroSetPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.metroSetPanel2.BorderThickness = 1;
+            this.metroSetPanel2.Controls.Add(this.label5);
+            this.metroSetPanel2.Controls.Add(this.Duracion);
             this.metroSetPanel2.Controls.Add(this.label4);
             this.metroSetPanel2.Controls.Add(this.label3);
             this.metroSetPanel2.Controls.Add(this.label2);
@@ -117,6 +121,68 @@ namespace QuizifyGUI
             this.metroSetPanel2.TabIndex = 12;
             this.metroSetPanel2.ThemeAuthor = null;
             this.metroSetPanel2.ThemeName = null;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(24, 249);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 17);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Dificultad";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(24, 199);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 17);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Fecha de fin";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(25, 146);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 17);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Fecha de inicio";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(24, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 17);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Titulo";
+            // 
+            // fechaFin
+            // 
+            this.fechaFin.Location = new System.Drawing.Point(27, 219);
+            this.fechaFin.Name = "fechaFin";
+            this.fechaFin.Size = new System.Drawing.Size(137, 22);
+            this.fechaFin.TabIndex = 17;
+            // 
+            // fechaInicio
+            // 
+            this.fechaInicio.Location = new System.Drawing.Point(27, 166);
+            this.fechaInicio.Name = "fechaInicio";
+            this.fechaInicio.Size = new System.Drawing.Size(137, 22);
+            this.fechaInicio.TabIndex = 16;
+            // 
+            // Dificultad
+            // 
+            this.Dificultad.Location = new System.Drawing.Point(28, 268);
+            this.Dificultad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Dificultad.Name = "Dificultad";
+            this.Dificultad.Size = new System.Drawing.Size(137, 22);
+            this.Dificultad.TabIndex = 8;
             // 
             // CrearNuevaPregunta
             // 
@@ -190,7 +256,7 @@ namespace QuizifyGUI
             // 
             // nombreQuiz
             // 
-            this.nombreQuiz.Location = new System.Drawing.Point(27, 105);
+            this.nombreQuiz.Location = new System.Drawing.Point(27, 76);
             this.nombreQuiz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nombreQuiz.Name = "nombreQuiz";
             this.nombreQuiz.Size = new System.Drawing.Size(137, 22);
@@ -257,67 +323,24 @@ namespace QuizifyGUI
             this.Pregunta.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Pregunta.Width = 125;
             // 
-            // Dificultad
+            // Duracion
             // 
-            this.Dificultad.Location = new System.Drawing.Point(28, 268);
-            this.Dificultad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Dificultad.Name = "Dificultad";
-            this.Dificultad.Size = new System.Drawing.Size(137, 22);
-            this.Dificultad.TabIndex = 8;
+            this.Duracion.Location = new System.Drawing.Point(27, 122);
+            this.Duracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Duracion.Name = "Duracion";
+            this.Duracion.Size = new System.Drawing.Size(137, 22);
+            this.Duracion.TabIndex = 21;
+            this.Duracion.TextChanged += new System.EventHandler(this.Duracion_TextChanged);
             // 
-            // fechaInicio
+            // label5
             // 
-            this.fechaInicio.Location = new System.Drawing.Point(27, 166);
-            this.fechaInicio.Name = "fechaInicio";
-            this.fechaInicio.Size = new System.Drawing.Size(137, 22);
-            this.fechaInicio.TabIndex = 16;
-            // 
-            // fechaFin
-            // 
-            this.fechaFin.Location = new System.Drawing.Point(27, 219);
-            this.fechaFin.Name = "fechaFin";
-            this.fechaFin.Size = new System.Drawing.Size(137, 22);
-            this.fechaFin.TabIndex = 17;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(24, 74);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 17);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Titulo";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(25, 146);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 17);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Fecha de inicio";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(24, 199);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 17);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Fecha de fin";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(24, 249);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 17);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Dificultad";
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(25, 103);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 17);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Duracion";
             // 
             // CrearQuiz
             // 
@@ -363,5 +386,7 @@ namespace QuizifyGUI
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker fechaFin;
         private System.Windows.Forms.DateTimePicker fechaInicio;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox Duracion;
     }
 }

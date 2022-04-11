@@ -100,7 +100,27 @@ namespace QuizifyGUI
             FirebaseResponse datosBDD = cliente.Get(@"Quiz");
             int indice = servicio.ContarElementosBDD(datosBDD);
             Instructor instructorProvisional = new Instructor("Paco", "1234");
-            Quiz nuevoQuiz = new QuizAbierto(nombreQuiz.Text,instructorProvisional,Dificultad.Text,fechaInicio.Value.ToString(),fechaFin.Value.ToString());
+
+            if (SelectorTipoQuiz.Text == "Tipo Test")
+            {
+
+                Quiz nuevoQuiz = new QuizMultiOpcion(nombreQuiz.Text, instructorProvisional, int.Parse(Duracion.Text), Dificultad.Text, fechaInicio.Value, fechaFin.Value);
+            }
+            else if (SelectorTipoQuiz.Text == "Respuesta Abierta")
+            {
+
+                Quiz nuevoQuiz = new QuizAbierto(nombreQuiz.Text, instructorProvisional, int.Parse(Duracion.Text), Dificultad.Text, fechaInicio.Value, fechaFin.Value);
+            }
+            else if (SelectorTipoQuiz.Text == "Verdadero/Falso")
+            {
+
+                Quiz nuevoQuiz = new QuizVerdaderoFalso(nombreQuiz.Text, instructorProvisional,int.Parse( Duracion.Text), Dificultad.Text, fechaInicio.Value, fechaFin.Value);
+            }
+            else
+            {
+
+            }
+                
         }
 
         private void CrearNuevaPregunta_Click(object sender, EventArgs e)
@@ -109,6 +129,11 @@ namespace QuizifyGUI
             preguntaNueva.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             //preguntaNueva.
             preguntaNueva.Show();
+        }
+
+        private void Duracion_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
