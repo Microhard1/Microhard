@@ -139,6 +139,7 @@ namespace QuizifyGUI
             // 
             // SelectorTipoQuiz
             // 
+            this.SelectorTipoQuiz.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SelectorTipoQuiz.FormattingEnabled = true;
             this.SelectorTipoQuiz.Items.AddRange(new object[] {
             "Tipo Test",
